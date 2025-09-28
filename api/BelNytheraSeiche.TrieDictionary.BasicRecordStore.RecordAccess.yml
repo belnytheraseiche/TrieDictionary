@@ -1,0 +1,781 @@
+### YamlMime:ManagedReference
+items:
+- uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess
+  commentId: T:BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess
+  id: BasicRecordStore.RecordAccess
+  parent: BelNytheraSeiche.TrieDictionary
+  children:
+  - BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.Add(System.ReadOnlySpan{System.Byte})
+  - BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.Clear
+  - BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.GetEnumerator
+  - BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.Identifier
+  langs:
+  - csharp
+  - vb
+  name: BasicRecordStore.RecordAccess
+  nameWithType: BasicRecordStore.RecordAccess
+  fullName: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess
+  type: Class
+  source:
+    id: RecordAccess
+    path: C:\Users\nanto\dev\TrieDictionary\src\BasicRecordStore.cs
+    startLine: 353
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Provides access to and manages a linked list of <xref href="BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record" data-throw-if-not-resolved="false"></xref> objects.
+  remarks: >-
+    This class implements <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> to allow easy iteration.
+
+    The collection will throw an <xref href="System.InvalidOperationException" data-throw-if-not-resolved="false"></xref> if modified during enumeration.
+  example: []
+  syntax:
+    content: 'public sealed class BasicRecordStore.RecordAccess : IEnumerable<BasicRecordStore.Record>, IEnumerable'
+    content.vb: Public NotInheritable Class BasicRecordStore.RecordAccess Implements IEnumerable(Of BasicRecordStore.Record), IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.IEnumerable{BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.Identifier
+  commentId: P:BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.Identifier
+  id: Identifier
+  parent: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess
+  langs:
+  - csharp
+  - vb
+  name: Identifier
+  nameWithType: BasicRecordStore.RecordAccess.Identifier
+  fullName: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.Identifier
+  type: Property
+  source:
+    id: Identifier
+    path: C:\Users\nanto\dev\TrieDictionary\src\BasicRecordStore.cs
+    startLine: 360
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Gets the identifier for the head of the linked list that this object accesses.
+  example: []
+  syntax:
+    content: public int Identifier { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Identifier As Integer
+  overload: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.Identifier*
+- uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.Clear
+  commentId: M:BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.Clear
+  id: Clear
+  parent: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: BasicRecordStore.RecordAccess.Clear()
+  fullName: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.Clear()
+  type: Method
+  source:
+    id: Clear
+    path: C:\Users\nanto\dev\TrieDictionary\src\BasicRecordStore.cs
+    startLine: 371
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Removes all records from the list.
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.Clear*
+- uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.Add(System.ReadOnlySpan{System.Byte})
+  commentId: M:BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.Add(System.ReadOnlySpan{System.Byte})
+  id: Add(System.ReadOnlySpan{System.Byte})
+  parent: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess
+  langs:
+  - csharp
+  - vb
+  name: Add(ReadOnlySpan<byte>)
+  nameWithType: BasicRecordStore.RecordAccess.Add(ReadOnlySpan<byte>)
+  fullName: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.Add(System.ReadOnlySpan<byte>)
+  type: Method
+  source:
+    id: Add
+    path: C:\Users\nanto\dev\TrieDictionary\src\BasicRecordStore.cs
+    startLine: 414
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Adds a new record with the specified content to the end of the list.
+  example: []
+  syntax:
+    content: public BasicRecordStore.Record Add(ReadOnlySpan<byte> content)
+    parameters:
+    - id: content
+      type: System.ReadOnlySpan{System.Byte}
+      description: The content of the new record.
+    return:
+      type: BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record
+      description: The newly added <xref href="BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function Add(content As ReadOnlySpan(Of Byte)) As BasicRecordStore.Record
+  overload: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.Add*
+  nameWithType.vb: BasicRecordStore.RecordAccess.Add(ReadOnlySpan(Of Byte))
+  fullName.vb: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.Add(System.ReadOnlySpan(Of Byte))
+  name.vb: Add(ReadOnlySpan(Of Byte))
+- uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.GetEnumerator
+  commentId: M:BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.GetEnumerator
+  id: GetEnumerator
+  parent: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: BasicRecordStore.RecordAccess.GetEnumerator()
+  fullName: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.GetEnumerator()
+  type: Method
+  source:
+    id: GetEnumerator
+    path: C:\Users\nanto\dev\TrieDictionary\src\BasicRecordStore.cs
+    startLine: 489
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Returns an enumerator that iterates through the records in the list.
+  example: []
+  syntax:
+    content: public IEnumerator<BasicRecordStore.Record> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record}
+      description: An enumerator for this record list.
+    content.vb: Public Function GetEnumerator() As IEnumerator(Of BasicRecordStore.Record)
+  overload: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record}.GetEnumerator
+references:
+- uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record
+  commentId: T:BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.html
+  name: BasicRecordStore.Record
+  nameWithType: BasicRecordStore.Record
+  fullName: BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record
+  spec.csharp:
+  - uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore
+    name: BasicRecordStore
+    href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record
+    name: Record
+    href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record.html
+  spec.vb:
+  - uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore
+    name: BasicRecordStore
+    href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record
+    name: Record
+    href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record.html
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: BelNytheraSeiche.TrieDictionary
+  commentId: N:BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.html
+  name: BelNytheraSeiche.TrieDictionary
+  nameWithType: BelNytheraSeiche.TrieDictionary
+  fullName: BelNytheraSeiche.TrieDictionary
+  spec.csharp:
+  - uid: BelNytheraSeiche
+    name: BelNytheraSeiche
+    href: BelNytheraSeiche.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary
+    name: TrieDictionary
+    href: BelNytheraSeiche.TrieDictionary.html
+  spec.vb:
+  - uid: BelNytheraSeiche
+    name: BelNytheraSeiche
+    href: BelNytheraSeiche.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary
+    name: TrieDictionary
+    href: BelNytheraSeiche.TrieDictionary.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Collections.Generic.IEnumerable{BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record}
+  commentId: T:System.Collections.Generic.IEnumerable{BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<BasicRecordStore.Record>
+  nameWithType: IEnumerable<BasicRecordStore.Record>
+  fullName: System.Collections.Generic.IEnumerable<BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record>
+  nameWithType.vb: IEnumerable(Of BasicRecordStore.Record)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record)
+  name.vb: IEnumerable(Of BasicRecordStore.Record)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore
+    name: BasicRecordStore
+    href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record
+    name: Record
+    href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore
+    name: BasicRecordStore
+    href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record
+    name: Record
+    href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record.html
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.Identifier*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.Identifier
+  href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.html#BelNytheraSeiche_TrieDictionary_BasicRecordStore_RecordAccess_Identifier
+  name: Identifier
+  nameWithType: BasicRecordStore.RecordAccess.Identifier
+  fullName: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.Identifier
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.Clear*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.Clear
+  href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.html#BelNytheraSeiche_TrieDictionary_BasicRecordStore_RecordAccess_Clear
+  name: Clear
+  nameWithType: BasicRecordStore.RecordAccess.Clear
+  fullName: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.Clear
+- uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.Add*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.Add
+  href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.html#BelNytheraSeiche_TrieDictionary_BasicRecordStore_RecordAccess_Add_System_ReadOnlySpan_System_Byte__
+  name: Add
+  nameWithType: BasicRecordStore.RecordAccess.Add
+  fullName: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.Add
+- uid: System.ReadOnlySpan{System.Byte}
+  commentId: T:System.ReadOnlySpan{System.Byte}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<byte>
+  nameWithType: ReadOnlySpan<byte>
+  fullName: System.ReadOnlySpan<byte>
+  nameWithType.vb: ReadOnlySpan(Of Byte)
+  fullName.vb: System.ReadOnlySpan(Of Byte)
+  name.vb: ReadOnlySpan(Of Byte)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.GetEnumerator*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.GetEnumerator
+  href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.html#BelNytheraSeiche_TrieDictionary_BasicRecordStore_RecordAccess_GetEnumerator
+  name: GetEnumerator
+  nameWithType: BasicRecordStore.RecordAccess.GetEnumerator
+  fullName: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<BasicRecordStore.Record>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of BasicRecordStore.Record).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable{BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable{BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator{BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record}
+  commentId: T:System.Collections.Generic.IEnumerator{BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<BasicRecordStore.Record>
+  nameWithType: IEnumerator<BasicRecordStore.Record>
+  fullName: System.Collections.Generic.IEnumerator<BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record>
+  nameWithType.vb: IEnumerator(Of BasicRecordStore.Record)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record)
+  name.vb: IEnumerator(Of BasicRecordStore.Record)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore
+    name: BasicRecordStore
+    href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record
+    name: Record
+    href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore
+    name: BasicRecordStore
+    href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record
+    name: Record
+    href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

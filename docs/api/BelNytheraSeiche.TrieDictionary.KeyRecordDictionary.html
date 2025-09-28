@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class KeyRecordDictionary | BelNytheraSeiche.TrieDictionary </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class KeyRecordDictionary | BelNytheraSeiche.TrieDictionary ">
+      
+      <meta name="description" content="An abstract base class for advanced key-record dictionaries.">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo-small.png" alt="BelNytheraSeiche.TrieDictionary">
+            BelNytheraSeiche.TrieDictionary
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary">
+
+
+
+  <h1 id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary" data-uid="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary" class="text-break">
+Class KeyRecordDictionary  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="BelNytheraSeiche.html">BelNytheraSeiche</a>.<a class="xref" href="BelNytheraSeiche.TrieDictionary.html">TrieDictionary</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BelNytheraSeiche.TrieDictionary.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>An abstract base class for advanced key-record dictionaries.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class KeyRecordDictionary</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">KeyRecordDictionary</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="BelNytheraSeiche.TrieDictionary.DirectedAcyclicGraphDictionary.html">DirectedAcyclicGraphDictionary</a></div>
+      <div><a class="xref" href="BelNytheraSeiche.TrieDictionary.DoubleArrayDictionary.html">DoubleArrayDictionary</a></div>
+      <div><a class="xref" href="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.html">LevelOrderBitsDictionary</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This class provides a framework for mapping byte array keys to linked lists of data records.
+It features a dual-storage system (transient and persistent) for records, supports different key search directions (LTR/RTL),
+and allows for custom metadata storage. Concrete implementations are expected to provide the specific key management structure (e.g., a trie).</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary__ctor_" data-uid="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.#ctor*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary__ctor_BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SearchDirectionType_" data-uid="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.#ctor(BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType)">
+  KeyRecordDictionary(SearchDirectionType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>An abstract base class for advanced key-record dictionaries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected KeyRecordDictionary(KeyRecordDictionary.SearchDirectionType searchDirection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>searchDirection</code> <a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html">KeyRecordDictionary</a>.<a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType.html">SearchDirectionType</a></dt>
+    <dd><p>The key search direction for the new dictionary.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary__ctor_BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SearchDirectionType__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This class provides a framework for mapping byte array keys to linked lists of data records.
+It features a dual-storage system (transient and persistent) for records, supports different key search directions (LTR/RTL),
+and allows for custom metadata storage. Concrete implementations are expected to provide the specific key management structure (e.g., a trie).</p>
+</div>
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Additional1_" data-uid="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Additional1*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Additional1" data-uid="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Additional1">
+  Additional1
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets a small, general-purpose byte array for additional persistent data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] Additional1 { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Additional1_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The size of the byte array cannot exceed 4096 bytes.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The assigned value is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>The length of the assigned byte array is greater than 4096.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Additional2_" data-uid="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Additional2*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Additional2" data-uid="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Additional2">
+  Additional2
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets a large, general-purpose byte array for additional persistent data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] Additional2 { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Additional2_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The size of the byte array cannot exceed 1,073,741,824 bytes (1 GB).</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>The assigned value is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>The length of the assigned byte array is greater than 1 GB.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SearchDirection_" data-uid="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirection*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SearchDirection" data-uid="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirection">
+  SearchDirection
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the search direction (Left-To-Right or Right-To-Left) for key operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KeyRecordDictionary.SearchDirectionType SearchDirection { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html">KeyRecordDictionary</a>.<a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType.html">SearchDirectionType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Create_" data-uid="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Create*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Create__1_BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SearchDirectionType_" data-uid="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Create``1(BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType)">
+  Create&lt;T&gt;(SearchDirectionType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new instance of a derived dictionary type with an empty set of keys.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T Create&lt;T&gt;(KeyRecordDictionary.SearchDirectionType searchDirection = SearchDirectionType.LTR) where T : KeyRecordDictionary</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>searchDirection</code> <a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html">KeyRecordDictionary</a>.<a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType.html">SearchDirectionType</a></dt>
+    <dd><p>The key search direction for the new dictionary.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>A new instance of the specified dictionary type.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The concrete type of the dictionary to create.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Create_" data-uid="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Create*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Create__1_System_Collections_Generic_IEnumerable_System_Byte____BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SearchDirectionType_" data-uid="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Create``1(System.Collections.Generic.IEnumerable{System.Byte[]},BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType)">
+  Create&lt;T&gt;(IEnumerable&lt;byte[]&gt;, SearchDirectionType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new instance of a derived dictionary type, populated with an initial set of keys.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T Create&lt;T&gt;(IEnumerable&lt;byte[]&gt; keys, KeyRecordDictionary.SearchDirectionType searchDirection = SearchDirectionType.LTR) where T : KeyRecordDictionary</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keys</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]&gt;</dt>
+    <dd><p>An enumerable collection of byte arrays to use as the initial keys. The collection does not need to be pre-sorted. Duplicate keys are permitted, but only the first occurrence will be added. The collection must not contain any elements that are null or empty byte array.</p>
+</dd>
+    <dt><code>searchDirection</code> <a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html">KeyRecordDictionary</a>.<a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType.html">SearchDirectionType</a></dt>
+    <dd><p>The key search direction for the new dictionary.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>A new instance of the specified dictionary type.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The concrete type of the dictionary to create.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Create__1_System_Collections_Generic_IEnumerable_System_Byte____BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SearchDirectionType__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method uses reflection to invoke the static <code>Create</code> method on the concrete derived type <code class="typeparamref">T</code>.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">keys</code> is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Create_" data-uid="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Create*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Create__1_System_Collections_Generic_IEnumerable_System_String__System_Text_Encoding_BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SearchDirectionType_" data-uid="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Create``1(System.Collections.Generic.IEnumerable{System.String},System.Text.Encoding,BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType)">
+  Create&lt;T&gt;(IEnumerable&lt;string&gt;, Encoding?, SearchDirectionType)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new instance of a derived dictionary type, populated with an initial set of string keys.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T Create&lt;T&gt;(IEnumerable&lt;string&gt; keys, Encoding? encoding = null, KeyRecordDictionary.SearchDirectionType searchDirection = SearchDirectionType.LTR) where T : KeyRecordDictionary</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keys</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>An enumerable collection of strings to use as the initial keys. The collection does not need to be pre-sorted. Duplicate keys are permitted, but only the first occurrence will be added. The collection must not contain any elements that are null or empty strings.</p>
+</dd>
+    <dt><code>encoding</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></dt>
+    <dd><p>The encoding to use for converting strings to bytes. Defaults to UTF-8.</p>
+</dd>
+    <dt><code>searchDirection</code> <a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html">KeyRecordDictionary</a>.<a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType.html">SearchDirectionType</a></dt>
+    <dd><p>The key search direction for the new dictionary.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>A new instance of the specified dictionary type.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The concrete type of the dictionary to create.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">keys</code> is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Deserialize_" data-uid="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Deserialize*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Deserialize__1_System_Byte___" data-uid="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Deserialize``1(System.Byte[])">
+  Deserialize&lt;T&gt;(byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deserializes a dictionary from a byte array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T Deserialize&lt;T&gt;(byte[] data) where T : KeyRecordDictionary</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>The byte array containing the serialized data.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>A new instance of <code class="typeparamref">T</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The concrete type of the dictionary to deserialize.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Deserialize__1_System_Byte____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This static method uses reflection to invoke the static <code>Deserialize</code> method on the specified type <code class="typeparamref">T</code>.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">data</code> is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Deserialize_" data-uid="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Deserialize*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Deserialize__1_System_IO_Stream_" data-uid="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Deserialize``1(System.IO.Stream)">
+  Deserialize&lt;T&gt;(Stream)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deserializes a dictionary from a stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T Deserialize&lt;T&gt;(Stream stream) where T : KeyRecordDictionary</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>The stream to read the serialized data from.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>A new instance of <code class="typeparamref">T</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The concrete type of the dictionary to deserialize.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">stream</code> is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p>The type <code class="typeparamref">T</code> does not have a public static <code>Deserialize(Stream)</code> method.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Deserialize_" data-uid="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Deserialize*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Deserialize__1_System_String_" data-uid="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Deserialize``1(System.String)">
+  Deserialize&lt;T&gt;(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deserializes a dictionary from a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T Deserialize&lt;T&gt;(string file) where T : KeyRecordDictionary</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path of the file to read from.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>A new instance of <code class="typeparamref">T</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The concrete type of the dictionary to deserialize.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Deserialize__1_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This static method uses reflection to invoke the static <code>Deserialize</code> method on the specified type <code class="typeparamref">T</code>.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">file</code> is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">file</code> is empty or whitespace.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Serialize_" data-uid="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Serialize*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Serialize__1___0_BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SerializationOptions_" data-uid="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Serialize``1(``0,BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions)">
+  Serialize&lt;T&gt;(T, SerializationOptions?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serializes the specified dictionary instance into a byte array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] Serialize&lt;T&gt;(T obj, KeyRecordDictionary.SerializationOptions? options = null) where T : KeyRecordDictionary</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <span class="xref">T</span></dt>
+    <dd><p>The dictionary instance to serialize.</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html">KeyRecordDictionary</a>.<a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.html">SerializationOptions</a></dt>
+    <dd><p>Options to control the serialization process. If null, the settings from <a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SerializationOptions_Default">Default</a> will be used.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>A byte array containing the serialized data.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The concrete type of the dictionary.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Serialize__1___0_BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SerializationOptions__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This static method uses reflection to invoke the static <code>Serialize</code> method on the concrete derived type <code class="typeparamref">T</code>.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">obj</code> is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Serialize_" data-uid="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Serialize*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Serialize__1___0_System_IO_Stream_BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SerializationOptions_" data-uid="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Serialize``1(``0,System.IO.Stream,BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions)">
+  Serialize&lt;T&gt;(T, Stream, SerializationOptions?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serializes the specified dictionary instance into a stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Serialize&lt;T&gt;(T obj, Stream stream, KeyRecordDictionary.SerializationOptions? options = null) where T : KeyRecordDictionary</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <span class="xref">T</span></dt>
+    <dd><p>The dictionary instance to serialize.</p>
+</dd>
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>The stream to write the serialized data to.</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html">KeyRecordDictionary</a>.<a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.html">SerializationOptions</a></dt>
+    <dd><p>Options to control the serialization process. If null, the settings from <a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SerializationOptions_Default">Default</a> will be used.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The concrete type of the dictionary.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">obj</code> or <code class="paramref">stream</code> is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p>The type <code class="typeparamref">T</code> does not have a public static <code>Serialize(T, Stream)</code> method.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Serialize_" data-uid="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Serialize*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Serialize__1___0_System_String_BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SerializationOptions_" data-uid="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Serialize``1(``0,System.String,BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions)">
+  Serialize&lt;T&gt;(T, string, SerializationOptions?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serializes the specified dictionary instance to a file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Serialize&lt;T&gt;(T obj, string file, KeyRecordDictionary.SerializationOptions? options = null) where T : KeyRecordDictionary</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <span class="xref">T</span></dt>
+    <dd><p>The dictionary instance to serialize.</p>
+</dd>
+    <dt><code>file</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path of the file to create.</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html">KeyRecordDictionary</a>.<a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.html">SerializationOptions</a></dt>
+    <dd><p>Options to control the serialization process. If null, the settings from <a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SerializationOptions_Default">Default</a> will be used.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The concrete type of the dictionary.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Serialize__1___0_System_String_BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SerializationOptions__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This static method uses reflection to invoke the static <code>Serialize</code> method on the concrete derived type <code class="typeparamref">T</code>.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p><code class="paramref">obj</code> or <code class="paramref">file</code> is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p><code class="paramref">file</code> is empty or whitespace.</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

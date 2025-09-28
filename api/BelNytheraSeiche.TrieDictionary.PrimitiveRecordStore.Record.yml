@@ -1,0 +1,776 @@
+### YamlMime:ManagedReference
+items:
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+  commentId: T:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+  id: PrimitiveRecordStore.Record
+  parent: BelNytheraSeiche.TrieDictionary
+  children:
+  - BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Actual
+  - BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Capacity
+  - BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Clear
+  - BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.ExByte
+  - BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Identifier
+  - BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.InsertAfter(System.ReadOnlySpan{System.Byte})
+  - BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.InsertBefore(System.ReadOnlySpan{System.Byte})
+  - BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Next
+  - BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Read
+  - BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Remove
+  - BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Update(System.ReadOnlySpan{System.Byte})
+  langs:
+  - csharp
+  - vb
+  name: PrimitiveRecordStore.Record
+  nameWithType: PrimitiveRecordStore.Record
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+  type: Class
+  source:
+    id: Record
+    path: C:\Users\nanto\dev\TrieDictionary\src\PrimitiveRecordStore.cs
+    startLine: 382
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Represents a handle to a single record within the store.
+  remarks: >-
+    This object is a proxy that provides methods to read, update, and navigate the record's data and relationships.
+
+    Operations performed on this object modify the underlying data in the parent <xref href="BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public sealed class PrimitiveRecordStore.Record
+    content.vb: Public NotInheritable Class PrimitiveRecordStore.Record
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Identifier
+  commentId: P:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Identifier
+  id: Identifier
+  parent: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+  langs:
+  - csharp
+  - vb
+  name: Identifier
+  nameWithType: PrimitiveRecordStore.Record.Identifier
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Identifier
+  type: Property
+  source:
+    id: Identifier
+    path: C:\Users\nanto\dev\TrieDictionary\src\PrimitiveRecordStore.cs
+    startLine: 389
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Gets the unique, persistent identifier for this record within the store.
+  example: []
+  syntax:
+    content: public int Identifier { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Identifier As Integer
+  overload: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Identifier*
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.ExByte
+  commentId: P:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.ExByte
+  id: ExByte
+  parent: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+  langs:
+  - csharp
+  - vb
+  name: ExByte
+  nameWithType: PrimitiveRecordStore.Record.ExByte
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.ExByte
+  type: Property
+  source:
+    id: ExByte
+    path: C:\Users\nanto\dev\TrieDictionary\src\PrimitiveRecordStore.cs
+    startLine: 394
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Gets or sets an extra, user-definable byte of metadata associated with this record. The value must be in the range of 0 to 255.
+  example: []
+  syntax:
+    content: public int ExByte { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property ExByte As Integer
+  overload: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.ExByte*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: The assigned value is less than 0 or greater than 255.
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Read
+  commentId: M:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Read
+  id: Read
+  parent: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+  langs:
+  - csharp
+  - vb
+  name: Read()
+  nameWithType: PrimitiveRecordStore.Record.Read()
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Read()
+  type: Method
+  source:
+    id: Read
+    path: C:\Users\nanto\dev\TrieDictionary\src\PrimitiveRecordStore.cs
+    startLine: 399
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Reads the content of the record.
+  example: []
+  syntax:
+    content: public ReadOnlySpan<byte> Read()
+    return:
+      type: System.ReadOnlySpan{System.Byte}
+      description: A read-only span of bytes representing the record's content.
+    content.vb: Public Function Read() As ReadOnlySpan(Of Byte)
+  overload: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Read*
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Update(System.ReadOnlySpan{System.Byte})
+  commentId: M:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Update(System.ReadOnlySpan{System.Byte})
+  id: Update(System.ReadOnlySpan{System.Byte})
+  parent: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+  langs:
+  - csharp
+  - vb
+  name: Update(ReadOnlySpan<byte>)
+  nameWithType: PrimitiveRecordStore.Record.Update(ReadOnlySpan<byte>)
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Update(System.ReadOnlySpan<byte>)
+  type: Method
+  source:
+    id: Update
+    path: C:\Users\nanto\dev\TrieDictionary\src\PrimitiveRecordStore.cs
+    startLine: 404
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Updates the content of the record.
+  example: []
+  syntax:
+    content: public void Update(ReadOnlySpan<byte> content)
+    parameters:
+    - id: content
+      type: System.ReadOnlySpan{System.Byte}
+      description: The new content for the record.
+    content.vb: Public Sub Update(content As ReadOnlySpan(Of Byte))
+  overload: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Update*
+  nameWithType.vb: PrimitiveRecordStore.Record.Update(ReadOnlySpan(Of Byte))
+  fullName.vb: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Update(System.ReadOnlySpan(Of Byte))
+  name.vb: Update(ReadOnlySpan(Of Byte))
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Clear
+  commentId: M:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Clear
+  id: Clear
+  parent: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: PrimitiveRecordStore.Record.Clear()
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Clear()
+  type: Method
+  source:
+    id: Clear
+    path: C:\Users\nanto\dev\TrieDictionary\src\PrimitiveRecordStore.cs
+    startLine: 408
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Clears the content of the record, setting its length to zero.
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Clear*
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Capacity
+  commentId: P:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Capacity
+  id: Capacity
+  parent: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+  langs:
+  - csharp
+  - vb
+  name: Capacity
+  nameWithType: PrimitiveRecordStore.Record.Capacity
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Capacity
+  type: Property
+  source:
+    id: Capacity
+    path: C:\Users\nanto\dev\TrieDictionary\src\PrimitiveRecordStore.cs
+    startLine: 412
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Gets the total allocated storage capacity for the record's content in bytes.
+  example: []
+  syntax:
+    content: public int Capacity { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Capacity As Integer
+  overload: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Capacity*
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Actual
+  commentId: P:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Actual
+  id: Actual
+  parent: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+  langs:
+  - csharp
+  - vb
+  name: Actual
+  nameWithType: PrimitiveRecordStore.Record.Actual
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Actual
+  type: Property
+  source:
+    id: Actual
+    path: C:\Users\nanto\dev\TrieDictionary\src\PrimitiveRecordStore.cs
+    startLine: 416
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Gets the actual size of the record's content in bytes.
+  example: []
+  syntax:
+    content: public int Actual { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Actual As Integer
+  overload: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Actual*
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Next
+  commentId: P:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Next
+  id: Next
+  parent: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+  langs:
+  - csharp
+  - vb
+  name: Next
+  nameWithType: PrimitiveRecordStore.Record.Next
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Next
+  type: Property
+  source:
+    id: Next
+    path: C:\Users\nanto\dev\TrieDictionary\src\PrimitiveRecordStore.cs
+    startLine: 420
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Gets the next record in the linked list, or null if this is the last record.
+  example: []
+  syntax:
+    content: public PrimitiveRecordStore.Record? Next { get; }
+    parameters: []
+    return:
+      type: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+    content.vb: Public ReadOnly Property [Next] As PrimitiveRecordStore.Record
+  overload: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Next*
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Remove
+  commentId: M:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Remove
+  id: Remove
+  parent: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+  langs:
+  - csharp
+  - vb
+  name: Remove()
+  nameWithType: PrimitiveRecordStore.Record.Remove()
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Remove()
+  type: Method
+  source:
+    id: Remove
+    path: C:\Users\nanto\dev\TrieDictionary\src\PrimitiveRecordStore.cs
+    startLine: 424
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Removes this record from the linked list it belongs to.
+  example: []
+  syntax:
+    content: public void Remove()
+    content.vb: Public Sub Remove()
+  overload: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Remove*
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.InsertBefore(System.ReadOnlySpan{System.Byte})
+  commentId: M:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.InsertBefore(System.ReadOnlySpan{System.Byte})
+  id: InsertBefore(System.ReadOnlySpan{System.Byte})
+  parent: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+  langs:
+  - csharp
+  - vb
+  name: InsertBefore(ReadOnlySpan<byte>)
+  nameWithType: PrimitiveRecordStore.Record.InsertBefore(ReadOnlySpan<byte>)
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.InsertBefore(System.ReadOnlySpan<byte>)
+  type: Method
+  source:
+    id: InsertBefore
+    path: C:\Users\nanto\dev\TrieDictionary\src\PrimitiveRecordStore.cs
+    startLine: 430
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Inserts a new record with the specified content immediately before this record in the list.
+  example: []
+  syntax:
+    content: public PrimitiveRecordStore.Record InsertBefore(ReadOnlySpan<byte> content)
+    parameters:
+    - id: content
+      type: System.ReadOnlySpan{System.Byte}
+      description: The content of the new record to insert.
+    return:
+      type: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+      description: A <xref href="BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record" data-throw-if-not-resolved="false"></xref> handle for the newly inserted record.
+    content.vb: Public Function InsertBefore(content As ReadOnlySpan(Of Byte)) As PrimitiveRecordStore.Record
+  overload: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.InsertBefore*
+  nameWithType.vb: PrimitiveRecordStore.Record.InsertBefore(ReadOnlySpan(Of Byte))
+  fullName.vb: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.InsertBefore(System.ReadOnlySpan(Of Byte))
+  name.vb: InsertBefore(ReadOnlySpan(Of Byte))
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.InsertAfter(System.ReadOnlySpan{System.Byte})
+  commentId: M:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.InsertAfter(System.ReadOnlySpan{System.Byte})
+  id: InsertAfter(System.ReadOnlySpan{System.Byte})
+  parent: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+  langs:
+  - csharp
+  - vb
+  name: InsertAfter(ReadOnlySpan<byte>)
+  nameWithType: PrimitiveRecordStore.Record.InsertAfter(ReadOnlySpan<byte>)
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.InsertAfter(System.ReadOnlySpan<byte>)
+  type: Method
+  source:
+    id: InsertAfter
+    path: C:\Users\nanto\dev\TrieDictionary\src\PrimitiveRecordStore.cs
+    startLine: 436
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Inserts a new record with the specified content immediately after this record in the list.
+  example: []
+  syntax:
+    content: public PrimitiveRecordStore.Record InsertAfter(ReadOnlySpan<byte> content)
+    parameters:
+    - id: content
+      type: System.ReadOnlySpan{System.Byte}
+      description: The content of the new record to insert.
+    return:
+      type: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+      description: A <xref href="BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record" data-throw-if-not-resolved="false"></xref> handle for the newly inserted record.
+    content.vb: Public Function InsertAfter(content As ReadOnlySpan(Of Byte)) As PrimitiveRecordStore.Record
+  overload: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.InsertAfter*
+  nameWithType.vb: PrimitiveRecordStore.Record.InsertAfter(ReadOnlySpan(Of Byte))
+  fullName.vb: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.InsertAfter(System.ReadOnlySpan(Of Byte))
+  name.vb: InsertAfter(ReadOnlySpan(Of Byte))
+references:
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+  commentId: T:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.html
+  name: PrimitiveRecordStore
+  nameWithType: PrimitiveRecordStore
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+- uid: BelNytheraSeiche.TrieDictionary
+  commentId: N:BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.html
+  name: BelNytheraSeiche.TrieDictionary
+  nameWithType: BelNytheraSeiche.TrieDictionary
+  fullName: BelNytheraSeiche.TrieDictionary
+  spec.csharp:
+  - uid: BelNytheraSeiche
+    name: BelNytheraSeiche
+    href: BelNytheraSeiche.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary
+    name: TrieDictionary
+    href: BelNytheraSeiche.TrieDictionary.html
+  spec.vb:
+  - uid: BelNytheraSeiche
+    name: BelNytheraSeiche
+    href: BelNytheraSeiche.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary
+    name: TrieDictionary
+    href: BelNytheraSeiche.TrieDictionary.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Identifier*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Identifier
+  href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.html#BelNytheraSeiche_TrieDictionary_PrimitiveRecordStore_Record_Identifier
+  name: Identifier
+  nameWithType: PrimitiveRecordStore.Record.Identifier
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Identifier
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.ExByte*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.ExByte
+  href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.html#BelNytheraSeiche_TrieDictionary_PrimitiveRecordStore_Record_ExByte
+  name: ExByte
+  nameWithType: PrimitiveRecordStore.Record.ExByte
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.ExByte
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Read*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Read
+  href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.html#BelNytheraSeiche_TrieDictionary_PrimitiveRecordStore_Record_Read
+  name: Read
+  nameWithType: PrimitiveRecordStore.Record.Read
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Read
+- uid: System.ReadOnlySpan{System.Byte}
+  commentId: T:System.ReadOnlySpan{System.Byte}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<byte>
+  nameWithType: ReadOnlySpan<byte>
+  fullName: System.ReadOnlySpan<byte>
+  nameWithType.vb: ReadOnlySpan(Of Byte)
+  fullName.vb: System.ReadOnlySpan(Of Byte)
+  name.vb: ReadOnlySpan(Of Byte)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Update*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Update
+  href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.html#BelNytheraSeiche_TrieDictionary_PrimitiveRecordStore_Record_Update_System_ReadOnlySpan_System_Byte__
+  name: Update
+  nameWithType: PrimitiveRecordStore.Record.Update
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Update
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Clear*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Clear
+  href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.html#BelNytheraSeiche_TrieDictionary_PrimitiveRecordStore_Record_Clear
+  name: Clear
+  nameWithType: PrimitiveRecordStore.Record.Clear
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Clear
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Capacity*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Capacity
+  href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.html#BelNytheraSeiche_TrieDictionary_PrimitiveRecordStore_Record_Capacity
+  name: Capacity
+  nameWithType: PrimitiveRecordStore.Record.Capacity
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Capacity
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Actual*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Actual
+  href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.html#BelNytheraSeiche_TrieDictionary_PrimitiveRecordStore_Record_Actual
+  name: Actual
+  nameWithType: PrimitiveRecordStore.Record.Actual
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Actual
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Next*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Next
+  href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.html#BelNytheraSeiche_TrieDictionary_PrimitiveRecordStore_Record_Next
+  name: Next
+  nameWithType: PrimitiveRecordStore.Record.Next
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Next
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+  commentId: T:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.html
+  name: PrimitiveRecordStore.Record
+  nameWithType: PrimitiveRecordStore.Record
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+  spec.csharp:
+  - uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+    name: PrimitiveRecordStore
+    href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+    name: Record
+    href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.html
+  spec.vb:
+  - uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+    name: PrimitiveRecordStore
+    href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+    name: Record
+    href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.html
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Remove*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Remove
+  href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.html#BelNytheraSeiche_TrieDictionary_PrimitiveRecordStore_Record_Remove
+  name: Remove
+  nameWithType: PrimitiveRecordStore.Record.Remove
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.Remove
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.InsertBefore*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.InsertBefore
+  href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.html#BelNytheraSeiche_TrieDictionary_PrimitiveRecordStore_Record_InsertBefore_System_ReadOnlySpan_System_Byte__
+  name: InsertBefore
+  nameWithType: PrimitiveRecordStore.Record.InsertBefore
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.InsertBefore
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.InsertAfter*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.InsertAfter
+  href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.html#BelNytheraSeiche_TrieDictionary_PrimitiveRecordStore_Record_InsertAfter_System_ReadOnlySpan_System_Byte__
+  name: InsertAfter
+  nameWithType: PrimitiveRecordStore.Record.InsertAfter
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.InsertAfter

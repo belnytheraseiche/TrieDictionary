@@ -1,0 +1,567 @@
+{
+  "source_base_path": "C:/Users/nanto/dev/TrieDictionary",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.AATreeRecordStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.AATreeRecordStore.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.AATreeRecordStore",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.AATreeRecordStore.yml\" sourcestartlinenumber=\"1\">A concrete implementation of <xref href=\"BelNytheraSeiche.TrieDictionary.BinaryTreeRecordStore\" data-throw-if-not-resolved=\"false\"></xref> that uses a self-balancing AA tree.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.AVLTreeRecordStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.AVLTreeRecordStore.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.AVLTreeRecordStore",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.AVLTreeRecordStore.yml\" sourcestartlinenumber=\"1\">A concrete implementation of <xref href=\"BelNytheraSeiche.TrieDictionary.BinaryTreeRecordStore\" data-throw-if-not-resolved=\"false\"></xref> that uses a self-balancing AVL tree.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record.yml\" sourcestartlinenumber=\"1\">Represents a single node in a linked list of records.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.yml\" sourcestartlinenumber=\"1\">Provides access to and manages a linked list of <xref href=\"BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record\" data-throw-if-not-resolved=\"false\"></xref> objects.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.BasicRecordStore.SerializationOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.BasicRecordStore.SerializationOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.BasicRecordStore.SerializationOptions",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.BasicRecordStore.SerializationOptions.yml\" sourcestartlinenumber=\"1\">Provides options to control the serialization process for key-value record stores.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.BasicRecordStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.BasicRecordStore.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.BasicRecordStore",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.BasicRecordStore.yml\" sourcestartlinenumber=\"1\">An abstract base class for key-value record stores.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.BinaryTreeRecordStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.BinaryTreeRecordStore.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.BinaryTreeRecordStore",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.BinaryTreeRecordStore.yml\" sourcestartlinenumber=\"1\">An abstract base class for record stores that use a binary search tree to organize records.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.BitSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.BitSet.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.BitSet",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.BitSet.yml\" sourcestartlinenumber=\"1\">Provides a mutable bit set for efficiently building large bit vectors.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.BitwiseVectorDictionary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.BitwiseVectorDictionary.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.BitwiseVectorDictionary",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.BitwiseVectorDictionary.yml\" sourcestartlinenumber=\"1\">A concrete implementation of <xref href=\"BelNytheraSeiche.TrieDictionary.KeyRecordDictionary\" data-throw-if-not-resolved=\"false\"></xref> that uses a high-performance, array-based trie structure.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.DirectedAcyclicGraphDictionary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.DirectedAcyclicGraphDictionary.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.DirectedAcyclicGraphDictionary",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.DirectedAcyclicGraphDictionary.yml\" sourcestartlinenumber=\"1\">A concrete implementation of <xref href=\"BelNytheraSeiche.TrieDictionary.KeyRecordDictionary\" data-throw-if-not-resolved=\"false\"></xref> that uses a Directed Acyclic Word Graph (DAWG).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.DoubleArrayDictionary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.DoubleArrayDictionary.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.DoubleArrayDictionary",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.DoubleArrayDictionary.yml\" sourcestartlinenumber=\"1\">A concrete implementation of <xref href=\"BelNytheraSeiche.TrieDictionary.KeyRecordDictionary\" data-throw-if-not-resolved=\"false\"></xref> that uses a mutable Double-Array trie structure.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.HashMapRecordStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.HashMapRecordStore.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.HashMapRecordStore",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.HashMapRecordStore.yml\" sourcestartlinenumber=\"1\">A concrete implementation of <xref href=\"BelNytheraSeiche.TrieDictionary.BasicRecordStore\" data-throw-if-not-resolved=\"false\"></xref> that uses a hash map as its underlying data structure.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.ImmutableBitSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.ImmutableBitSet.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.ImmutableBitSet",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.ImmutableBitSet.yml\" sourcestartlinenumber=\"1\">Represents a read-only, immutable bit set.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.yml\" sourcestartlinenumber=\"1\">Defines the primary public contract for all key-based operations within the dictionary.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.yml\" sourcestartlinenumber=\"1\">Defines a public contract for a single data record.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess.yml\" sourcestartlinenumber=\"1\">Defines a public contract for accessing and managing a list of records associated with a single key.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType.yml\" sourcestartlinenumber=\"1\">Specifies the direction for key matching and sorting operations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.yml\" sourcestartlinenumber=\"1\">Provides options to control the serialization process for dictionary data structures.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.StringSpecialized.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.StringSpecialized.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.StringSpecialized",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.StringSpecialized.yml\" sourcestartlinenumber=\"1\">Provides a string-specialized wrapper around an <xref href=\"BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess\" data-throw-if-not-resolved=\"false\"></xref> instance, simplifying operations by handling string-to-byte encoding and decoding.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.KeyRecordDictionary",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.yml\" sourcestartlinenumber=\"1\">An abstract base class for advanced key-record dictionaries.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.yml\" sourcestartlinenumber=\"1\">An abstract base class for read-only, trie-based dictionaries that are constructed in level-order.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.LoudsDictionary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.LoudsDictionary.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.LoudsDictionary",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.LoudsDictionary.yml\" sourcestartlinenumber=\"1\">A concrete implementation of <xref href=\"BelNytheraSeiche.TrieDictionary.KeyRecordDictionary\" data-throw-if-not-resolved=\"false\"></xref> that uses a memory-efficient LOUDS (Level-Order Unary Degree Sequence) trie.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.yml\" sourcestartlinenumber=\"1\">Represents a handle to a single record within the store.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.RecordAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.RecordAccess.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.RecordAccess",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.RecordAccess.yml\" sourcestartlinenumber=\"1\">Provides access to a linked list of records within a <xref href=\"BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions.yml\" sourcestartlinenumber=\"1\">Provides options to control the serialization process for data store.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.yml\" sourcestartlinenumber=\"1\">Provides a low-level, memory-efficient data store for variable-length byte records.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.RankSelectBitSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.RankSelectBitSet.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.RankSelectBitSet",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.RankSelectBitSet.yml\" sourcestartlinenumber=\"1\">An immutable bit set optimized for high-performance Rank and Select operations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.ScapegoatTreeRecordStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.ScapegoatTreeRecordStore.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.ScapegoatTreeRecordStore",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.ScapegoatTreeRecordStore.yml\" sourcestartlinenumber=\"1\">A concrete implementation of <xref href=\"BelNytheraSeiche.TrieDictionary.BinaryTreeRecordStore\" data-throw-if-not-resolved=\"false\"></xref> that uses a self-balancing Scapegoat tree.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.TreapRecordStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.TreapRecordStore.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.TreapRecordStore",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.TreapRecordStore.yml\" sourcestartlinenumber=\"1\">A concrete implementation of <xref href=\"BelNytheraSeiche.TrieDictionary.BinaryTreeRecordStore\" data-throw-if-not-resolved=\"false\"></xref> that uses a Treap.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.ValueBuffer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.ValueBuffer-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.ValueBuffer<T>",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.ValueBuffer-1.yml\" sourcestartlinenumber=\"1\">Represents a buffer for value types, implemented using a list of array chunks.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.Xoroshiro128PlusPlus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.Xoroshiro128PlusPlus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.Xoroshiro128PlusPlus",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.Xoroshiro128PlusPlus.yml\" sourcestartlinenumber=\"1\">Represents a 64-bit pseudo-random number generator based on the xoroshiro128++ algorithm.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.Xoshiro256PlusPlus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.Xoshiro256PlusPlus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary.Xoshiro256PlusPlus",
+      "Summary": "<p sourcefile=\"api/BelNytheraSeiche.TrieDictionary.Xoshiro256PlusPlus.yml\" sourcestartlinenumber=\"1\">Represents a 64-bit pseudo-random number generator based on the xoshiro256++ algorithm.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BelNytheraSeiche.TrieDictionary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BelNytheraSeiche.TrieDictionary.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "BelNytheraSeiche.TrieDictionary",
+      "Summary": null
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/favicon.ico"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo-small.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo-small.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "readme.md",
+      "output": {
+        ".html": {
+          "relative_path": "readme.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

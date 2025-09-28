@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>BelNytheraSeiche.TrieDictionary | BelNytheraSeiche.TrieDictionary </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="BelNytheraSeiche.TrieDictionary | BelNytheraSeiche.TrieDictionary ">
+      
+      
+      <link rel="icon" href="images/favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="images/logo-small.png" alt="BelNytheraSeiche.TrieDictionary">
+            BelNytheraSeiche.TrieDictionary
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="belnytheraseichetriedictionary">BelNytheraSeiche.TrieDictionary</h1>
+
+<!-- [![NuGet version](https://img.shields.io/nuget/v/BelNytheraSeiche.svg)](https://www.nuget.org/packages/BelNytheraSeiche.TrieDictionary/) -->
+<!-- [![Build Status](https://dev.azure.com/your-org/your-project/_apis/build/status/your-build-definition)](https://dev.azure.com/your-org/your-project/_build/latest?definitionId=your-build-definition) -->
+<p>A collection of high-performance, memory-efficient dictionary and data storage classes for .NET, specializing in advanced search capabilities.</p>
+<hr>
+<h2 id="features">Features</h2>
+<ul>
+<li><strong>Multiple High-Performance Dictionary Implementations:</strong>
+<ul>
+<li><strong>Mutable:</strong> Double-Array Trie (<code>DoubleArrayDictionary</code>)</li>
+<li><strong>Read-Only &amp; Memory-Efficient:</strong> LOUDS Trie (<code>LoudsDictionary</code>)</li>
+</ul>
+</li>
+<li><strong>Advanced Search Capabilities:</strong>
+<ul>
+<li>Exact match, prefix search, common prefix search, longest prefix search, and wildcard search.</li>
+<li>Supports both Left-to-Right (LTR) and Right-to-Left (RTL) search directions.</li>
+</ul>
+</li>
+<li><strong>Flexible Record Storage:</strong>
+<ul>
+<li>Each key can map to a list of records.</li>
+<li>Supports both persistent (serializable) and transient (in-memory) record lists for each key.</li>
+</ul>
+</li>
+<li><strong>Low-Level Storage Primitives:</strong>
+<ul>
+<li>Includes various record store backends like <code>PrimitiveRecordStore</code> and several balanced binary trees (<code>AVLTree</code>, <code>AATree</code>, etc.).</li>
+</ul>
+</li>
+<li><strong>Serialization Support:</strong>
+<ul>
+<li>Robust serialization and deserialization for all dictionary and store types.</li>
+</ul>
+</li>
+<li><strong>Utility Classes:</strong>
+<ul>
+<li>Includes high-performance utilities like <code>ValueBuffer&lt;T&gt;</code>, rank/select bit-set and fast random number generators.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="installation">Installation</h2>
+<p>This library is available on NuGet. You can install it using the .NET CLI:</p>
+<pre><code class="lang-sh">dotnet add package BelNytheraSeiche.TrieDictionary
+</code></pre>
+<p>Or via the NuGet Package Manager Console:</p>
+<pre><code class="lang-powershell">Install-Package BelNytheraSeiche.TrieDictionary
+</code></pre>
+<p><a href="https://www.nuget.org/packages/BelNytheraSeiche.TrieDictionary/"><strong>➡️ View on nuget package page</strong></a></p>
+<hr>
+<h2 id="quick-start">Quick Start</h2>
+<p>Here's a quick example of how to use the <code>DoubleArrayDictionary</code>, which is a mutable (add/remove capable) dictionary.</p>
+<pre><code class="lang-csharp">using System;
+using System.Text;
+using BelNytheraSeiche.TrieDictionary;
+
+// 1. Create a new dictionary.
+var dict = KeyRecordDictionary.Create&lt;DoubleArrayDictionary&gt;();
+// Utility: Create a wrapper, it converts string to byte-array automatically.
+var ssdict = dict.AsStringSpecialized(Encoding.UTF8);
+
+// 2. Add keys.
+Console.WriteLine(&quot;Adding keys...&quot;);
+ssdict.Add(&quot;apple&quot;); // or dict.Add(Encoding.UTF8.GetBytes(&quot;apple&quot;));
+ssdict.Add(&quot;apricot&quot;); // or dict.Add(Encoding.UTF8.GetBytes(&quot;apricot&quot;));
+ssdict.Add(&quot;banana&quot;); // or dict.Add(Encoding.UTF8.GetBytes(&quot;banana&quot;));
+
+// 3. Perform a search.
+var identifier1 = ssdict.SearchExactly(&quot;apple&quot;); // or dict.SearchExactly(Encoding.UTF8.GetBytes(&quot;apple&quot;));
+if (identifier1 &gt; 0)
+{
+    Console.WriteLine($&quot;Found 'apple' with id: {identifier1}&quot;);
+
+    // 4. Add records to the key.
+    var records = ssdict.GetRecordAccess(identifier1);
+    // add a record and append another record after it.
+    records.Add(Encoding.UTF8.GetBytes(&quot;This is a record for apple.&quot;)).InsertAfter(Encoding.UTF8.GetBytes(&quot;Hello World.&quot;));
+}
+
+// 5. Perform a prefix search.
+Console.WriteLine(&quot;\nKeys starting with 'ap':&quot;);
+foreach (var (identifier2, key) in ssdict.SearchByPrefix(&quot;ap&quot;)) // or dict.SearchByPrefix(Encoding.UTF8.GetBytes(&quot;ap&quot;)
+{
+    Console.WriteLine($&quot;- Found: '{key}' (id: {identifier2})&quot;);
+    foreach (var rec in ssdict.GetRecordAccess(identifier2))
+      Console.WriteLine($&quot;  Record: {Encoding.UTF8.GetString(rec.Content)}&quot;);
+}
+</code></pre>
+<p>For more detailed examples covering all major classes in the library, please see the full sample file:</p>
+<p><a href="https://github.com/belnytheraseiche/TrieDictionary/src/Program.cs"><strong>➡️ View <code>Program.cs</code> for More Examples</strong></a></p>
+<hr>
+<h2 id="performance">Performance</h2>
+<p>The following benchmarks were run on [Snapdragon X Plus - X1P42100] with .NET 9.0.
+The test data used was the <a href="https://raw.githubusercontent.com/dwyl/english-words/master/words_alpha.txt"><code>words_alpha.txt</code></a> file from the <code>dwyl/english-words</code> repository, containing <strong>370,105</strong> English words.</p>
+<h3 id="time--memory-usage">Time &amp; Memory Usage</h3>
+<p>This benchmark measures the time taken to perform an exact match search for a single, existing key.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th style="text-align: right;">Mean</th>
+<th style="text-align: right;">Error</th>
+<th style="text-align: right;">StdDev</th>
+<th style="text-align: right;">Allocated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DoubleArrayDictionary</td>
+<td style="text-align: right;">40.99 ns</td>
+<td style="text-align: right;">0.083 ns</td>
+<td style="text-align: right;">0.069 ns</td>
+<td style="text-align: right;">-</td>
+</tr>
+<tr>
+<td>BitwiseVectorDictionary</td>
+<td style="text-align: right;">56.89 ns</td>
+<td style="text-align: right;">0.153 ns</td>
+<td style="text-align: right;">0.143 ns</td>
+<td style="text-align: right;">-</td>
+</tr>
+<tr>
+<td>LoudsDictionary</td>
+<td style="text-align: right;">1,477.55 ns</td>
+<td style="text-align: right;">1.041 ns</td>
+<td style="text-align: right;">0.974 ns</td>
+<td style="text-align: right;">-</td>
+</tr>
+<tr>
+<td>DirectedAcyclicGraphDictionary</td>
+<td style="text-align: right;">357.80 ns</td>
+<td style="text-align: right;">2.610 ns</td>
+<td style="text-align: right;">2.441 ns</td>
+<td style="text-align: right;">-</td>
+</tr>
+</tbody>
+</table>
+<p>This benchmark measures the time taken to perform an exact match search for all, existing keys.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th style="text-align: right;">Mean</th>
+<th style="text-align: right;">Error</th>
+<th style="text-align: right;">StdDev</th>
+<th style="text-align: right;">Allocated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DoubleArrayDictionary</td>
+<td style="text-align: right;">15.17 ms</td>
+<td style="text-align: right;">0.026 ms</td>
+<td style="text-align: right;">0.024 ms</td>
+<td style="text-align: right;">-</td>
+</tr>
+<tr>
+<td>BitwiseVectorDictionary</td>
+<td style="text-align: right;">21.91 ms</td>
+<td style="text-align: right;">0.436 ms</td>
+<td style="text-align: right;">0.535 ms</td>
+<td style="text-align: right;">-</td>
+</tr>
+<tr>
+<td>LoudsDictionary</td>
+<td style="text-align: right;">584.83 ms</td>
+<td style="text-align: right;">4.851 ms</td>
+<td style="text-align: right;">4.051 ms</td>
+<td style="text-align: right;">-</td>
+</tr>
+<tr>
+<td>DirectedAcyclicGraphDictionary</td>
+<td style="text-align: right;">144.80 ms</td>
+<td style="text-align: right;">2.440 ms</td>
+<td style="text-align: right;">2.163 ms</td>
+<td style="text-align: right;">-</td>
+</tr>
+</tbody>
+</table>
+<p>This benchmark measures the time taken to enumerate all keys in the dictionary using <code>EnumerateAll()</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th style="text-align: right;">Mean</th>
+<th style="text-align: right;">Error</th>
+<th style="text-align: right;">StdDev</th>
+<th style="text-align: right;">Gen0</th>
+<th style="text-align: right;">Allocated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DoubleArrayDictionary</td>
+<td style="text-align: right;">937.92 ms</td>
+<td style="text-align: right;">1.204 ms</td>
+<td style="text-align: right;">1.126 ms</td>
+<td style="text-align: right;">20000.0000</td>
+<td style="text-align: right;">81.96 MB</td>
+</tr>
+<tr>
+<td>BitwiseVectorDictionary</td>
+<td style="text-align: right;">76.33 ms</td>
+<td style="text-align: right;">0.513 ms</td>
+<td style="text-align: right;">0.455 ms</td>
+<td style="text-align: right;">13857.1429</td>
+<td style="text-align: right;">55.35 MB</td>
+</tr>
+<tr>
+<td>LoudsDictionary</td>
+<td style="text-align: right;">893.20 ms</td>
+<td style="text-align: right;">0.971 ms</td>
+<td style="text-align: right;">0.861 ms</td>
+<td style="text-align: right;">13000.0000</td>
+<td style="text-align: right;">55.35 MB</td>
+</tr>
+<tr>
+<td>DirectedAcyclicGraphDictionary</td>
+<td style="text-align: right;">338.85 ms</td>
+<td style="text-align: right;">5.918 ms</td>
+<td style="text-align: right;">5.535 ms</td>
+<td style="text-align: right;">44000.0000</td>
+<td style="text-align: right;">178.18 MB</td>
+</tr>
+</tbody>
+</table>
+<p>This benchmark measures the total time taken to <code>SearchByPrefix(&quot;a&quot;)</code> through <code>SearchByPrefix(&quot;z&quot;)</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th style="text-align: right;">Mean</th>
+<th style="text-align: right;">Error</th>
+<th style="text-align: right;">StdDev</th>
+<th style="text-align: right;">Gen0</th>
+<th style="text-align: right;">Gen1</th>
+<th style="text-align: right;">Allocated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DoubleArrayDictionary</td>
+<td style="text-align: right;">464.38 ms</td>
+<td style="text-align: right;">0.991 ms</td>
+<td style="text-align: right;">0.927 ms</td>
+<td style="text-align: right;">11000.0000</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;">44.50 MB</td>
+</tr>
+<tr>
+<td>BitwiseVectorDictionary</td>
+<td style="text-align: right;">46.45 ms</td>
+<td style="text-align: right;">0.104 ms</td>
+<td style="text-align: right;">0.097 ms</td>
+<td style="text-align: right;">13909.0909</td>
+<td style="text-align: right;">818.1818</td>
+<td style="text-align: right;">55.76 MB</td>
+</tr>
+<tr>
+<td>LoudsDictionary</td>
+<td style="text-align: right;">252.94 ms</td>
+<td style="text-align: right;">0.533 ms</td>
+<td style="text-align: right;">0.473 ms</td>
+<td style="text-align: right;">13500.0000</td>
+<td style="text-align: right;">500.0000</td>
+<td style="text-align: right;">55.76 MB</td>
+</tr>
+<tr>
+<td>DirectedAcyclicGraphDictionary</td>
+<td style="text-align: right;">100.25 ms</td>
+<td style="text-align: right;">0.202 ms</td>
+<td style="text-align: right;">0.179 ms</td>
+<td style="text-align: right;">21200.0000</td>
+<td style="text-align: right;">600.0000</td>
+<td style="text-align: right;">84.76 MB</td>
+</tr>
+</tbody>
+</table>
+<p>This benchmark measures the final file size after serializing a dictionary built from the source key set.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th style="text-align: right;">Serialized</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DoubleArrayDictionary</td>
+<td style="text-align: right;">5.56 MB</td>
+</tr>
+<tr>
+<td>BitwiseVectorDictionary</td>
+<td style="text-align: right;">4.39 MB</td>
+</tr>
+<tr>
+<td>LoudsDictionary</td>
+<td style="text-align: right;">0.82 MB</td>
+</tr>
+<tr>
+<td>DirectedAcyclicGraphDictionary</td>
+<td style="text-align: right;">13.61 MB</td>
+</tr>
+</tbody>
+</table>
+<p>This benchmark measures the time and memory required to build the dictionary from the source key set.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th style="text-align: right;">Mean</th>
+<th style="text-align: right;">Error</th>
+<th style="text-align: right;">StdDev</th>
+<th style="text-align: right;">Gen0</th>
+<th style="text-align: right;">Gen1</th>
+<th style="text-align: right;">Gen2</th>
+<th style="text-align: right;">Allocated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DoubleArrayDictionary</td>
+<td style="text-align: right;">454.6 ms</td>
+<td style="text-align: right;">3.53 ms</td>
+<td style="text-align: right;">3.30 ms</td>
+<td style="text-align: right;">80000.0000</td>
+<td style="text-align: right;">1000.0000</td>
+<td style="text-align: right;">1000.0000</td>
+<td style="text-align: right;">361.07 MB</td>
+</tr>
+<tr>
+<td>BitwiseVectorDictionary</td>
+<td style="text-align: right;">281.9 ms</td>
+<td style="text-align: right;">3.39 ms</td>
+<td style="text-align: right;">3.17 ms</td>
+<td style="text-align: right;">6000.0000</td>
+<td style="text-align: right;">3000.0000</td>
+<td style="text-align: right;">1000.0000</td>
+<td style="text-align: right;">85.41 MB</td>
+</tr>
+<tr>
+<td>LoudsDictionary</td>
+<td style="text-align: right;">407.9 ms</td>
+<td style="text-align: right;">3.30 ms</td>
+<td style="text-align: right;">2.58 ms</td>
+<td style="text-align: right;">7000.0000</td>
+<td style="text-align: right;">5000.0000</td>
+<td style="text-align: right;">2000.0000</td>
+<td style="text-align: right;">141.62 MB</td>
+</tr>
+<tr>
+<td>DirectedAcyclicGraphDictionary</td>
+<td style="text-align: right;">967.5 ms</td>
+<td style="text-align: right;">19.02 ms</td>
+<td style="text-align: right;">18.68 ms</td>
+<td style="text-align: right;">53000.0000</td>
+<td style="text-align: right;">16000.0000</td>
+<td style="text-align: right;">3000.0000</td>
+<td style="text-align: right;">501.56 MB</td>
+</tr>
+</tbody>
+</table>
+<p>This benchmark measures the time and memory required to serialize the built dictionary with the default options.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th style="text-align: right;">Mean</th>
+<th style="text-align: right;">Error</th>
+<th style="text-align: right;">StdDev</th>
+<th style="text-align: right;">Gen0</th>
+<th style="text-align: right;">Gen1</th>
+<th style="text-align: right;">Gen2</th>
+<th style="text-align: right;">Allocated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DoubleArrayDictionary</td>
+<td style="text-align: right;">82.647 ms</td>
+<td style="text-align: right;">0.9356 ms</td>
+<td style="text-align: right;">0.8294 ms</td>
+<td style="text-align: right;">571.4286</td>
+<td style="text-align: right;">571.4286</td>
+<td style="text-align: right;">571.4286</td>
+<td style="text-align: right;">46.45 MB</td>
+</tr>
+<tr>
+<td>BitwiseVectorDictionary</td>
+<td style="text-align: right;">55.513 ms</td>
+<td style="text-align: right;">1.0995 ms</td>
+<td style="text-align: right;">1.1764 ms</td>
+<td style="text-align: right;">444.4444</td>
+<td style="text-align: right;">444.4444</td>
+<td style="text-align: right;">444.4444</td>
+<td style="text-align: right;">34.38 MB</td>
+</tr>
+<tr>
+<td>LoudsDictionary</td>
+<td style="text-align: right;">8.208 ms</td>
+<td style="text-align: right;">0.0719 ms</td>
+<td style="text-align: right;">0.0601 ms</td>
+<td style="text-align: right;">125.0000</td>
+<td style="text-align: right;">78.1250</td>
+<td style="text-align: right;">78.1250</td>
+<td style="text-align: right;">6.10 MB</td>
+</tr>
+<tr>
+<td>DirectedAcyclicGraphDictionary</td>
+<td style="text-align: right;">653.322 ms</td>
+<td style="text-align: right;">1.1429 ms</td>
+<td style="text-align: right;">1.0691 ms</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;">109.78 MB</td>
+</tr>
+</tbody>
+</table>
+<p>This benchmark measures the time and memory required to deserialize from the serialized dictionary.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th style="text-align: right;">Mean</th>
+<th style="text-align: right;">Error</th>
+<th style="text-align: right;">StdDev</th>
+<th style="text-align: right;">Gen0</th>
+<th style="text-align: right;">Gen1</th>
+<th style="text-align: right;">Gen2</th>
+<th style="text-align: right;">Allocated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DoubleArrayDictionary</td>
+<td style="text-align: right;">69.21 ms</td>
+<td style="text-align: right;">1.266 ms</td>
+<td style="text-align: right;">1.185 ms</td>
+<td style="text-align: right;">250.0000</td>
+<td style="text-align: right;">250.0000</td>
+<td style="text-align: right;">250.0000</td>
+<td style="text-align: right;">18.75 MB</td>
+</tr>
+<tr>
+<td>BitwiseVectorDictionary</td>
+<td style="text-align: right;">49.49 ms</td>
+<td style="text-align: right;">0.090 ms</td>
+<td style="text-align: right;">0.084 ms</td>
+<td style="text-align: right;">500.0000</td>
+<td style="text-align: right;">500.0000</td>
+<td style="text-align: right;">500.0000</td>
+<td style="text-align: right;">22.05 MB</td>
+</tr>
+<tr>
+<td>LoudsDictionary</td>
+<td style="text-align: right;">16.94 ms</td>
+<td style="text-align: right;">0.239 ms</td>
+<td style="text-align: right;">0.223 ms</td>
+<td style="text-align: right;">500.0000</td>
+<td style="text-align: right;">468.7500</td>
+<td style="text-align: right;">468.7500</td>
+<td style="text-align: right;">19.21 MB</td>
+</tr>
+<tr>
+<td>DirectedAcyclicGraphDictionary</td>
+<td style="text-align: right;">243.02 ms</td>
+<td style="text-align: right;">2.419 ms</td>
+<td style="text-align: right;">2.263 ms</td>
+<td style="text-align: right;">12000.0000</td>
+<td style="text-align: right;">6666.6667</td>
+<td style="text-align: right;">1666.6667</td>
+<td style="text-align: right;">94.74 MB</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="api-overview">API Overview</h2>
+<p>This library is composed of several key components:</p>
+<ul>
+<li><p><strong><code>KeyRecordDictionary</code>:</strong> The abstract base class for all high-level dictionaries. It defines the core architecture, including the dual record storage system (persistent/transient) and serialization patterns.</p>
+</li>
+<li><p><strong>Dictionary Implementations:</strong></p>
+<ul>
+<li><code>DoubleArrayDictionary</code>: A <strong>mutable</strong> trie. Ideal for scenarios where keys need to be added or removed dynamically.</li>
+<li><code>BitwiseVectorDictionary</code>: A <strong>read-only</strong>, high-performance dictionary. An alternative to LOUDS, also great for static key sets.</li>
+<li><code>LoudsDictionary</code>: A <strong>read-only</strong>, memory-efficient trie. An alternative to DAWG, also great for static key sets.</li>
+<li><code>DirectedAcyclicGraphDictionary</code> (DAWG): A <strong>read-only</strong> dictionary that compresses a trie by merging common nodes.</li>
+</ul>
+</li>
+</ul>
+<div style="height: 8px;"></div>
+<ul>
+<li><strong>Record Stores:</strong>
+<span style="height: 40px; display: inline-block; vertical-align: top;"></span>
+<ul>
+<li><code>PrimitiveRecordStore</code>: A low-level, append-only store for raw byte records. Used as the default persistent storage.</li>
+<li><code>BasicRecordStore</code> Implementations (<code>HashMapRecordStore</code>, <code>AVLTreeRecordStore</code>, etc.): In-memory stores used for transient data or other specialized use cases.</li>
+</ul>
+</li>
+</ul>
+<p>For a complete reference of all public classes and methods, please see our full <strong><a href="https://github.com/belnytheraseiche/TrieDictionary/api/">API Reference</a></strong>.</p>
+<hr>
+<h2 id="license">License</h2>
+<p>This project is licensed under the MIT License. See the  <strong><a href="https://github.com/belnytheraseiche/TrieDictionary/LICENSE">LICENSE</a></strong> file for details.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

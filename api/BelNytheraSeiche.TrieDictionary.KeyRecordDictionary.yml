@@ -1,0 +1,1231 @@
+### YamlMime:ManagedReference
+items:
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+  commentId: T:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+  id: KeyRecordDictionary
+  parent: BelNytheraSeiche.TrieDictionary
+  children:
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.#ctor(BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType)
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Additional1
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Additional2
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Create``1(BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType)
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Create``1(System.Collections.Generic.IEnumerable{System.Byte[]},BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType)
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Create``1(System.Collections.Generic.IEnumerable{System.String},System.Text.Encoding,BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType)
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Deserialize``1(System.Byte[])
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Deserialize``1(System.IO.Stream)
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Deserialize``1(System.String)
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirection
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Serialize``1(``0,BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions)
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Serialize``1(``0,System.IO.Stream,BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions)
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Serialize``1(``0,System.String,BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions)
+  langs:
+  - csharp
+  - vb
+  name: KeyRecordDictionary
+  nameWithType: KeyRecordDictionary
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+  type: Class
+  source:
+    id: KeyRecordDictionary
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 40
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: An abstract base class for advanced key-record dictionaries.
+  remarks: >-
+    This class provides a framework for mapping byte array keys to linked lists of data records.
+
+    It features a dual-storage system (transient and persistent) for records, supports different key search directions (LTR/RTL),
+
+    and allows for custom metadata storage. Concrete implementations are expected to provide the specific key management structure (e.g., a trie).
+  example: []
+  syntax:
+    content: public abstract class KeyRecordDictionary
+    content.vb: Public MustInherit Class KeyRecordDictionary
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - BelNytheraSeiche.TrieDictionary.DirectedAcyclicGraphDictionary
+  - BelNytheraSeiche.TrieDictionary.DoubleArrayDictionary
+  - BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.#ctor(BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType)
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.#ctor(BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType)
+  id: '#ctor(BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType)'
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+  langs:
+  - csharp
+  - vb
+  name: KeyRecordDictionary(SearchDirectionType)
+  nameWithType: KeyRecordDictionary.KeyRecordDictionary(KeyRecordDictionary.SearchDirectionType)
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.KeyRecordDictionary(BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType)
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 40
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: An abstract base class for advanced key-record dictionaries.
+  remarks: >-
+    This class provides a framework for mapping byte array keys to linked lists of data records.
+
+    It features a dual-storage system (transient and persistent) for records, supports different key search directions (LTR/RTL),
+
+    and allows for custom metadata storage. Concrete implementations are expected to provide the specific key management structure (e.g., a trie).
+  example: []
+  syntax:
+    content: protected KeyRecordDictionary(KeyRecordDictionary.SearchDirectionType searchDirection)
+    parameters:
+    - id: searchDirection
+      type: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+      description: The key search direction for the new dictionary.
+    content.vb: Protected Sub New(searchDirection As KeyRecordDictionary.SearchDirectionType)
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.#ctor*
+  nameWithType.vb: KeyRecordDictionary.New(KeyRecordDictionary.SearchDirectionType)
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.New(BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType)
+  name.vb: New(SearchDirectionType)
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirection
+  commentId: P:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirection
+  id: SearchDirection
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+  langs:
+  - csharp
+  - vb
+  name: SearchDirection
+  nameWithType: KeyRecordDictionary.SearchDirection
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirection
+  type: Property
+  source:
+    id: SearchDirection
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 45
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Gets the search direction (Left-To-Right or Right-To-Left) for key operations.
+  example: []
+  syntax:
+    content: public KeyRecordDictionary.SearchDirectionType SearchDirection { get; }
+    parameters: []
+    return:
+      type: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+    content.vb: Public ReadOnly Property SearchDirection As KeyRecordDictionary.SearchDirectionType
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirection*
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Additional1
+  commentId: P:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Additional1
+  id: Additional1
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+  langs:
+  - csharp
+  - vb
+  name: Additional1
+  nameWithType: KeyRecordDictionary.Additional1
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Additional1
+  type: Property
+  source:
+    id: Additional1
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 52
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Gets or sets a small, general-purpose byte array for additional persistent data.
+  remarks: The size of the byte array cannot exceed 4096 bytes.
+  example: []
+  syntax:
+    content: public byte[] Additional1 { get; set; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public Property Additional1 As Byte()
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Additional1*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The assigned value is null.
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: The length of the assigned byte array is greater than 4096.
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Additional2
+  commentId: P:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Additional2
+  id: Additional2
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+  langs:
+  - csharp
+  - vb
+  name: Additional2
+  nameWithType: KeyRecordDictionary.Additional2
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Additional2
+  type: Property
+  source:
+    id: Additional2
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 84
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Gets or sets a large, general-purpose byte array for additional persistent data.
+  remarks: The size of the byte array cannot exceed 1,073,741,824 bytes (1 GB).
+  example: []
+  syntax:
+    content: public byte[] Additional2 { get; set; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public Property Additional2 As Byte()
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Additional2*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The assigned value is null.
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: The length of the assigned byte array is greater than 1 GB.
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Create``1(BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType)
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Create``1(BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType)
+  id: Create``1(BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType)
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+  langs:
+  - csharp
+  - vb
+  name: Create<T>(SearchDirectionType)
+  nameWithType: KeyRecordDictionary.Create<T>(KeyRecordDictionary.SearchDirectionType)
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Create<T>(BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType)
+  type: Method
+  source:
+    id: Create
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 127
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Creates a new instance of a derived dictionary type with an empty set of keys.
+  example: []
+  syntax:
+    content: 'public static T Create<T>(KeyRecordDictionary.SearchDirectionType searchDirection = SearchDirectionType.LTR) where T : KeyRecordDictionary'
+    parameters:
+    - id: searchDirection
+      type: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+      description: The key search direction for the new dictionary.
+    typeParameters:
+    - id: T
+      description: The concrete type of the dictionary to create.
+    return:
+      type: '{T}'
+      description: A new instance of the specified dictionary type.
+    content.vb: Public Shared Function Create(Of T As KeyRecordDictionary)(searchDirection As KeyRecordDictionary.SearchDirectionType = SearchDirectionType.LTR) As T
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Create*
+  nameWithType.vb: KeyRecordDictionary.Create(Of T)(KeyRecordDictionary.SearchDirectionType)
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Create(Of T)(BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType)
+  name.vb: Create(Of T)(SearchDirectionType)
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Create``1(System.Collections.Generic.IEnumerable{System.Byte[]},BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType)
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Create``1(System.Collections.Generic.IEnumerable{System.Byte[]},BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType)
+  id: Create``1(System.Collections.Generic.IEnumerable{System.Byte[]},BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType)
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+  langs:
+  - csharp
+  - vb
+  name: Create<T>(IEnumerable<byte[]>, SearchDirectionType)
+  nameWithType: KeyRecordDictionary.Create<T>(IEnumerable<byte[]>, KeyRecordDictionary.SearchDirectionType)
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Create<T>(System.Collections.Generic.IEnumerable<byte[]>, BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType)
+  type: Method
+  source:
+    id: Create
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 145
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Creates a new instance of a derived dictionary type, populated with an initial set of keys.
+  remarks: This method uses reflection to invoke the static `Create` method on the concrete derived type <code class="typeparamref">T</code>.
+  example: []
+  syntax:
+    content: 'public static T Create<T>(IEnumerable<byte[]> keys, KeyRecordDictionary.SearchDirectionType searchDirection = SearchDirectionType.LTR) where T : KeyRecordDictionary'
+    parameters:
+    - id: keys
+      type: System.Collections.Generic.IEnumerable{System.Byte[]}
+      description: An enumerable collection of byte arrays to use as the initial keys. The collection does not need to be pre-sorted. Duplicate keys are permitted, but only the first occurrence will be added. The collection must not contain any elements that are null or empty byte array.
+    - id: searchDirection
+      type: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+      description: The key search direction for the new dictionary.
+    typeParameters:
+    - id: T
+      description: The concrete type of the dictionary to create.
+    return:
+      type: '{T}'
+      description: A new instance of the specified dictionary type.
+    content.vb: Public Shared Function Create(Of T As KeyRecordDictionary)(keys As IEnumerable(Of Byte()), searchDirection As KeyRecordDictionary.SearchDirectionType = SearchDirectionType.LTR) As T
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Create*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">keys</code> is null.
+  nameWithType.vb: KeyRecordDictionary.Create(Of T)(IEnumerable(Of Byte()), KeyRecordDictionary.SearchDirectionType)
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Create(Of T)(System.Collections.Generic.IEnumerable(Of Byte()), BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType)
+  name.vb: Create(Of T)(IEnumerable(Of Byte()), SearchDirectionType)
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Create``1(System.Collections.Generic.IEnumerable{System.String},System.Text.Encoding,BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType)
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Create``1(System.Collections.Generic.IEnumerable{System.String},System.Text.Encoding,BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType)
+  id: Create``1(System.Collections.Generic.IEnumerable{System.String},System.Text.Encoding,BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType)
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+  langs:
+  - csharp
+  - vb
+  name: Create<T>(IEnumerable<string>, Encoding?, SearchDirectionType)
+  nameWithType: KeyRecordDictionary.Create<T>(IEnumerable<string>, Encoding?, KeyRecordDictionary.SearchDirectionType)
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Create<T>(System.Collections.Generic.IEnumerable<string>, System.Text.Encoding?, BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType)
+  type: Method
+  source:
+    id: Create
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 172
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Creates a new instance of a derived dictionary type, populated with an initial set of string keys.
+  example: []
+  syntax:
+    content: 'public static T Create<T>(IEnumerable<string> keys, Encoding? encoding = null, KeyRecordDictionary.SearchDirectionType searchDirection = SearchDirectionType.LTR) where T : KeyRecordDictionary'
+    parameters:
+    - id: keys
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: An enumerable collection of strings to use as the initial keys. The collection does not need to be pre-sorted. Duplicate keys are permitted, but only the first occurrence will be added. The collection must not contain any elements that are null or empty strings.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The encoding to use for converting strings to bytes. Defaults to UTF-8.
+    - id: searchDirection
+      type: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+      description: The key search direction for the new dictionary.
+    typeParameters:
+    - id: T
+      description: The concrete type of the dictionary to create.
+    return:
+      type: '{T}'
+      description: A new instance of the specified dictionary type.
+    content.vb: Public Shared Function Create(Of T As KeyRecordDictionary)(keys As IEnumerable(Of String), encoding As Encoding = Nothing, searchDirection As KeyRecordDictionary.SearchDirectionType = SearchDirectionType.LTR) As T
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Create*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">keys</code> is null.
+  nameWithType.vb: KeyRecordDictionary.Create(Of T)(IEnumerable(Of String), Encoding, KeyRecordDictionary.SearchDirectionType)
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Create(Of T)(System.Collections.Generic.IEnumerable(Of String), System.Text.Encoding, BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType)
+  name.vb: Create(Of T)(IEnumerable(Of String), Encoding, SearchDirectionType)
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Serialize``1(``0,BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions)
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Serialize``1(``0,BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions)
+  id: Serialize``1(``0,BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions)
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+  langs:
+  - csharp
+  - vb
+  name: Serialize<T>(T, SerializationOptions?)
+  nameWithType: KeyRecordDictionary.Serialize<T>(T, KeyRecordDictionary.SerializationOptions?)
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Serialize<T>(T, BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions?)
+  type: Method
+  source:
+    id: Serialize
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 198
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Serializes the specified dictionary instance into a byte array.
+  remarks: This static method uses reflection to invoke the static `Serialize` method on the concrete derived type <code class="typeparamref">T</code>.
+  example: []
+  syntax:
+    content: 'public static byte[] Serialize<T>(T obj, KeyRecordDictionary.SerializationOptions? options = null) where T : KeyRecordDictionary'
+    parameters:
+    - id: obj
+      type: '{T}'
+      description: The dictionary instance to serialize.
+    - id: options
+      type: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions
+      description: Options to control the serialization process. If null, the settings from <xref href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.Default" data-throw-if-not-resolved="false"></xref> will be used.
+    typeParameters:
+    - id: T
+      description: The concrete type of the dictionary.
+    return:
+      type: System.Byte[]
+      description: A byte array containing the serialized data.
+    content.vb: Public Shared Function Serialize(Of T As KeyRecordDictionary)(obj As T, options As KeyRecordDictionary.SerializationOptions = Nothing) As Byte()
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Serialize*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">obj</code> is null.
+  nameWithType.vb: KeyRecordDictionary.Serialize(Of T)(T, KeyRecordDictionary.SerializationOptions)
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Serialize(Of T)(T, BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions)
+  name.vb: Serialize(Of T)(T, SerializationOptions)
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Serialize``1(``0,System.String,BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions)
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Serialize``1(``0,System.String,BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions)
+  id: Serialize``1(``0,System.String,BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions)
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+  langs:
+  - csharp
+  - vb
+  name: Serialize<T>(T, string, SerializationOptions?)
+  nameWithType: KeyRecordDictionary.Serialize<T>(T, string, KeyRecordDictionary.SerializationOptions?)
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Serialize<T>(T, string, BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions?)
+  type: Method
+  source:
+    id: Serialize
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 226
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Serializes the specified dictionary instance to a file.
+  remarks: This static method uses reflection to invoke the static `Serialize` method on the concrete derived type <code class="typeparamref">T</code>.
+  example: []
+  syntax:
+    content: 'public static void Serialize<T>(T obj, string file, KeyRecordDictionary.SerializationOptions? options = null) where T : KeyRecordDictionary'
+    parameters:
+    - id: obj
+      type: '{T}'
+      description: The dictionary instance to serialize.
+    - id: file
+      type: System.String
+      description: The path of the file to create.
+    - id: options
+      type: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions
+      description: Options to control the serialization process. If null, the settings from <xref href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.Default" data-throw-if-not-resolved="false"></xref> will be used.
+    typeParameters:
+    - id: T
+      description: The concrete type of the dictionary.
+    content.vb: Public Shared Sub Serialize(Of T As KeyRecordDictionary)(obj As T, file As String, options As KeyRecordDictionary.SerializationOptions = Nothing)
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Serialize*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">obj</code> or <code class="paramref">file</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">file</code> is empty or whitespace.
+  nameWithType.vb: KeyRecordDictionary.Serialize(Of T)(T, String, KeyRecordDictionary.SerializationOptions)
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Serialize(Of T)(T, String, BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions)
+  name.vb: Serialize(Of T)(T, String, SerializationOptions)
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Serialize``1(``0,System.IO.Stream,BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions)
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Serialize``1(``0,System.IO.Stream,BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions)
+  id: Serialize``1(``0,System.IO.Stream,BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions)
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+  langs:
+  - csharp
+  - vb
+  name: Serialize<T>(T, Stream, SerializationOptions?)
+  nameWithType: KeyRecordDictionary.Serialize<T>(T, Stream, KeyRecordDictionary.SerializationOptions?)
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Serialize<T>(T, System.IO.Stream, BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions?)
+  type: Method
+  source:
+    id: Serialize
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 254
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Serializes the specified dictionary instance into a stream.
+  example: []
+  syntax:
+    content: 'public static void Serialize<T>(T obj, Stream stream, KeyRecordDictionary.SerializationOptions? options = null) where T : KeyRecordDictionary'
+    parameters:
+    - id: obj
+      type: '{T}'
+      description: The dictionary instance to serialize.
+    - id: stream
+      type: System.IO.Stream
+      description: The stream to write the serialized data to.
+    - id: options
+      type: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions
+      description: Options to control the serialization process. If null, the settings from <xref href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.Default" data-throw-if-not-resolved="false"></xref> will be used.
+    typeParameters:
+    - id: T
+      description: The concrete type of the dictionary.
+    content.vb: Public Shared Sub Serialize(Of T As KeyRecordDictionary)(obj As T, stream As Stream, options As KeyRecordDictionary.SerializationOptions = Nothing)
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Serialize*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">obj</code> or <code class="paramref">stream</code> is null.
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The type <code class="typeparamref">T</code> does not have a public static `Serialize(T, Stream)` method.
+  nameWithType.vb: KeyRecordDictionary.Serialize(Of T)(T, Stream, KeyRecordDictionary.SerializationOptions)
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Serialize(Of T)(T, System.IO.Stream, BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions)
+  name.vb: Serialize(Of T)(T, Stream, SerializationOptions)
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Deserialize``1(System.Byte[])
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Deserialize``1(System.Byte[])
+  id: Deserialize``1(System.Byte[])
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+  langs:
+  - csharp
+  - vb
+  name: Deserialize<T>(byte[])
+  nameWithType: KeyRecordDictionary.Deserialize<T>(byte[])
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Deserialize<T>(byte[])
+  type: Method
+  source:
+    id: Deserialize
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 283
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Deserializes a dictionary from a byte array.
+  remarks: This static method uses reflection to invoke the static `Deserialize` method on the specified type <code class="typeparamref">T</code>.
+  example: []
+  syntax:
+    content: 'public static T Deserialize<T>(byte[] data) where T : KeyRecordDictionary'
+    parameters:
+    - id: data
+      type: System.Byte[]
+      description: The byte array containing the serialized data.
+    typeParameters:
+    - id: T
+      description: The concrete type of the dictionary to deserialize.
+    return:
+      type: '{T}'
+      description: A new instance of <code class="typeparamref">T</code>.
+    content.vb: Public Shared Function Deserialize(Of T As KeyRecordDictionary)(data As Byte()) As T
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Deserialize*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">data</code> is null.
+  nameWithType.vb: KeyRecordDictionary.Deserialize(Of T)(Byte())
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Deserialize(Of T)(Byte())
+  name.vb: Deserialize(Of T)(Byte())
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Deserialize``1(System.String)
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Deserialize``1(System.String)
+  id: Deserialize``1(System.String)
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+  langs:
+  - csharp
+  - vb
+  name: Deserialize<T>(string)
+  nameWithType: KeyRecordDictionary.Deserialize<T>(string)
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Deserialize<T>(string)
+  type: Method
+  source:
+    id: Deserialize
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 309
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Deserializes a dictionary from a file.
+  remarks: This static method uses reflection to invoke the static `Deserialize` method on the specified type <code class="typeparamref">T</code>.
+  example: []
+  syntax:
+    content: 'public static T Deserialize<T>(string file) where T : KeyRecordDictionary'
+    parameters:
+    - id: file
+      type: System.String
+      description: The path of the file to read from.
+    typeParameters:
+    - id: T
+      description: The concrete type of the dictionary to deserialize.
+    return:
+      type: '{T}'
+      description: A new instance of <code class="typeparamref">T</code>.
+    content.vb: Public Shared Function Deserialize(Of T As KeyRecordDictionary)(file As String) As T
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Deserialize*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">file</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">file</code> is empty or whitespace.
+  nameWithType.vb: KeyRecordDictionary.Deserialize(Of T)(String)
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Deserialize(Of T)(String)
+  name.vb: Deserialize(Of T)(String)
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Deserialize``1(System.IO.Stream)
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Deserialize``1(System.IO.Stream)
+  id: Deserialize``1(System.IO.Stream)
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+  langs:
+  - csharp
+  - vb
+  name: Deserialize<T>(Stream)
+  nameWithType: KeyRecordDictionary.Deserialize<T>(Stream)
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Deserialize<T>(System.IO.Stream)
+  type: Method
+  source:
+    id: Deserialize
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 336
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Deserializes a dictionary from a stream.
+  example: []
+  syntax:
+    content: 'public static T Deserialize<T>(Stream stream) where T : KeyRecordDictionary'
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream to read the serialized data from.
+    typeParameters:
+    - id: T
+      description: The concrete type of the dictionary to deserialize.
+    return:
+      type: '{T}'
+      description: A new instance of <code class="typeparamref">T</code>.
+    content.vb: Public Shared Function Deserialize(Of T As KeyRecordDictionary)(stream As Stream) As T
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Deserialize*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">stream</code> is null.
+  - type: System.NotSupportedException
+    commentId: T:System.NotSupportedException
+    description: The type <code class="typeparamref">T</code> does not have a public static `Deserialize(Stream)` method.
+  nameWithType.vb: KeyRecordDictionary.Deserialize(Of T)(Stream)
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Deserialize(Of T)(System.IO.Stream)
+  name.vb: Deserialize(Of T)(Stream)
+references:
+- uid: BelNytheraSeiche.TrieDictionary
+  commentId: N:BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.html
+  name: BelNytheraSeiche.TrieDictionary
+  nameWithType: BelNytheraSeiche.TrieDictionary
+  fullName: BelNytheraSeiche.TrieDictionary
+  spec.csharp:
+  - uid: BelNytheraSeiche
+    name: BelNytheraSeiche
+    href: BelNytheraSeiche.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary
+    name: TrieDictionary
+    href: BelNytheraSeiche.TrieDictionary.html
+  spec.vb:
+  - uid: BelNytheraSeiche
+    name: BelNytheraSeiche
+    href: BelNytheraSeiche.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary
+    name: TrieDictionary
+    href: BelNytheraSeiche.TrieDictionary.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.#ctor*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.#ctor
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary__ctor_BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SearchDirectionType_
+  name: KeyRecordDictionary
+  nameWithType: KeyRecordDictionary.KeyRecordDictionary
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.KeyRecordDictionary
+  nameWithType.vb: KeyRecordDictionary.New
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.New
+  name.vb: New
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+  commentId: T:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  name: KeyRecordDictionary.SearchDirectionType
+  nameWithType: KeyRecordDictionary.SearchDirectionType
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+  spec.csharp:
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+    name: SearchDirectionType
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType.html
+  spec.vb:
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+    name: SearchDirectionType
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType.html
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirection*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirection
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SearchDirection
+  name: SearchDirection
+  nameWithType: KeyRecordDictionary.SearchDirection
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirection
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Additional1*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Additional1
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Additional1
+  name: Additional1
+  nameWithType: KeyRecordDictionary.Additional1
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Additional1
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Additional2*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Additional2
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Additional2
+  name: Additional2
+  nameWithType: KeyRecordDictionary.Additional2
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Additional2
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Create*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Create
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Create__1_BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SearchDirectionType_
+  name: Create
+  nameWithType: KeyRecordDictionary.Create
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Create
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Collections.Generic.IEnumerable{System.Byte[]}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Byte[]}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<byte[]>
+  nameWithType: IEnumerable<byte[]>
+  fullName: System.Collections.Generic.IEnumerable<byte[]>
+  nameWithType.vb: IEnumerable(Of Byte())
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Byte())
+  name.vb: IEnumerable(Of Byte())
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Text.Encoding
+  commentId: T:System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.encoding
+  name: Encoding
+  nameWithType: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.Default
+  commentId: P:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.Default
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SerializationOptions_Default
+  name: Default
+  nameWithType: KeyRecordDictionary.SerializationOptions.Default
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.Default
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Serialize*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Serialize
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Serialize__1___0_BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SerializationOptions_
+  name: Serialize
+  nameWithType: KeyRecordDictionary.Serialize
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Serialize
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions
+  commentId: T:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  name: KeyRecordDictionary.SerializationOptions
+  nameWithType: KeyRecordDictionary.SerializationOptions
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions
+  spec.csharp:
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions
+    name: SerializationOptions
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.html
+  spec.vb:
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions
+    name: SerializationOptions
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.html
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.NotSupportedException
+  commentId: T:System.NotSupportedException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.notsupportedexception
+  name: NotSupportedException
+  nameWithType: NotSupportedException
+  fullName: System.NotSupportedException
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Deserialize*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Deserialize
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Deserialize__1_System_Byte___
+  name: Deserialize
+  nameWithType: KeyRecordDictionary.Deserialize
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.Deserialize

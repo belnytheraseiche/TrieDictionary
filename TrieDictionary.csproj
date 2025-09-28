@@ -1,0 +1,76 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <!-- <TargetFramework>net9.0</TargetFramework> -->
+    <TargetFrameworks>netstandard2.1;net8.0;net9.0</TargetFrameworks>
+    <!-- <PublishTargetFramework>net9.0</PublishTargetFramework> -->
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <AssemblyTitle>BelNytheraSeiche: Data Structure Library</AssemblyTitle>
+    <AssemblyName>BelNytheraSeiche.TrieDictionary</AssemblyName>
+    <Product>BelNytheraSeiche.TrieDictionary</Product>
+    <Version>1.0.1</Version>
+    <Authors>belnytheraseiche</Authors>
+    <Company></Company>
+    <Copyright>© belnytheraseiche</Copyright>
+    <PackageId>BelNytheraSeiche.TrieDictionary</PackageId>
+    <PackageTags>trie;tree;dictionary;collections;data-structures;double-array;dawg;louds;binary-tree;key-search;key-value-store;storage;utility</PackageTags>
+    <RepositoryUrl>https://github.com/belnytheraseiche/TrieDictionary</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Title>BelNytheraSeiche: A High-Performance Trie and Dictionary Library for .NET</Title>
+    <Description>
+      A .NET library providing a collection of high-performance, memory-efficient data structures, primarily focused on various trie implementations and advanced search capabilities.
+
+      Key Features:
+      - Mutable and Immutable Trie Dictionaries: Includes a mutable Double-Array trie and read-only, highly compressed DAWG and LOUDS tries.
+      - Advanced Search: Supports exact match, prefix, common prefix, longest prefix, and wildcard searches (LTR/RTL).
+      - Flexible Record Storage: Each key maps to a list of records, with support for both persistent (serializable) and transient (in-memory) storage per key.
+      - A rich set of underlying data stores, including HashMap, AVL Tree, AA Tree, Treap, and more.
+
+      Ideal for applications requiring efficient text processing, auto-completion, full-text search engines, morphological analysis, or management of large, static dictionaries.
+
+      For more details, please visit the project repository on GitHub.
+    </Description>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net9.0'">
+    <NoWarn>CS9191</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0'">
+    <NoWarn>CS9191</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <DebugType>portable</DebugType>
+    <DefineConstants></DefineConstants>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <OutputType>Library</OutputType>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>1591</NoWarn>
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <DefineConstants></DefineConstants>
+    <Optimize>true</Optimize>
+    <TieredPGO>true</TieredPGO>
+    <Deterministic>true</Deterministic>
+    <!-- <AnalysisLevel>latest-Recommended</AnalysisLevel> -->
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release' And '$(TargetFramework)' == 'net9.0'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release' And '$(TargetFramework)' == 'net8.0'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release' And '$(TargetFramework)' == 'netstandard2.1'">
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="src/**/*.cs" />
+    <Compile Remove="src/Program.cs" Condition="'$(OutputType)' == 'Library'" />
+    <!-- <Compile Remove="tests/**/*.cs" /> -->
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.IO.Hashing" Version="9.0.9" />
+  </ItemGroup>
+</Project>

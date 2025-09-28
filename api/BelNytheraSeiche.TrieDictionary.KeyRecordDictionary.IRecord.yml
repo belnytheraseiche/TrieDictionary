@@ -1,0 +1,401 @@
+### YamlMime:ManagedReference
+items:
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+  commentId: T:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+  id: KeyRecordDictionary.IRecord
+  parent: BelNytheraSeiche.TrieDictionary
+  children:
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.Content
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.ExByte
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.InsertAfter(System.ReadOnlySpan{System.Byte})
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.InsertBefore(System.ReadOnlySpan{System.Byte})
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.Next
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.Remove
+  langs:
+  - csharp
+  - vb
+  name: KeyRecordDictionary.IRecord
+  nameWithType: KeyRecordDictionary.IRecord
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+  type: Interface
+  source:
+    id: IRecord
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 420
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Defines a public contract for a single data record.
+  example: []
+  syntax:
+    content: public interface KeyRecordDictionary.IRecord
+    content.vb: Public Interface KeyRecordDictionary.IRecord
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.ExByte
+  commentId: P:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.ExByte
+  id: ExByte
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+  langs:
+  - csharp
+  - vb
+  name: ExByte
+  nameWithType: KeyRecordDictionary.IRecord.ExByte
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.ExByte
+  type: Property
+  source:
+    id: ExByte
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 426
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: >-
+    Gets or sets an extra, user-definable byte of metadata associated with this record (0-255).
+
+    Not supported by all underlying record stores, only supported by <xref href="BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: int ExByte { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property ExByte As Integer
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.ExByte*
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.Content
+  commentId: P:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.Content
+  id: Content
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+  langs:
+  - csharp
+  - vb
+  name: Content
+  nameWithType: KeyRecordDictionary.IRecord.Content
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.Content
+  type: Property
+  source:
+    id: Content
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 430
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Gets or sets the byte array content of this record.
+  example: []
+  syntax:
+    content: byte[] Content { get; set; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Property Content As Byte()
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.Content*
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.Next
+  commentId: P:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.Next
+  id: Next
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+  langs:
+  - csharp
+  - vb
+  name: Next
+  nameWithType: KeyRecordDictionary.IRecord.Next
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.Next
+  type: Property
+  source:
+    id: Next
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 434
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Gets the next record in the linked list, or null if this is the last record.
+  example: []
+  syntax:
+    content: KeyRecordDictionary.IRecord? Next { get; }
+    parameters: []
+    return:
+      type: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+    content.vb: ReadOnly Property [Next] As KeyRecordDictionary.IRecord
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.Next*
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.Remove
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.Remove
+  id: Remove
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+  langs:
+  - csharp
+  - vb
+  name: Remove()
+  nameWithType: KeyRecordDictionary.IRecord.Remove()
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.Remove()
+  type: Method
+  source:
+    id: Remove
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 438
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Removes this record from the list it belongs to.
+  example: []
+  syntax:
+    content: void Remove()
+    content.vb: Sub Remove()
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.Remove*
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.InsertBefore(System.ReadOnlySpan{System.Byte})
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.InsertBefore(System.ReadOnlySpan{System.Byte})
+  id: InsertBefore(System.ReadOnlySpan{System.Byte})
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+  langs:
+  - csharp
+  - vb
+  name: InsertBefore(ReadOnlySpan<byte>)
+  nameWithType: KeyRecordDictionary.IRecord.InsertBefore(ReadOnlySpan<byte>)
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.InsertBefore(System.ReadOnlySpan<byte>)
+  type: Method
+  source:
+    id: InsertBefore
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 444
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Inserts a new record immediately before this record in the list.
+  example: []
+  syntax:
+    content: KeyRecordDictionary.IRecord InsertBefore(ReadOnlySpan<byte> content)
+    parameters:
+    - id: content
+      type: System.ReadOnlySpan{System.Byte}
+      description: The content of the new record to insert.
+    return:
+      type: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+      description: An <xref href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord" data-throw-if-not-resolved="false"></xref> handle for the newly inserted record.
+    content.vb: Function InsertBefore(content As ReadOnlySpan(Of Byte)) As KeyRecordDictionary.IRecord
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.InsertBefore*
+  nameWithType.vb: KeyRecordDictionary.IRecord.InsertBefore(ReadOnlySpan(Of Byte))
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.InsertBefore(System.ReadOnlySpan(Of Byte))
+  name.vb: InsertBefore(ReadOnlySpan(Of Byte))
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.InsertAfter(System.ReadOnlySpan{System.Byte})
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.InsertAfter(System.ReadOnlySpan{System.Byte})
+  id: InsertAfter(System.ReadOnlySpan{System.Byte})
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+  langs:
+  - csharp
+  - vb
+  name: InsertAfter(ReadOnlySpan<byte>)
+  nameWithType: KeyRecordDictionary.IRecord.InsertAfter(ReadOnlySpan<byte>)
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.InsertAfter(System.ReadOnlySpan<byte>)
+  type: Method
+  source:
+    id: InsertAfter
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 450
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Inserts a new record immediately after this record in the list.
+  example: []
+  syntax:
+    content: KeyRecordDictionary.IRecord InsertAfter(ReadOnlySpan<byte> content)
+    parameters:
+    - id: content
+      type: System.ReadOnlySpan{System.Byte}
+      description: The content of the new record to insert.
+    return:
+      type: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+      description: An <xref href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord" data-throw-if-not-resolved="false"></xref> handle for the newly inserted record.
+    content.vb: Function InsertAfter(content As ReadOnlySpan(Of Byte)) As KeyRecordDictionary.IRecord
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.InsertAfter*
+  nameWithType.vb: KeyRecordDictionary.IRecord.InsertAfter(ReadOnlySpan(Of Byte))
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.InsertAfter(System.ReadOnlySpan(Of Byte))
+  name.vb: InsertAfter(ReadOnlySpan(Of Byte))
+references:
+- uid: BelNytheraSeiche.TrieDictionary
+  commentId: N:BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.html
+  name: BelNytheraSeiche.TrieDictionary
+  nameWithType: BelNytheraSeiche.TrieDictionary
+  fullName: BelNytheraSeiche.TrieDictionary
+  spec.csharp:
+  - uid: BelNytheraSeiche
+    name: BelNytheraSeiche
+    href: BelNytheraSeiche.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary
+    name: TrieDictionary
+    href: BelNytheraSeiche.TrieDictionary.html
+  spec.vb:
+  - uid: BelNytheraSeiche
+    name: BelNytheraSeiche
+    href: BelNytheraSeiche.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary
+    name: TrieDictionary
+    href: BelNytheraSeiche.TrieDictionary.html
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+  commentId: T:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.html
+  name: PrimitiveRecordStore
+  nameWithType: PrimitiveRecordStore
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.ExByte*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.ExByte
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IRecord_ExByte
+  name: ExByte
+  nameWithType: KeyRecordDictionary.IRecord.ExByte
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.ExByte
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.Content*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.Content
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IRecord_Content
+  name: Content
+  nameWithType: KeyRecordDictionary.IRecord.Content
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.Content
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.Next*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.Next
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IRecord_Next
+  name: Next
+  nameWithType: KeyRecordDictionary.IRecord.Next
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.Next
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+  commentId: T:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  name: KeyRecordDictionary.IRecord
+  nameWithType: KeyRecordDictionary.IRecord
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+  spec.csharp:
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+    name: IRecord
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.html
+  spec.vb:
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+    name: IRecord
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.html
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.Remove*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.Remove
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IRecord_Remove
+  name: Remove
+  nameWithType: KeyRecordDictionary.IRecord.Remove
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.Remove
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.InsertBefore*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.InsertBefore
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IRecord_InsertBefore_System_ReadOnlySpan_System_Byte__
+  name: InsertBefore
+  nameWithType: KeyRecordDictionary.IRecord.InsertBefore
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.InsertBefore
+- uid: System.ReadOnlySpan{System.Byte}
+  commentId: T:System.ReadOnlySpan{System.Byte}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<byte>
+  nameWithType: ReadOnlySpan<byte>
+  fullName: System.ReadOnlySpan<byte>
+  nameWithType.vb: ReadOnlySpan(Of Byte)
+  fullName.vb: System.ReadOnlySpan(Of Byte)
+  name.vb: ReadOnlySpan(Of Byte)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.InsertAfter*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.InsertAfter
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IRecord_InsertAfter_System_ReadOnlySpan_System_Byte__
+  name: InsertAfter
+  nameWithType: KeyRecordDictionary.IRecord.InsertAfter
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.InsertAfter

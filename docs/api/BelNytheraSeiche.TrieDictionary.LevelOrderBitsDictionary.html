@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class LevelOrderBitsDictionary | BelNytheraSeiche.TrieDictionary </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class LevelOrderBitsDictionary | BelNytheraSeiche.TrieDictionary ">
+      
+      <meta name="description" content="An abstract base class for read-only, trie-based dictionaries that are constructed in level-order.">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo-small.png" alt="BelNytheraSeiche.TrieDictionary">
+            BelNytheraSeiche.TrieDictionary
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary">
+
+
+
+  <h1 id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary" class="text-break">
+Class LevelOrderBitsDictionary  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="BelNytheraSeiche.html">BelNytheraSeiche</a>.<a class="xref" href="BelNytheraSeiche.TrieDictionary.html">TrieDictionary</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BelNytheraSeiche.TrieDictionary.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>An abstract base class for read-only, trie-based dictionaries that are constructed in level-order.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class LevelOrderBitsDictionary : KeyRecordDictionary, KeyRecordDictionary.IKeyAccess</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html">KeyRecordDictionary</a></div>
+      <div><span class="xref">LevelOrderBitsDictionary</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html">KeyRecordDictionary</a>.<a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.html">IKeyAccess</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="BelNytheraSeiche.TrieDictionary.BitwiseVectorDictionary.html">BitwiseVectorDictionary</a></div>
+      <div><a class="xref" href="BelNytheraSeiche.TrieDictionary.LoudsDictionary.html">LoudsDictionary</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SearchDirection">KeyRecordDictionary.SearchDirection</a>
+    </div>
+    <div>
+      <a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Additional1">KeyRecordDictionary.Additional1</a>
+    </div>
+    <div>
+      <a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Additional2">KeyRecordDictionary.Additional2</a>
+    </div>
+    <div>
+      <a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Create__1_BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SearchDirectionType_">KeyRecordDictionary.Create&lt;T&gt;(KeyRecordDictionary.SearchDirectionType)</a>
+    </div>
+    <div>
+      <a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Create__1_System_Collections_Generic_IEnumerable_System_Byte____BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SearchDirectionType_">KeyRecordDictionary.Create&lt;T&gt;(IEnumerable&lt;byte[]&gt;, KeyRecordDictionary.SearchDirectionType)</a>
+    </div>
+    <div>
+      <a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Create__1_System_Collections_Generic_IEnumerable_System_String__System_Text_Encoding_BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SearchDirectionType_">KeyRecordDictionary.Create&lt;T&gt;(IEnumerable&lt;string&gt;, Encoding, KeyRecordDictionary.SearchDirectionType)</a>
+    </div>
+    <div>
+      <a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Serialize__1___0_BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SerializationOptions_">KeyRecordDictionary.Serialize&lt;T&gt;(T, KeyRecordDictionary.SerializationOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Serialize__1___0_System_String_BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SerializationOptions_">KeyRecordDictionary.Serialize&lt;T&gt;(T, string, KeyRecordDictionary.SerializationOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Serialize__1___0_System_IO_Stream_BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SerializationOptions_">KeyRecordDictionary.Serialize&lt;T&gt;(T, Stream, KeyRecordDictionary.SerializationOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Deserialize__1_System_Byte___">KeyRecordDictionary.Deserialize&lt;T&gt;(byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Deserialize__1_System_String_">KeyRecordDictionary.Deserialize&lt;T&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_Deserialize__1_System_IO_Stream_">KeyRecordDictionary.Deserialize&lt;T&gt;(Stream)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This class provides the common infrastructure for trie implementations that are &quot;flattened&quot; into arrays
+based on a breadth-first (level-order) traversal. The core data is stored in arrays for labels, parent pointers,
+and terminal node flags.</p>
+<p>
+Concrete implementations must provide a strategy for navigating the tree structure, primarily by implementing the
+FindRange1(int) method.
+</p>
+<p>
+<strong>Important Usage Notes:</strong> This class and its derivatives are read-only after creation.
+Key addition and removal operations are not supported.
+</p>
+</div>
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_Add_" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.Add*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_Add_System_ReadOnlySpan_System_Byte__" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.Add(System.ReadOnlySpan{System.Byte})">
+  Add(ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This operation is not supported. The dictionary is read-only after creation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Add(ReadOnlySpan&lt;byte&gt; key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p>Always thrown.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_AsStringSpecialized_" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.AsStringSpecialized*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_AsStringSpecialized_System_Text_Encoding_" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.AsStringSpecialized(System.Text.Encoding)">
+  AsStringSpecialized(Encoding?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a string-specialized wrapper for the dictionary's key access interface.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KeyRecordDictionary.StringSpecialized AsStringSpecialized(Encoding? encoding = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>encoding</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.encoding">Encoding</a></dt>
+    <dd><p>The encoding to use for string conversions. Defaults to UTF-8.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html">KeyRecordDictionary</a>.<a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.StringSpecialized.html">StringSpecialized</a></dt>
+    <dd><p>A new <a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.StringSpecialized.html">KeyRecordDictionary.StringSpecialized</a> instance providing string-based access to the dictionary.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_Contains_" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.Contains*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_Contains_System_ReadOnlySpan_System_Byte__" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.Contains(System.ReadOnlySpan{System.Byte})">
+  Contains(ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified key exists in the graph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Contains(ReadOnlySpan&lt;byte&gt; key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd><p>The key to locate.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the key is found; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_EnumerateAll_" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.EnumerateAll*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_EnumerateAll_System_Boolean_" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.EnumerateAll(System.Boolean)">
+  EnumerateAll(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enumerates all keys in the dictionary in lexicographical order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;(int, byte[])&gt; EnumerateAll(bool reverse = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>reverse</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If true, returns keys in reverse lexicographical order.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[])&gt;</dt>
+    <dd><p>An enumerable collection of all (identifier, key) tuples.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_FindFirst_" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.FindFirst*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_FindFirst_System_Int32__System_Byte____" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.FindFirst(System.Int32@,System.Byte[]@)">
+  FindFirst(out int, out byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds the first key in the dictionary in lexicographical order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool FindFirst(out int identifier, out byte[] key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>identifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>When this method returns, the identifier of the first key.</p>
+</dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>When this method returns, the first key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the dictionary is not empty; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_FindLast_" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.FindLast*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_FindLast_System_Int32__System_Byte____" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.FindLast(System.Int32@,System.Byte[]@)">
+  FindLast(out int, out byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds the last key in the dictionary in lexicographical order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool FindLast(out int identifier, out byte[] key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>identifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>When this method returns, the identifier of the last key.</p>
+</dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>When this method returns, the last key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the dictionary is not empty; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_FindNext_" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.FindNext*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_FindNext_System_Int32_System_Int32__System_Byte____" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.FindNext(System.Int32,System.Int32@,System.Byte[]@)">
+  FindNext(int, out int, out byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds the next key in lexicographical order after the specified identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool FindNext(int currentIdentifier, out int foundIdentifier, out byte[] foundKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>currentIdentifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The identifier to start the search from.</p>
+</dd>
+    <dt><code>foundIdentifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>When this method returns, the identifier of the next key.</p>
+</dd>
+    <dt><code>foundKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>When this method returns, the next key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if a next key was found; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_FindNext_" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.FindNext*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_FindNext_System_ReadOnlySpan_System_Byte__System_Int32__System_Byte____" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.FindNext(System.ReadOnlySpan{System.Byte},System.Int32@,System.Byte[]@)">
+  FindNext(ReadOnlySpan&lt;byte&gt;, out int, out byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds the next key in lexicographical order after the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool FindNext(ReadOnlySpan&lt;byte&gt; currentKey, out int foundIdentifier, out byte[] foundKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>currentKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd><p>The key to start the search from.</p>
+</dd>
+    <dt><code>foundIdentifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>When this method returns, the identifier of the next key.</p>
+</dd>
+    <dt><code>foundKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>When this method returns, the next key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if a next key was found; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_FindPrevious_" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.FindPrevious*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_FindPrevious_System_Int32_System_Int32__System_Byte____" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.FindPrevious(System.Int32,System.Int32@,System.Byte[]@)">
+  FindPrevious(int, out int, out byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds the previous key in lexicographical order before the specified identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool FindPrevious(int currentIdentifier, out int foundIdentifier, out byte[] foundKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>currentIdentifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The identifier to start the search from.</p>
+</dd>
+    <dt><code>foundIdentifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>When this method returns, the identifier of the previous key.</p>
+</dd>
+    <dt><code>foundKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>When this method returns, the previous key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if a previous key was found; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_FindPrevious_" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.FindPrevious*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_FindPrevious_System_ReadOnlySpan_System_Byte__System_Int32__System_Byte____" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.FindPrevious(System.ReadOnlySpan{System.Byte},System.Int32@,System.Byte[]@)">
+  FindPrevious(ReadOnlySpan&lt;byte&gt;, out int, out byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds the previous key in lexicographical order before the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool FindPrevious(ReadOnlySpan&lt;byte&gt; currentKey, out int foundIdentifier, out byte[] foundKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>currentKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd><p>The key to start the search from.</p>
+</dd>
+    <dt><code>foundIdentifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>When this method returns, the identifier of the previous key.</p>
+</dd>
+    <dt><code>foundKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>When this method returns, the previous key.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if a previous key was found; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_GetKey_" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.GetKey*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_GetKey_System_Int32_" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.GetKey(System.Int32)">
+  GetKey(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the key associated with the specified identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual byte[] GetKey(int identifier)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>identifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The identifier of the key to get.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>The key as a byte array.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>The specified identifier does not exist.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_GetRecordAccess_" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.GetRecordAccess*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_GetRecordAccess_System_Int32_System_Boolean_" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.GetRecordAccess(System.Int32,System.Boolean)">
+  GetRecordAccess(int, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets an accessor for the list of records associated with a given key identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KeyRecordDictionary.IRecordAccess GetRecordAccess(int identifier, bool isTransient = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>identifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The identifier of the key whose records are to be accessed. This must be a valid key identifier obtained from a search or add operation.</p>
+</dd>
+    <dt><code>isTransient</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If true, accesses the transient (in-memory) record store; otherwise, accesses the persistent record store.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html">KeyRecordDictionary</a>.<a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess.html">IRecordAccess</a></dt>
+    <dd><p>An <a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess.html">KeyRecordDictionary.IRecordAccess</a> handle for the specified record list.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_GetRecordAccess_System_Int32_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Note that while new records can be added to a key's record list, new keys cannot be added to the dictionary itself after creation.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p><code class="paramref">identifier</code> is negative.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>The specified <code class="paramref">identifier</code> is invalid or does not exist.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_Remove_" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.Remove*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_Remove_System_Int32_" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.Remove(System.Int32)">
+  Remove(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This operation is not supported. The dictionary is read-only after creation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(int identifier)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>identifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p>Always thrown.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_Remove_" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.Remove*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_Remove_System_ReadOnlySpan_System_Byte__" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.Remove(System.ReadOnlySpan{System.Byte})">
+  Remove(ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This operation is not supported. The dictionary is read-only after creation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(ReadOnlySpan&lt;byte&gt; key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p>Always thrown.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_SearchByPrefix_" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.SearchByPrefix*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_SearchByPrefix_System_ReadOnlySpan_System_Byte__System_Boolean_" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.SearchByPrefix(System.ReadOnlySpan{System.Byte},System.Boolean)">
+  SearchByPrefix(ReadOnlySpan&lt;byte&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds all keys that start with the given prefix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;(int, byte[])&gt; SearchByPrefix(ReadOnlySpan&lt;byte&gt; sequence, bool reverse = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sequence</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd><p>The prefix to search for.</p>
+</dd>
+    <dt><code>reverse</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If true, returns results in reverse lexicographical order.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[])&gt;</dt>
+    <dd><p>An enumerable collection of (identifier, key) tuples for all keys starting with the prefix.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_SearchByPrefix_System_ReadOnlySpan_System_Byte__System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is the implementation of interface method.
+For detailed behavior and examples, see <a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IKeyAccess_SearchByPrefix_System_ReadOnlySpan_System_Byte__System_Boolean_">SearchByPrefix(ReadOnlySpan&lt;byte&gt;, bool)</a>.</p>
+</div>
+
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_SearchCommonPrefix_" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.SearchCommonPrefix*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_SearchCommonPrefix_System_ReadOnlySpan_System_Byte__" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.SearchCommonPrefix(System.ReadOnlySpan{System.Byte})">
+  SearchCommonPrefix(ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds all keys in the dictionary that are prefixes of the given sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;(int, byte[])&gt; SearchCommonPrefix(ReadOnlySpan&lt;byte&gt; sequence)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sequence</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd><p>The sequence to search within.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[])&gt;</dt>
+    <dd><p>An enumerable collection of (identifier, key) tuples for all matching prefixes.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_SearchCommonPrefix_System_ReadOnlySpan_System_Byte___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is the implementation of interface method.
+For detailed behavior and examples, see <a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IKeyAccess_SearchCommonPrefix_System_ReadOnlySpan_System_Byte__">SearchCommonPrefix(ReadOnlySpan&lt;byte&gt;)</a>.</p>
+</div>
+
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_SearchExactly_" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.SearchExactly*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_SearchExactly_System_ReadOnlySpan_System_Byte__" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.SearchExactly(System.ReadOnlySpan{System.Byte})">
+  SearchExactly(ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Searches for an exact match of the given sequence and returns its identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int SearchExactly(ReadOnlySpan&lt;byte&gt; sequence)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sequence</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd><p>The key to search for.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The positive identifier for the key if found; otherwise, a non-positive value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_SearchLongestPrefix_" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.SearchLongestPrefix*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_SearchLongestPrefix_System_ReadOnlySpan_System_Byte__" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.SearchLongestPrefix(System.ReadOnlySpan{System.Byte})">
+  SearchLongestPrefix(ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds the longest key in the dictionary that is a prefix of the given sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual (int, byte[]) SearchLongestPrefix(ReadOnlySpan&lt;byte&gt; sequence)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sequence</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd><p>The sequence to search within.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[])</dt>
+    <dd><p>A tuple containing the identifier and key of the longest matching prefix, or (-1, []) if no match is found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_SearchLongestPrefix_System_ReadOnlySpan_System_Byte___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is the implementation of interface method.
+For detailed behavior and examples, see <a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IKeyAccess_SearchLongestPrefix_System_ReadOnlySpan_System_Byte__">SearchLongestPrefix(ReadOnlySpan&lt;byte&gt;)</a>.</p>
+</div>
+
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_SearchWildcard_" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.SearchWildcard*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_SearchWildcard_System_ReadOnlySpan_System_Byte__System_ReadOnlySpan_System_Char__System_Boolean_" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.SearchWildcard(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Char},System.Boolean)">
+  SearchWildcard(ReadOnlySpan&lt;byte&gt;, ReadOnlySpan&lt;char&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs a wildcard search for keys matching a pattern.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;(int, byte[])&gt; SearchWildcard(ReadOnlySpan&lt;byte&gt; sequence, ReadOnlySpan&lt;char&gt; cards, bool reverse = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sequence</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd><p>The byte sequence of the pattern.</p>
+</dd>
+    <dt><code>cards</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd><p>A sequence of characters ('?' for single, '*' for multiple wildcards) corresponding to the pattern.</p>
+</dd>
+    <dt><code>reverse</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If true, returns results in reverse order.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[])&gt;</dt>
+    <dd><p>An enumerable collection of matching (identifier, key) tuples.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_SearchWildcard_System_ReadOnlySpan_System_Byte__System_ReadOnlySpan_System_Char__System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is the implementation of interface method.
+For detailed behavior and examples, see <a class="xref" href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IKeyAccess_SearchWildcard_System_ReadOnlySpan_System_Byte__System_ReadOnlySpan_System_Char__System_Boolean_">SearchWildcard(ReadOnlySpan&lt;byte&gt;, ReadOnlySpan&lt;char&gt;, bool)</a>.</p>
+</div>
+
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_TryAdd_" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.TryAdd*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_TryAdd_System_ReadOnlySpan_System_Byte__System_Int32__" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.TryAdd(System.ReadOnlySpan{System.Byte},System.Int32@)">
+  TryAdd(ReadOnlySpan&lt;byte&gt;, out int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This operation is not supported. The dictionary is read-only after creation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryAdd(ReadOnlySpan&lt;byte&gt; key, out int identifier)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>identifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notsupportedexception">NotSupportedException</a></dt>
+    <dd><p>Always thrown.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_TryGetKey_" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.TryGetKey*"></a>
+
+  <h3 id="BelNytheraSeiche_TrieDictionary_LevelOrderBitsDictionary_TryGetKey_System_Int32_System_Byte____" data-uid="BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.TryGetKey(System.Int32,System.Byte[]@)">
+  TryGetKey(int, out byte[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tries to get the key associated with the specified identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool TryGetKey(int identifier, out byte[] key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>identifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The identifier of the key to get.</p>
+</dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>When this method returns, contains the key if found; otherwise, an empty array.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true if the key was found; otherwise, false.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

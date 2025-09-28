@@ -1,0 +1,496 @@
+### YamlMime:ManagedReference
+items:
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions
+  commentId: T:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions
+  id: KeyRecordDictionary.SerializationOptions
+  parent: BelNytheraSeiche.TrieDictionary
+  children:
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.CompressionLevel
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.Default
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.IncludeLoudsParentPointers
+  langs:
+  - csharp
+  - vb
+  name: KeyRecordDictionary.SerializationOptions
+  nameWithType: KeyRecordDictionary.SerializationOptions
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions
+  type: Class
+  source:
+    id: SerializationOptions
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 387
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Provides options to control the serialization process for dictionary data structures.
+  example: []
+  syntax:
+    content: public class KeyRecordDictionary.SerializationOptions
+    content.vb: Public Class KeyRecordDictionary.SerializationOptions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.CompressionLevel
+  commentId: P:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.CompressionLevel
+  id: CompressionLevel
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions
+  langs:
+  - csharp
+  - vb
+  name: CompressionLevel
+  nameWithType: KeyRecordDictionary.SerializationOptions.CompressionLevel
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.CompressionLevel
+  type: Property
+  source:
+    id: CompressionLevel
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 396
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Gets or sets the compression level to use for serialization.
+  remarks: >-
+    Higher compression levels can result in smaller file sizes but may take longer to process.
+
+    Defaults to <xref href="System.IO.Compression.CompressionLevel.Fastest" data-throw-if-not-resolved="false"></xref> for a balance of speed and size.
+  example: []
+  syntax:
+    content: public CompressionLevel CompressionLevel { get; set; }
+    parameters: []
+    return:
+      type: System.IO.Compression.CompressionLevel
+    content.vb: Public Property CompressionLevel As CompressionLevel
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.CompressionLevel*
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.IncludeLoudsParentPointers
+  commentId: P:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.IncludeLoudsParentPointers
+  id: IncludeLoudsParentPointers
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions
+  langs:
+  - csharp
+  - vb
+  name: IncludeLoudsParentPointers
+  nameWithType: KeyRecordDictionary.SerializationOptions.IncludeLoudsParentPointers
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.IncludeLoudsParentPointers
+  type: Property
+  source:
+    id: IncludeLoudsParentPointers
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 406
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: >-
+    [LOUDS-specific] Gets or sets a value indicating whether to include the parent pointer array in the serialization output.
+
+    Defaults to <code>false</code>.
+  remarks: >-
+    Setting this to <code>false</code> will reduce the final file size, but it may significantly increase
+
+    the time required for deserialization as the parent structure needs to be rebuilt.
+  example: []
+  syntax:
+    content: public bool IncludeLoudsParentPointers { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IncludeLoudsParentPointers As Boolean
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.IncludeLoudsParentPointers*
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.Default
+  commentId: P:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.Default
+  id: Default
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: KeyRecordDictionary.SerializationOptions.Default
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.Default
+  type: Property
+  source:
+    id: Default
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 414
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Gets a singleton instance of <xref href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions" data-throw-if-not-resolved="false"></xref> with default values.
+  remarks: Use this property to avoid creating a new options object when default settings are sufficient.
+  example: []
+  syntax:
+    content: public static KeyRecordDictionary.SerializationOptions Default { get; }
+    parameters: []
+    return:
+      type: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions
+    content.vb: Public Shared ReadOnly Property [Default] As KeyRecordDictionary.SerializationOptions
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.Default*
+references:
+- uid: BelNytheraSeiche.TrieDictionary
+  commentId: N:BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.html
+  name: BelNytheraSeiche.TrieDictionary
+  nameWithType: BelNytheraSeiche.TrieDictionary
+  fullName: BelNytheraSeiche.TrieDictionary
+  spec.csharp:
+  - uid: BelNytheraSeiche
+    name: BelNytheraSeiche
+    href: BelNytheraSeiche.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary
+    name: TrieDictionary
+    href: BelNytheraSeiche.TrieDictionary.html
+  spec.vb:
+  - uid: BelNytheraSeiche
+    name: BelNytheraSeiche
+    href: BelNytheraSeiche.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary
+    name: TrieDictionary
+    href: BelNytheraSeiche.TrieDictionary.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IO.Compression.CompressionLevel.Fastest
+  commentId: F:System.IO.Compression.CompressionLevel.Fastest
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.compression.compressionlevel#system-io-compression-compressionlevel-fastest
+  name: Fastest
+  nameWithType: CompressionLevel.Fastest
+  fullName: System.IO.Compression.CompressionLevel.Fastest
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.CompressionLevel*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.CompressionLevel
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SerializationOptions_CompressionLevel
+  name: CompressionLevel
+  nameWithType: KeyRecordDictionary.SerializationOptions.CompressionLevel
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.CompressionLevel
+- uid: System.IO.Compression.CompressionLevel
+  commentId: T:System.IO.Compression.CompressionLevel
+  parent: System.IO.Compression
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.compression.compressionlevel
+  name: CompressionLevel
+  nameWithType: CompressionLevel
+  fullName: System.IO.Compression.CompressionLevel
+- uid: System.IO.Compression
+  commentId: N:System.IO.Compression
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO.Compression
+  nameWithType: System.IO.Compression
+  fullName: System.IO.Compression
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  - name: .
+  - uid: System.IO.Compression
+    name: Compression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.compression
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  - name: .
+  - uid: System.IO.Compression
+    name: Compression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.compression
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.IncludeLoudsParentPointers*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.IncludeLoudsParentPointers
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SerializationOptions_IncludeLoudsParentPointers
+  name: IncludeLoudsParentPointers
+  nameWithType: KeyRecordDictionary.SerializationOptions.IncludeLoudsParentPointers
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.IncludeLoudsParentPointers
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions
+  commentId: T:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  name: KeyRecordDictionary.SerializationOptions
+  nameWithType: KeyRecordDictionary.SerializationOptions
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions
+  spec.csharp:
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions
+    name: SerializationOptions
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.html
+  spec.vb:
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions
+    name: SerializationOptions
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.html
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.Default*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.Default
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_SerializationOptions_Default
+  name: Default
+  nameWithType: KeyRecordDictionary.SerializationOptions.Default
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.Default

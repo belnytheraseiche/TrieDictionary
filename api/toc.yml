@@ -1,0 +1,103 @@
+### YamlMime:TableOfContent
+items:
+- uid: BelNytheraSeiche.TrieDictionary
+  name: BelNytheraSeiche.TrieDictionary
+  type: Namespace
+  items:
+  - uid: BelNytheraSeiche.TrieDictionary.AATreeRecordStore
+    name: AATreeRecordStore
+    type: Class
+  - uid: BelNytheraSeiche.TrieDictionary.AVLTreeRecordStore
+    name: AVLTreeRecordStore
+    type: Class
+  - uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore
+    name: BasicRecordStore
+    type: Class
+  - uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record
+    name: BasicRecordStore.Record
+    type: Class
+  - uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess
+    name: BasicRecordStore.RecordAccess
+    type: Class
+  - uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore.SerializationOptions
+    name: BasicRecordStore.SerializationOptions
+    type: Class
+  - uid: BelNytheraSeiche.TrieDictionary.BinaryTreeRecordStore
+    name: BinaryTreeRecordStore
+    type: Class
+  - uid: BelNytheraSeiche.TrieDictionary.BitSet
+    name: BitSet
+    type: Class
+  - uid: BelNytheraSeiche.TrieDictionary.BitwiseVectorDictionary
+    name: BitwiseVectorDictionary
+    type: Class
+  - uid: BelNytheraSeiche.TrieDictionary.DirectedAcyclicGraphDictionary
+    name: DirectedAcyclicGraphDictionary
+    type: Class
+  - uid: BelNytheraSeiche.TrieDictionary.DoubleArrayDictionary
+    name: DoubleArrayDictionary
+    type: Class
+  - uid: BelNytheraSeiche.TrieDictionary.HashMapRecordStore
+    name: HashMapRecordStore
+    type: Class
+  - uid: BelNytheraSeiche.TrieDictionary.ImmutableBitSet
+    name: ImmutableBitSet
+    type: Class
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    type: Class
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+    name: KeyRecordDictionary.IKeyAccess
+    type: Interface
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+    name: KeyRecordDictionary.IRecord
+    type: Interface
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess
+    name: KeyRecordDictionary.IRecordAccess
+    type: Interface
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+    name: KeyRecordDictionary.SearchDirectionType
+    type: Enum
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions
+    name: KeyRecordDictionary.SerializationOptions
+    type: Class
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.StringSpecialized
+    name: KeyRecordDictionary.StringSpecialized
+    type: Class
+  - uid: BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary
+    name: LevelOrderBitsDictionary
+    type: Class
+  - uid: BelNytheraSeiche.TrieDictionary.LoudsDictionary
+    name: LoudsDictionary
+    type: Class
+  - uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+    name: PrimitiveRecordStore
+    type: Class
+  - uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+    name: PrimitiveRecordStore.Record
+    type: Class
+  - uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.RecordAccess
+    name: PrimitiveRecordStore.RecordAccess
+    type: Class
+  - uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions
+    name: PrimitiveRecordStore.SerializationOptions
+    type: Class
+  - uid: BelNytheraSeiche.TrieDictionary.RankSelectBitSet
+    name: RankSelectBitSet
+    type: Class
+  - uid: BelNytheraSeiche.TrieDictionary.ScapegoatTreeRecordStore
+    name: ScapegoatTreeRecordStore
+    type: Class
+  - uid: BelNytheraSeiche.TrieDictionary.TreapRecordStore
+    name: TreapRecordStore
+    type: Class
+  - uid: BelNytheraSeiche.TrieDictionary.ValueBuffer`1
+    name: ValueBuffer<T>
+    type: Class
+  - uid: BelNytheraSeiche.TrieDictionary.Xoroshiro128PlusPlus
+    name: Xoroshiro128PlusPlus
+    type: Class
+  - uid: BelNytheraSeiche.TrieDictionary.Xoshiro256PlusPlus
+    name: Xoshiro256PlusPlus
+    type: Class
+memberLayout: SamePage

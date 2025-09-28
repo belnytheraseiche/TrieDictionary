@@ -1,0 +1,812 @@
+### YamlMime:ManagedReference
+items:
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+  commentId: T:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+  id: PrimitiveRecordStore
+  parent: BelNytheraSeiche.TrieDictionary
+  children:
+  - BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Clear
+  - BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Deserialize(System.Byte[])
+  - BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Deserialize(System.IO.Stream)
+  - BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Deserialize(System.String)
+  - BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.GetRecordAccess(System.Int32)
+  - BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Serialize(BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore,BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions)
+  - BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Serialize(BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore,System.IO.Stream,BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions)
+  - BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Serialize(BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore,System.String,BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions)
+  langs:
+  - csharp
+  - vb
+  name: PrimitiveRecordStore
+  nameWithType: PrimitiveRecordStore
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+  type: Class
+  source:
+    id: PrimitiveRecordStore
+    path: C:\Users\nanto\dev\TrieDictionary\src\PrimitiveRecordStore.cs
+    startLine: 48
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Provides a low-level, memory-efficient data store for variable-length byte records.
+  remarks: >-
+    This store uses a series of fixed-size byte arrays ("chunks") to avoid allocations on the Large Object Heap.
+
+    It internally manages a system of linked lists, where each list is a sequence of records.
+
+    The entire store can be serialized to and deserialized from a compressed, checksummed binary format.
+
+    <p>
+
+    <strong>Record Size Limit:</strong> Please note that the <code>Content</code> for any single record
+
+    cannot exceed 4,096 bytes. This limit is enforced during operations such as adding or updating records.
+
+    </p>
+
+    <p>
+
+    <strong>Important Usage Note:</strong> This is an append-only style store. When records are removed
+
+    (i.e., unlinked from their respective lists), the underlying space they occupied is <strong>not</strong> reclaimed or reused.
+
+    As a result, memory usage will only grow as new records are added. To compact the store and reclaim
+
+    the space from deleted records, the store must be rebuilt. The correct procedure is to create a new, empty store instance
+
+    and transfer all valid records from the old store to the new one, for instance by iterating through a known set of root identifiers.
+
+    </p>
+  example: []
+  syntax:
+    content: public sealed class PrimitiveRecordStore
+    content.vb: Public NotInheritable Class PrimitiveRecordStore
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Serialize(BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore,BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions)
+  commentId: M:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Serialize(BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore,BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions)
+  id: Serialize(BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore,BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions)
+  parent: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+  langs:
+  - csharp
+  - vb
+  name: Serialize(PrimitiveRecordStore, SerializationOptions?)
+  nameWithType: PrimitiveRecordStore.Serialize(PrimitiveRecordStore, PrimitiveRecordStore.SerializationOptions?)
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Serialize(BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore, BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions?)
+  type: Method
+  source:
+    id: Serialize
+    path: C:\Users\nanto\dev\TrieDictionary\src\PrimitiveRecordStore.cs
+    startLine: 63
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Serializes the specified store into a byte array.
+  example: []
+  syntax:
+    content: public static byte[] Serialize(PrimitiveRecordStore store, PrimitiveRecordStore.SerializationOptions? options = null)
+    parameters:
+    - id: store
+      type: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+      description: The store to serialize.
+    - id: options
+      type: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions
+      description: Options to control the serialization process. If null, the settings from <xref href="BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions.Default" data-throw-if-not-resolved="false"></xref> will be used.
+    return:
+      type: System.Byte[]
+      description: A byte array containing the serialized data.
+    content.vb: Public Shared Function Serialize(store As PrimitiveRecordStore, options As PrimitiveRecordStore.SerializationOptions = Nothing) As Byte()
+  overload: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Serialize*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">store</code> is null.
+  nameWithType.vb: PrimitiveRecordStore.Serialize(PrimitiveRecordStore, PrimitiveRecordStore.SerializationOptions)
+  fullName.vb: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Serialize(BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore, BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions)
+  name.vb: Serialize(PrimitiveRecordStore, SerializationOptions)
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Serialize(BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore,System.String,BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions)
+  commentId: M:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Serialize(BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore,System.String,BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions)
+  id: Serialize(BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore,System.String,BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions)
+  parent: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+  langs:
+  - csharp
+  - vb
+  name: Serialize(PrimitiveRecordStore, string, SerializationOptions?)
+  nameWithType: PrimitiveRecordStore.Serialize(PrimitiveRecordStore, string, PrimitiveRecordStore.SerializationOptions?)
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Serialize(BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore, string, BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions?)
+  type: Method
+  source:
+    id: Serialize
+    path: C:\Users\nanto\dev\TrieDictionary\src\PrimitiveRecordStore.cs
+    startLine: 78
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Serializes the specified store to a file.
+  example: []
+  syntax:
+    content: public static void Serialize(PrimitiveRecordStore store, string file, PrimitiveRecordStore.SerializationOptions? options = null)
+    parameters:
+    - id: store
+      type: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+      description: The store to serialize.
+    - id: file
+      type: System.String
+      description: The path of the file to create.
+    - id: options
+      type: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions
+      description: Options to control the serialization process. If null, the settings from <xref href="BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions.Default" data-throw-if-not-resolved="false"></xref> will be used.
+    content.vb: Public Shared Sub Serialize(store As PrimitiveRecordStore, file As String, options As PrimitiveRecordStore.SerializationOptions = Nothing)
+  overload: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Serialize*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">store</code> or <code class="paramref">file</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">file</code> is empty or whitespace.
+  nameWithType.vb: PrimitiveRecordStore.Serialize(PrimitiveRecordStore, String, PrimitiveRecordStore.SerializationOptions)
+  fullName.vb: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Serialize(BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore, String, BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions)
+  name.vb: Serialize(PrimitiveRecordStore, String, SerializationOptions)
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Serialize(BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore,System.IO.Stream,BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions)
+  commentId: M:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Serialize(BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore,System.IO.Stream,BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions)
+  id: Serialize(BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore,System.IO.Stream,BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions)
+  parent: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+  langs:
+  - csharp
+  - vb
+  name: Serialize(PrimitiveRecordStore, Stream, SerializationOptions?)
+  nameWithType: PrimitiveRecordStore.Serialize(PrimitiveRecordStore, Stream, PrimitiveRecordStore.SerializationOptions?)
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Serialize(BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore, System.IO.Stream, BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions?)
+  type: Method
+  source:
+    id: Serialize
+    path: C:\Users\nanto\dev\TrieDictionary\src\PrimitiveRecordStore.cs
+    startLine: 100
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Serializes the specified store into a stream.
+  example: []
+  syntax:
+    content: public static void Serialize(PrimitiveRecordStore store, Stream stream, PrimitiveRecordStore.SerializationOptions? options = null)
+    parameters:
+    - id: store
+      type: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+      description: The store to serialize.
+    - id: stream
+      type: System.IO.Stream
+      description: The stream to write the serialized data to.
+    - id: options
+      type: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions
+      description: Options to control the serialization process. If null, the settings from <xref href="BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions.Default" data-throw-if-not-resolved="false"></xref> will be used.
+    content.vb: Public Shared Sub Serialize(store As PrimitiveRecordStore, stream As Stream, options As PrimitiveRecordStore.SerializationOptions = Nothing)
+  overload: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Serialize*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">store</code> or <code class="paramref">stream</code> is null.
+  nameWithType.vb: PrimitiveRecordStore.Serialize(PrimitiveRecordStore, Stream, PrimitiveRecordStore.SerializationOptions)
+  fullName.vb: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Serialize(BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore, System.IO.Stream, BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions)
+  name.vb: Serialize(PrimitiveRecordStore, Stream, SerializationOptions)
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Deserialize(System.Byte[])
+  commentId: M:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Deserialize(System.Byte[])
+  id: Deserialize(System.Byte[])
+  parent: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(byte[])
+  nameWithType: PrimitiveRecordStore.Deserialize(byte[])
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Deserialize(byte[])
+  type: Method
+  source:
+    id: Deserialize
+    path: C:\Users\nanto\dev\TrieDictionary\src\PrimitiveRecordStore.cs
+    startLine: 161
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Deserializes a store from a byte array.
+  example: []
+  syntax:
+    content: public static PrimitiveRecordStore Deserialize(byte[] data)
+    parameters:
+    - id: data
+      type: System.Byte[]
+      description: The byte array containing the serialized data.
+    return:
+      type: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+      description: A new instance of <xref href="BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function Deserialize(data As Byte()) As PrimitiveRecordStore
+  overload: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Deserialize*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">data</code> is null.
+  - type: System.IO.InvalidDataException
+    commentId: T:System.IO.InvalidDataException
+    description: The data is in an unsupported format or is corrupted.
+  nameWithType.vb: PrimitiveRecordStore.Deserialize(Byte())
+  fullName.vb: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Deserialize(Byte())
+  name.vb: Deserialize(Byte())
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Deserialize(System.String)
+  commentId: M:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Deserialize(System.String)
+  id: Deserialize(System.String)
+  parent: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(string)
+  nameWithType: PrimitiveRecordStore.Deserialize(string)
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Deserialize(string)
+  type: Method
+  source:
+    id: Deserialize
+    path: C:\Users\nanto\dev\TrieDictionary\src\PrimitiveRecordStore.cs
+    startLine: 182
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Deserializes a store from a file.
+  example: []
+  syntax:
+    content: public static PrimitiveRecordStore Deserialize(string file)
+    parameters:
+    - id: file
+      type: System.String
+      description: The path of the file to read from.
+    return:
+      type: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+      description: A new instance of <xref href="BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function Deserialize(file As String) As PrimitiveRecordStore
+  overload: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Deserialize*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">file</code> is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">file</code> is empty or whitespace.
+  - type: System.IO.InvalidDataException
+    commentId: T:System.IO.InvalidDataException
+    description: The data is in an unsupported format or is corrupted.
+  nameWithType.vb: PrimitiveRecordStore.Deserialize(String)
+  fullName.vb: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Deserialize(String)
+  name.vb: Deserialize(String)
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Deserialize(System.IO.Stream)
+  commentId: M:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Deserialize(System.IO.Stream)
+  id: Deserialize(System.IO.Stream)
+  parent: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+  langs:
+  - csharp
+  - vb
+  name: Deserialize(Stream)
+  nameWithType: PrimitiveRecordStore.Deserialize(Stream)
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Deserialize(System.IO.Stream)
+  type: Method
+  source:
+    id: Deserialize
+    path: C:\Users\nanto\dev\TrieDictionary\src\PrimitiveRecordStore.cs
+    startLine: 204
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Deserializes a store from a stream.
+  example: []
+  syntax:
+    content: public static PrimitiveRecordStore Deserialize(Stream stream)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream to read the serialized data from.
+    return:
+      type: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+      description: A new instance of <xref href="BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function Deserialize(stream As Stream) As PrimitiveRecordStore
+  overload: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Deserialize*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">stream</code> is null.
+  - type: System.IO.InvalidDataException
+    commentId: T:System.IO.InvalidDataException
+    description: The data is in an unsupported format or is corrupted.
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Clear
+  commentId: M:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Clear
+  id: Clear
+  parent: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: PrimitiveRecordStore.Clear()
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Clear()
+  type: Method
+  source:
+    id: Clear
+    path: C:\Users\nanto\dev\TrieDictionary\src\PrimitiveRecordStore.cs
+    startLine: 250
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Clears all data from the store and resets it to its initial state.
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Clear*
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.GetRecordAccess(System.Int32)
+  commentId: M:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.GetRecordAccess(System.Int32)
+  id: GetRecordAccess(System.Int32)
+  parent: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+  langs:
+  - csharp
+  - vb
+  name: GetRecordAccess(int)
+  nameWithType: PrimitiveRecordStore.GetRecordAccess(int)
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.GetRecordAccess(int)
+  type: Method
+  source:
+    id: GetRecordAccess
+    path: C:\Users\nanto\dev\TrieDictionary\src\PrimitiveRecordStore.cs
+    startLine: 264
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Gets a <xref href="BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.RecordAccess" data-throw-if-not-resolved="false"></xref> handle for a linked list of records.
+  example: []
+  syntax:
+    content: public PrimitiveRecordStore.RecordAccess GetRecordAccess(int identifier = 0)
+    parameters:
+    - id: identifier
+      type: System.Int32
+      description: The identifier of the record list. Specify 0 to create a new list and get its identifier.
+    return:
+      type: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.RecordAccess
+      description: A <xref href="BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.RecordAccess" data-throw-if-not-resolved="false"></xref> object to manage the specified record list.
+    content.vb: Public Function GetRecordAccess(identifier As Integer = 0) As PrimitiveRecordStore.RecordAccess
+  overload: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.GetRecordAccess*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: <code class="paramref">identifier</code> is negative.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: The specified <code class="paramref">identifier</code> is invalid or does not exist.
+  nameWithType.vb: PrimitiveRecordStore.GetRecordAccess(Integer)
+  fullName.vb: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.GetRecordAccess(Integer)
+  name.vb: GetRecordAccess(Integer)
+references:
+- uid: BelNytheraSeiche.TrieDictionary
+  commentId: N:BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.html
+  name: BelNytheraSeiche.TrieDictionary
+  nameWithType: BelNytheraSeiche.TrieDictionary
+  fullName: BelNytheraSeiche.TrieDictionary
+  spec.csharp:
+  - uid: BelNytheraSeiche
+    name: BelNytheraSeiche
+    href: BelNytheraSeiche.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary
+    name: TrieDictionary
+    href: BelNytheraSeiche.TrieDictionary.html
+  spec.vb:
+  - uid: BelNytheraSeiche
+    name: BelNytheraSeiche
+    href: BelNytheraSeiche.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary
+    name: TrieDictionary
+    href: BelNytheraSeiche.TrieDictionary.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions.Default
+  commentId: P:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions.Default
+  href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions.html#BelNytheraSeiche_TrieDictionary_PrimitiveRecordStore_SerializationOptions_Default
+  name: Default
+  nameWithType: PrimitiveRecordStore.SerializationOptions.Default
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions.Default
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Serialize*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Serialize
+  href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.html#BelNytheraSeiche_TrieDictionary_PrimitiveRecordStore_Serialize_BelNytheraSeiche_TrieDictionary_PrimitiveRecordStore_BelNytheraSeiche_TrieDictionary_PrimitiveRecordStore_SerializationOptions_
+  name: Serialize
+  nameWithType: PrimitiveRecordStore.Serialize
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Serialize
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+  commentId: T:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.html
+  name: PrimitiveRecordStore
+  nameWithType: PrimitiveRecordStore
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions
+  commentId: T:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.html
+  name: PrimitiveRecordStore.SerializationOptions
+  nameWithType: PrimitiveRecordStore.SerializationOptions
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions
+  spec.csharp:
+  - uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+    name: PrimitiveRecordStore
+    href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions
+    name: SerializationOptions
+    href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions.html
+  spec.vb:
+  - uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+    name: PrimitiveRecordStore
+    href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions
+    name: SerializationOptions
+    href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions.html
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: System.IO.InvalidDataException
+  commentId: T:System.IO.InvalidDataException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.invaliddataexception
+  name: InvalidDataException
+  nameWithType: InvalidDataException
+  fullName: System.IO.InvalidDataException
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Deserialize*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Deserialize
+  href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.html#BelNytheraSeiche_TrieDictionary_PrimitiveRecordStore_Deserialize_System_Byte___
+  name: Deserialize
+  nameWithType: PrimitiveRecordStore.Deserialize
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Deserialize
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Clear*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Clear
+  href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.html#BelNytheraSeiche_TrieDictionary_PrimitiveRecordStore_Clear
+  name: Clear
+  nameWithType: PrimitiveRecordStore.Clear
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Clear
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.RecordAccess
+  commentId: T:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.RecordAccess
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.html
+  name: PrimitiveRecordStore.RecordAccess
+  nameWithType: PrimitiveRecordStore.RecordAccess
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.RecordAccess
+  spec.csharp:
+  - uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+    name: PrimitiveRecordStore
+    href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.RecordAccess
+    name: RecordAccess
+    href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.RecordAccess.html
+  spec.vb:
+  - uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+    name: PrimitiveRecordStore
+    href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.RecordAccess
+    name: RecordAccess
+    href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.RecordAccess.html
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.GetRecordAccess*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.GetRecordAccess
+  href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.html#BelNytheraSeiche_TrieDictionary_PrimitiveRecordStore_GetRecordAccess_System_Int32_
+  name: GetRecordAccess
+  nameWithType: PrimitiveRecordStore.GetRecordAccess
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.GetRecordAccess
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

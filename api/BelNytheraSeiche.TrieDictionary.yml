@@ -1,0 +1,504 @@
+### YamlMime:ManagedReference
+items:
+- uid: BelNytheraSeiche.TrieDictionary
+  commentId: N:BelNytheraSeiche.TrieDictionary
+  id: BelNytheraSeiche.TrieDictionary
+  children:
+  - BelNytheraSeiche.TrieDictionary.AATreeRecordStore
+  - BelNytheraSeiche.TrieDictionary.AVLTreeRecordStore
+  - BelNytheraSeiche.TrieDictionary.BasicRecordStore
+  - BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record
+  - BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess
+  - BelNytheraSeiche.TrieDictionary.BasicRecordStore.SerializationOptions
+  - BelNytheraSeiche.TrieDictionary.BinaryTreeRecordStore
+  - BelNytheraSeiche.TrieDictionary.BitSet
+  - BelNytheraSeiche.TrieDictionary.BitwiseVectorDictionary
+  - BelNytheraSeiche.TrieDictionary.DirectedAcyclicGraphDictionary
+  - BelNytheraSeiche.TrieDictionary.DoubleArrayDictionary
+  - BelNytheraSeiche.TrieDictionary.HashMapRecordStore
+  - BelNytheraSeiche.TrieDictionary.ImmutableBitSet
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.StringSpecialized
+  - BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary
+  - BelNytheraSeiche.TrieDictionary.LoudsDictionary
+  - BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+  - BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+  - BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.RecordAccess
+  - BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions
+  - BelNytheraSeiche.TrieDictionary.RankSelectBitSet
+  - BelNytheraSeiche.TrieDictionary.ScapegoatTreeRecordStore
+  - BelNytheraSeiche.TrieDictionary.TreapRecordStore
+  - BelNytheraSeiche.TrieDictionary.ValueBuffer`1
+  - BelNytheraSeiche.TrieDictionary.Xoroshiro128PlusPlus
+  - BelNytheraSeiche.TrieDictionary.Xoshiro256PlusPlus
+  langs:
+  - csharp
+  - vb
+  name: BelNytheraSeiche.TrieDictionary
+  nameWithType: BelNytheraSeiche.TrieDictionary
+  fullName: BelNytheraSeiche.TrieDictionary
+  type: Namespace
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+references:
+- uid: BelNytheraSeiche.TrieDictionary.AATreeRecordStore
+  commentId: T:BelNytheraSeiche.TrieDictionary.AATreeRecordStore
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.AATreeRecordStore.html
+  name: AATreeRecordStore
+  nameWithType: AATreeRecordStore
+  fullName: BelNytheraSeiche.TrieDictionary.AATreeRecordStore
+- uid: BelNytheraSeiche.TrieDictionary.AVLTreeRecordStore
+  commentId: T:BelNytheraSeiche.TrieDictionary.AVLTreeRecordStore
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.AVLTreeRecordStore.html
+  name: AVLTreeRecordStore
+  nameWithType: AVLTreeRecordStore
+  fullName: BelNytheraSeiche.TrieDictionary.AVLTreeRecordStore
+- uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore
+  commentId: T:BelNytheraSeiche.TrieDictionary.BasicRecordStore
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.html
+  name: BasicRecordStore
+  nameWithType: BasicRecordStore
+  fullName: BelNytheraSeiche.TrieDictionary.BasicRecordStore
+- uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore.SerializationOptions
+  commentId: T:BelNytheraSeiche.TrieDictionary.BasicRecordStore.SerializationOptions
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.html
+  name: BasicRecordStore.SerializationOptions
+  nameWithType: BasicRecordStore.SerializationOptions
+  fullName: BelNytheraSeiche.TrieDictionary.BasicRecordStore.SerializationOptions
+  spec.csharp:
+  - uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore
+    name: BasicRecordStore
+    href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore.SerializationOptions
+    name: SerializationOptions
+    href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.SerializationOptions.html
+  spec.vb:
+  - uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore
+    name: BasicRecordStore
+    href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore.SerializationOptions
+    name: SerializationOptions
+    href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.SerializationOptions.html
+- uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record
+  commentId: T:BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.html
+  name: BasicRecordStore.Record
+  nameWithType: BasicRecordStore.Record
+  fullName: BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record
+  spec.csharp:
+  - uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore
+    name: BasicRecordStore
+    href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record
+    name: Record
+    href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record.html
+  spec.vb:
+  - uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore
+    name: BasicRecordStore
+    href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record
+    name: Record
+    href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.Record.html
+- uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess
+  commentId: T:BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.html
+  name: BasicRecordStore.RecordAccess
+  nameWithType: BasicRecordStore.RecordAccess
+  fullName: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess
+  spec.csharp:
+  - uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore
+    name: BasicRecordStore
+    href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess
+    name: RecordAccess
+    href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.html
+  spec.vb:
+  - uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore
+    name: BasicRecordStore
+    href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess
+    name: RecordAccess
+    href: BelNytheraSeiche.TrieDictionary.BasicRecordStore.RecordAccess.html
+- uid: BelNytheraSeiche.TrieDictionary.BinaryTreeRecordStore
+  commentId: T:BelNytheraSeiche.TrieDictionary.BinaryTreeRecordStore
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.BinaryTreeRecordStore.html
+  name: BinaryTreeRecordStore
+  nameWithType: BinaryTreeRecordStore
+  fullName: BelNytheraSeiche.TrieDictionary.BinaryTreeRecordStore
+- uid: BelNytheraSeiche.TrieDictionary.BitSet
+  commentId: T:BelNytheraSeiche.TrieDictionary.BitSet
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.BitSet.html
+  name: BitSet
+  nameWithType: BitSet
+  fullName: BelNytheraSeiche.TrieDictionary.BitSet
+- uid: BelNytheraSeiche.TrieDictionary.ImmutableBitSet
+  commentId: T:BelNytheraSeiche.TrieDictionary.ImmutableBitSet
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.ImmutableBitSet.html
+  name: ImmutableBitSet
+  nameWithType: ImmutableBitSet
+  fullName: BelNytheraSeiche.TrieDictionary.ImmutableBitSet
+- uid: BelNytheraSeiche.TrieDictionary.RankSelectBitSet
+  commentId: T:BelNytheraSeiche.TrieDictionary.RankSelectBitSet
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.RankSelectBitSet.html
+  name: RankSelectBitSet
+  nameWithType: RankSelectBitSet
+  fullName: BelNytheraSeiche.TrieDictionary.RankSelectBitSet
+- uid: BelNytheraSeiche.TrieDictionary.BitwiseVectorDictionary
+  commentId: T:BelNytheraSeiche.TrieDictionary.BitwiseVectorDictionary
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.BitwiseVectorDictionary.html
+  name: BitwiseVectorDictionary
+  nameWithType: BitwiseVectorDictionary
+  fullName: BelNytheraSeiche.TrieDictionary.BitwiseVectorDictionary
+- uid: BelNytheraSeiche.TrieDictionary.DirectedAcyclicGraphDictionary
+  commentId: T:BelNytheraSeiche.TrieDictionary.DirectedAcyclicGraphDictionary
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.DirectedAcyclicGraphDictionary.html
+  name: DirectedAcyclicGraphDictionary
+  nameWithType: DirectedAcyclicGraphDictionary
+  fullName: BelNytheraSeiche.TrieDictionary.DirectedAcyclicGraphDictionary
+- uid: BelNytheraSeiche.TrieDictionary.DoubleArrayDictionary
+  commentId: T:BelNytheraSeiche.TrieDictionary.DoubleArrayDictionary
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.DoubleArrayDictionary.html
+  name: DoubleArrayDictionary
+  nameWithType: DoubleArrayDictionary
+  fullName: BelNytheraSeiche.TrieDictionary.DoubleArrayDictionary
+- uid: BelNytheraSeiche.TrieDictionary.HashMapRecordStore
+  commentId: T:BelNytheraSeiche.TrieDictionary.HashMapRecordStore
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.HashMapRecordStore.html
+  name: HashMapRecordStore
+  nameWithType: HashMapRecordStore
+  fullName: BelNytheraSeiche.TrieDictionary.HashMapRecordStore
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+  commentId: T:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  name: KeyRecordDictionary
+  nameWithType: KeyRecordDictionary
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+  commentId: T:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  name: KeyRecordDictionary.SearchDirectionType
+  nameWithType: KeyRecordDictionary.SearchDirectionType
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+  spec.csharp:
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+    name: SearchDirectionType
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType.html
+  spec.vb:
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+    name: SearchDirectionType
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType.html
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions
+  commentId: T:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  name: KeyRecordDictionary.SerializationOptions
+  nameWithType: KeyRecordDictionary.SerializationOptions
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions
+  spec.csharp:
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions
+    name: SerializationOptions
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.html
+  spec.vb:
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions
+    name: SerializationOptions
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SerializationOptions.html
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+  commentId: T:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  name: KeyRecordDictionary.IRecord
+  nameWithType: KeyRecordDictionary.IRecord
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+  spec.csharp:
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+    name: IRecord
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.html
+  spec.vb:
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+    name: IRecord
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.html
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess
+  commentId: T:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  name: KeyRecordDictionary.IRecordAccess
+  nameWithType: KeyRecordDictionary.IRecordAccess
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess
+  spec.csharp:
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess
+    name: IRecordAccess
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess.html
+  spec.vb:
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess
+    name: IRecordAccess
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess.html
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+  commentId: T:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  name: KeyRecordDictionary.IKeyAccess
+  nameWithType: KeyRecordDictionary.IKeyAccess
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+  spec.csharp:
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+    name: IKeyAccess
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.html
+  spec.vb:
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+    name: IKeyAccess
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.html
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.StringSpecialized
+  commentId: T:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.StringSpecialized
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  name: KeyRecordDictionary.StringSpecialized
+  nameWithType: KeyRecordDictionary.StringSpecialized
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.StringSpecialized
+  spec.csharp:
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.StringSpecialized
+    name: StringSpecialized
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.StringSpecialized.html
+  spec.vb:
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.StringSpecialized
+    name: StringSpecialized
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.StringSpecialized.html
+- uid: BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary
+  commentId: T:BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary.html
+  name: LevelOrderBitsDictionary
+  nameWithType: LevelOrderBitsDictionary
+  fullName: BelNytheraSeiche.TrieDictionary.LevelOrderBitsDictionary
+- uid: BelNytheraSeiche.TrieDictionary.LoudsDictionary
+  commentId: T:BelNytheraSeiche.TrieDictionary.LoudsDictionary
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.LoudsDictionary.html
+  name: LoudsDictionary
+  nameWithType: LoudsDictionary
+  fullName: BelNytheraSeiche.TrieDictionary.LoudsDictionary
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+  commentId: T:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.html
+  name: PrimitiveRecordStore
+  nameWithType: PrimitiveRecordStore
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions
+  commentId: T:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.html
+  name: PrimitiveRecordStore.SerializationOptions
+  nameWithType: PrimitiveRecordStore.SerializationOptions
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions
+  spec.csharp:
+  - uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+    name: PrimitiveRecordStore
+    href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions
+    name: SerializationOptions
+    href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions.html
+  spec.vb:
+  - uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+    name: PrimitiveRecordStore
+    href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions
+    name: SerializationOptions
+    href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.SerializationOptions.html
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+  commentId: T:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.html
+  name: PrimitiveRecordStore.Record
+  nameWithType: PrimitiveRecordStore.Record
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+  spec.csharp:
+  - uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+    name: PrimitiveRecordStore
+    href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+    name: Record
+    href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.html
+  spec.vb:
+  - uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+    name: PrimitiveRecordStore
+    href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record
+    name: Record
+    href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.Record.html
+- uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.RecordAccess
+  commentId: T:BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.RecordAccess
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.html
+  name: PrimitiveRecordStore.RecordAccess
+  nameWithType: PrimitiveRecordStore.RecordAccess
+  fullName: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.RecordAccess
+  spec.csharp:
+  - uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+    name: PrimitiveRecordStore
+    href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.RecordAccess
+    name: RecordAccess
+    href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.RecordAccess.html
+  spec.vb:
+  - uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore
+    name: PrimitiveRecordStore
+    href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.RecordAccess
+    name: RecordAccess
+    href: BelNytheraSeiche.TrieDictionary.PrimitiveRecordStore.RecordAccess.html
+- uid: BelNytheraSeiche.TrieDictionary.ScapegoatTreeRecordStore
+  commentId: T:BelNytheraSeiche.TrieDictionary.ScapegoatTreeRecordStore
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.ScapegoatTreeRecordStore.html
+  name: ScapegoatTreeRecordStore
+  nameWithType: ScapegoatTreeRecordStore
+  fullName: BelNytheraSeiche.TrieDictionary.ScapegoatTreeRecordStore
+- uid: BelNytheraSeiche.TrieDictionary.TreapRecordStore
+  commentId: T:BelNytheraSeiche.TrieDictionary.TreapRecordStore
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.TreapRecordStore.html
+  name: TreapRecordStore
+  nameWithType: TreapRecordStore
+  fullName: BelNytheraSeiche.TrieDictionary.TreapRecordStore
+- uid: BelNytheraSeiche.TrieDictionary.ValueBuffer`1
+  commentId: T:BelNytheraSeiche.TrieDictionary.ValueBuffer`1
+  href: BelNytheraSeiche.TrieDictionary.ValueBuffer-1.html
+  name: ValueBuffer<T>
+  nameWithType: ValueBuffer<T>
+  fullName: BelNytheraSeiche.TrieDictionary.ValueBuffer<T>
+  nameWithType.vb: ValueBuffer(Of T)
+  fullName.vb: BelNytheraSeiche.TrieDictionary.ValueBuffer(Of T)
+  name.vb: ValueBuffer(Of T)
+  spec.csharp:
+  - uid: BelNytheraSeiche.TrieDictionary.ValueBuffer`1
+    name: ValueBuffer
+    href: BelNytheraSeiche.TrieDictionary.ValueBuffer-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: BelNytheraSeiche.TrieDictionary.ValueBuffer`1
+    name: ValueBuffer
+    href: BelNytheraSeiche.TrieDictionary.ValueBuffer-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: BelNytheraSeiche.TrieDictionary.Xoroshiro128PlusPlus
+  commentId: T:BelNytheraSeiche.TrieDictionary.Xoroshiro128PlusPlus
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.Xoroshiro128PlusPlus.html
+  name: Xoroshiro128PlusPlus
+  nameWithType: Xoroshiro128PlusPlus
+  fullName: BelNytheraSeiche.TrieDictionary.Xoroshiro128PlusPlus
+- uid: BelNytheraSeiche.TrieDictionary.Xoshiro256PlusPlus
+  commentId: T:BelNytheraSeiche.TrieDictionary.Xoshiro256PlusPlus
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.Xoshiro256PlusPlus.html
+  name: Xoshiro256PlusPlus
+  nameWithType: Xoshiro256PlusPlus
+  fullName: BelNytheraSeiche.TrieDictionary.Xoshiro256PlusPlus
+- uid: BelNytheraSeiche.TrieDictionary
+  commentId: N:BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.html
+  name: BelNytheraSeiche.TrieDictionary
+  nameWithType: BelNytheraSeiche.TrieDictionary
+  fullName: BelNytheraSeiche.TrieDictionary
+  spec.csharp:
+  - uid: BelNytheraSeiche
+    name: BelNytheraSeiche
+    href: BelNytheraSeiche.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary
+    name: TrieDictionary
+    href: BelNytheraSeiche.TrieDictionary.html
+  spec.vb:
+  - uid: BelNytheraSeiche
+    name: BelNytheraSeiche
+    href: BelNytheraSeiche.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary
+    name: TrieDictionary
+    href: BelNytheraSeiche.TrieDictionary.html

@@ -1,0 +1,122 @@
+### YamlMime:ManagedReference
+items:
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+  commentId: T:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+  id: KeyRecordDictionary.SearchDirectionType
+  parent: BelNytheraSeiche.TrieDictionary
+  children:
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType.LTR
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType.RTL
+  langs:
+  - csharp
+  - vb
+  name: KeyRecordDictionary.SearchDirectionType
+  nameWithType: KeyRecordDictionary.SearchDirectionType
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+  type: Enum
+  source:
+    id: SearchDirectionType
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 372
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Specifies the direction for key matching and sorting operations.
+  example: []
+  syntax:
+    content: public enum KeyRecordDictionary.SearchDirectionType
+    content.vb: Public Enum KeyRecordDictionary.SearchDirectionType
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType.LTR
+  commentId: F:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType.LTR
+  id: LTR
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+  langs:
+  - csharp
+  - vb
+  name: LTR
+  nameWithType: KeyRecordDictionary.SearchDirectionType.LTR
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType.LTR
+  type: Field
+  source:
+    id: LTR
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 377
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Left-To-Right search, representing standard lexicographical order.
+  example: []
+  syntax:
+    content: LTR = 0
+    return:
+      type: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType.RTL
+  commentId: F:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType.RTL
+  id: RTL
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+  langs:
+  - csharp
+  - vb
+  name: RTL
+  nameWithType: KeyRecordDictionary.SearchDirectionType.RTL
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType.RTL
+  type: Field
+  source:
+    id: RTL
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 381
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Right-To-Left search, useful for suffix matching and reverse lexicographical order.
+  example: []
+  syntax:
+    content: RTL = 1
+    return:
+      type: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+references:
+- uid: BelNytheraSeiche.TrieDictionary
+  commentId: N:BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.html
+  name: BelNytheraSeiche.TrieDictionary
+  nameWithType: BelNytheraSeiche.TrieDictionary
+  fullName: BelNytheraSeiche.TrieDictionary
+  spec.csharp:
+  - uid: BelNytheraSeiche
+    name: BelNytheraSeiche
+    href: BelNytheraSeiche.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary
+    name: TrieDictionary
+    href: BelNytheraSeiche.TrieDictionary.html
+  spec.vb:
+  - uid: BelNytheraSeiche
+    name: BelNytheraSeiche
+    href: BelNytheraSeiche.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary
+    name: TrieDictionary
+    href: BelNytheraSeiche.TrieDictionary.html
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+  commentId: T:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  name: KeyRecordDictionary.SearchDirectionType
+  nameWithType: KeyRecordDictionary.SearchDirectionType
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+  spec.csharp:
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+    name: SearchDirectionType
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType.html
+  spec.vb:
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType
+    name: SearchDirectionType
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.SearchDirectionType.html

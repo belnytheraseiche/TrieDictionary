@@ -1,0 +1,369 @@
+### YamlMime:ManagedReference
+items:
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess
+  commentId: T:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess
+  id: KeyRecordDictionary.IRecordAccess
+  parent: BelNytheraSeiche.TrieDictionary
+  children:
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess.Add(System.ReadOnlySpan{System.Byte})
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess.Clear
+  langs:
+  - csharp
+  - vb
+  name: KeyRecordDictionary.IRecordAccess
+  nameWithType: KeyRecordDictionary.IRecordAccess
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess
+  type: Interface
+  source:
+    id: IRecordAccess
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 492
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Defines a public contract for accessing and managing a list of records associated with a single key.
+  example: []
+  syntax:
+    content: 'public interface KeyRecordDictionary.IRecordAccess : IEnumerable<KeyRecordDictionary.IRecord>, IEnumerable'
+    content.vb: Public Interface KeyRecordDictionary.IRecordAccess Inherits IEnumerable(Of KeyRecordDictionary.IRecord), IEnumerable
+  inheritedMembers:
+  - System.Collections.Generic.IEnumerable{BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord}.GetEnumerator
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess.Add(System.ReadOnlySpan{System.Byte})
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess.Add(System.ReadOnlySpan{System.Byte})
+  id: Add(System.ReadOnlySpan{System.Byte})
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess
+  langs:
+  - csharp
+  - vb
+  name: Add(ReadOnlySpan<byte>)
+  nameWithType: KeyRecordDictionary.IRecordAccess.Add(ReadOnlySpan<byte>)
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess.Add(System.ReadOnlySpan<byte>)
+  type: Method
+  source:
+    id: Add
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 499
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Adds a new record with the specified content to the end of the list.
+  example: []
+  syntax:
+    content: KeyRecordDictionary.IRecord Add(ReadOnlySpan<byte> content)
+    parameters:
+    - id: content
+      type: System.ReadOnlySpan{System.Byte}
+      description: The content of the new record.
+    return:
+      type: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+      description: An <xref href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord" data-throw-if-not-resolved="false"></xref> handle for the newly added record.
+    content.vb: Function Add(content As ReadOnlySpan(Of Byte)) As KeyRecordDictionary.IRecord
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess.Add*
+  nameWithType.vb: KeyRecordDictionary.IRecordAccess.Add(ReadOnlySpan(Of Byte))
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess.Add(System.ReadOnlySpan(Of Byte))
+  name.vb: Add(ReadOnlySpan(Of Byte))
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess.Clear
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess.Clear
+  id: Clear
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: KeyRecordDictionary.IRecordAccess.Clear()
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess.Clear()
+  type: Method
+  source:
+    id: Clear
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 503
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Removes all records from this list.
+  example: []
+  syntax:
+    content: void Clear()
+    content.vb: Sub Clear()
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess.Clear*
+references:
+- uid: BelNytheraSeiche.TrieDictionary
+  commentId: N:BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.html
+  name: BelNytheraSeiche.TrieDictionary
+  nameWithType: BelNytheraSeiche.TrieDictionary
+  fullName: BelNytheraSeiche.TrieDictionary
+  spec.csharp:
+  - uid: BelNytheraSeiche
+    name: BelNytheraSeiche
+    href: BelNytheraSeiche.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary
+    name: TrieDictionary
+    href: BelNytheraSeiche.TrieDictionary.html
+  spec.vb:
+  - uid: BelNytheraSeiche
+    name: BelNytheraSeiche
+    href: BelNytheraSeiche.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary
+    name: TrieDictionary
+    href: BelNytheraSeiche.TrieDictionary.html
+- uid: System.Collections.Generic.IEnumerable{BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<KeyRecordDictionary.IRecord>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of KeyRecordDictionary.IRecord).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable{BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable{BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord}
+  commentId: T:System.Collections.Generic.IEnumerable{BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<KeyRecordDictionary.IRecord>
+  nameWithType: IEnumerable<KeyRecordDictionary.IRecord>
+  fullName: System.Collections.Generic.IEnumerable<BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord>
+  nameWithType.vb: IEnumerable(Of KeyRecordDictionary.IRecord)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord)
+  name.vb: IEnumerable(Of KeyRecordDictionary.IRecord)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+    name: IRecord
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+    name: IRecord
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+  commentId: T:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  name: KeyRecordDictionary.IRecord
+  nameWithType: KeyRecordDictionary.IRecord
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+  spec.csharp:
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+    name: IRecord
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.html
+  spec.vb:
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord
+    name: IRecord
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecord.html
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess.Add*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess.Add
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IRecordAccess_Add_System_ReadOnlySpan_System_Byte__
+  name: Add
+  nameWithType: KeyRecordDictionary.IRecordAccess.Add
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess.Add
+- uid: System.ReadOnlySpan{System.Byte}
+  commentId: T:System.ReadOnlySpan{System.Byte}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<byte>
+  nameWithType: ReadOnlySpan<byte>
+  fullName: System.ReadOnlySpan<byte>
+  nameWithType.vb: ReadOnlySpan(Of Byte)
+  fullName.vb: System.ReadOnlySpan(Of Byte)
+  name.vb: ReadOnlySpan(Of Byte)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess.Clear*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess.Clear
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IRecordAccess_Clear
+  name: Clear
+  nameWithType: KeyRecordDictionary.IRecordAccess.Clear
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess.Clear

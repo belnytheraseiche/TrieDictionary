@@ -1,0 +1,1403 @@
+### YamlMime:ManagedReference
+items:
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+  commentId: T:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+  id: KeyRecordDictionary.IKeyAccess
+  parent: BelNytheraSeiche.TrieDictionary
+  children:
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Add(System.ReadOnlySpan{System.Byte})
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.AsStringSpecialized(System.Text.Encoding)
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Contains(System.ReadOnlySpan{System.Byte})
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.EnumerateAll(System.Boolean)
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindFirst(System.Int32@,System.Byte[]@)
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindLast(System.Int32@,System.Byte[]@)
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindNext(System.Int32,System.Int32@,System.Byte[]@)
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindNext(System.ReadOnlySpan{System.Byte},System.Int32@,System.Byte[]@)
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindPrevious(System.Int32,System.Int32@,System.Byte[]@)
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindPrevious(System.ReadOnlySpan{System.Byte},System.Int32@,System.Byte[]@)
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.GetKey(System.Int32)
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.GetRecordAccess(System.Int32,System.Boolean)
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Remove(System.Int32)
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Remove(System.ReadOnlySpan{System.Byte})
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchByPrefix(System.ReadOnlySpan{System.Byte},System.Boolean)
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchCommonPrefix(System.ReadOnlySpan{System.Byte})
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchExactly(System.ReadOnlySpan{System.Byte})
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchLongestPrefix(System.ReadOnlySpan{System.Byte})
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchWildcard(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Char},System.Boolean)
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.TryAdd(System.ReadOnlySpan{System.Byte},System.Int32@)
+  - BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.TryGetKey(System.Int32,System.Byte[]@)
+  langs:
+  - csharp
+  - vb
+  name: KeyRecordDictionary.IKeyAccess
+  nameWithType: KeyRecordDictionary.IKeyAccess
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+  type: Interface
+  source:
+    id: IKeyAccess
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 545
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Defines the primary public contract for all key-based operations within the dictionary.
+  example: []
+  syntax:
+    content: public interface KeyRecordDictionary.IKeyAccess
+    content.vb: Public Interface KeyRecordDictionary.IKeyAccess
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.TryGetKey(System.Int32,System.Byte[]@)
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.TryGetKey(System.Int32,System.Byte[]@)
+  id: TryGetKey(System.Int32,System.Byte[]@)
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+  langs:
+  - csharp
+  - vb
+  name: TryGetKey(int, out byte[])
+  nameWithType: KeyRecordDictionary.IKeyAccess.TryGetKey(int, out byte[])
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.TryGetKey(int, out byte[])
+  type: Method
+  source:
+    id: TryGetKey
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 553
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Tries to get the key associated with the specified identifier.
+  example: []
+  syntax:
+    content: bool TryGetKey(int identifier, out byte[] key)
+    parameters:
+    - id: identifier
+      type: System.Int32
+      description: The identifier of the key to get.
+    - id: key
+      type: System.Byte[]
+      description: When this method returns, contains the key associated with the identifier, if found; otherwise, an empty array.
+    return:
+      type: System.Boolean
+      description: true if the key was found; otherwise, false.
+    content.vb: Function TryGetKey(identifier As Integer, key As Byte()) As Boolean
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.TryGetKey*
+  nameWithType.vb: KeyRecordDictionary.IKeyAccess.TryGetKey(Integer, Byte())
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.TryGetKey(Integer, Byte())
+  name.vb: TryGetKey(Integer, Byte())
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.GetKey(System.Int32)
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.GetKey(System.Int32)
+  id: GetKey(System.Int32)
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+  langs:
+  - csharp
+  - vb
+  name: GetKey(int)
+  nameWithType: KeyRecordDictionary.IKeyAccess.GetKey(int)
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.GetKey(int)
+  type: Method
+  source:
+    id: GetKey
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 561
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Gets the key associated with the specified identifier.
+  example: []
+  syntax:
+    content: byte[] GetKey(int identifier)
+    parameters:
+    - id: identifier
+      type: System.Int32
+      description: The identifier of the key to get.
+    return:
+      type: System.Byte[]
+      description: The key as a byte array.
+    content.vb: Function GetKey(identifier As Integer) As Byte()
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.GetKey*
+  exceptions:
+  - type: System.Collections.Generic.KeyNotFoundException
+    commentId: T:System.Collections.Generic.KeyNotFoundException
+    description: The specified identifier does not exist.
+  nameWithType.vb: KeyRecordDictionary.IKeyAccess.GetKey(Integer)
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.GetKey(Integer)
+  name.vb: GetKey(Integer)
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Contains(System.ReadOnlySpan{System.Byte})
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Contains(System.ReadOnlySpan{System.Byte})
+  id: Contains(System.ReadOnlySpan{System.Byte})
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+  langs:
+  - csharp
+  - vb
+  name: Contains(ReadOnlySpan<byte>)
+  nameWithType: KeyRecordDictionary.IKeyAccess.Contains(ReadOnlySpan<byte>)
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Contains(System.ReadOnlySpan<byte>)
+  type: Method
+  source:
+    id: Contains
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 568
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Determines whether the dictionary contains the specified key.
+  example: []
+  syntax:
+    content: bool Contains(ReadOnlySpan<byte> key)
+    parameters:
+    - id: key
+      type: System.ReadOnlySpan{System.Byte}
+      description: The key to locate.
+    return:
+      type: System.Boolean
+      description: true if the key is found; otherwise, false.
+    content.vb: Function Contains(key As ReadOnlySpan(Of Byte)) As Boolean
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Contains*
+  nameWithType.vb: KeyRecordDictionary.IKeyAccess.Contains(ReadOnlySpan(Of Byte))
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Contains(System.ReadOnlySpan(Of Byte))
+  name.vb: Contains(ReadOnlySpan(Of Byte))
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchExactly(System.ReadOnlySpan{System.Byte})
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchExactly(System.ReadOnlySpan{System.Byte})
+  id: SearchExactly(System.ReadOnlySpan{System.Byte})
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+  langs:
+  - csharp
+  - vb
+  name: SearchExactly(ReadOnlySpan<byte>)
+  nameWithType: KeyRecordDictionary.IKeyAccess.SearchExactly(ReadOnlySpan<byte>)
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchExactly(System.ReadOnlySpan<byte>)
+  type: Method
+  source:
+    id: SearchExactly
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 579
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Searches for an exact match of the given sequence and returns its identifier.
+  example:
+  - >-
+    If the dictionary contains the keys "a", "app", and "apple", and the input sequence is "apple",
+
+    this method will return a key: "apple".
+  syntax:
+    content: int SearchExactly(ReadOnlySpan<byte> sequence)
+    parameters:
+    - id: sequence
+      type: System.ReadOnlySpan{System.Byte}
+      description: The key to search for.
+    return:
+      type: System.Int32
+      description: The identifier for the key if found; otherwise, a value indicating not found (typically 0 or -1).
+    content.vb: Function SearchExactly(sequence As ReadOnlySpan(Of Byte)) As Integer
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchExactly*
+  nameWithType.vb: KeyRecordDictionary.IKeyAccess.SearchExactly(ReadOnlySpan(Of Byte))
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchExactly(System.ReadOnlySpan(Of Byte))
+  name.vb: SearchExactly(ReadOnlySpan(Of Byte))
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchCommonPrefix(System.ReadOnlySpan{System.Byte})
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchCommonPrefix(System.ReadOnlySpan{System.Byte})
+  id: SearchCommonPrefix(System.ReadOnlySpan{System.Byte})
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+  langs:
+  - csharp
+  - vb
+  name: SearchCommonPrefix(ReadOnlySpan<byte>)
+  nameWithType: KeyRecordDictionary.IKeyAccess.SearchCommonPrefix(ReadOnlySpan<byte>)
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchCommonPrefix(System.ReadOnlySpan<byte>)
+  type: Method
+  source:
+    id: SearchCommonPrefix
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 590
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Finds all keys in the dictionary that are prefixes of the given sequence.
+  example:
+  - >-
+    If the dictionary contains the keys "a", "app", and "apple", and the input sequence is "applepie",
+
+    this method will return all three keys: "a", "app", and "apple".
+  syntax:
+    content: IEnumerable<(int, byte[])> SearchCommonPrefix(ReadOnlySpan<byte> sequence)
+    parameters:
+    - id: sequence
+      type: System.ReadOnlySpan{System.Byte}
+      description: The sequence to search within.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Int32,System.Byte[]}}
+      description: An enumerable collection of (identifier, key) tuples for all matching prefixes.
+    content.vb: Function SearchCommonPrefix(sequence As ReadOnlySpan(Of Byte)) As IEnumerable(Of (Integer, Byte()))
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchCommonPrefix*
+  nameWithType.vb: KeyRecordDictionary.IKeyAccess.SearchCommonPrefix(ReadOnlySpan(Of Byte))
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchCommonPrefix(System.ReadOnlySpan(Of Byte))
+  name.vb: SearchCommonPrefix(ReadOnlySpan(Of Byte))
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchLongestPrefix(System.ReadOnlySpan{System.Byte})
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchLongestPrefix(System.ReadOnlySpan{System.Byte})
+  id: SearchLongestPrefix(System.ReadOnlySpan{System.Byte})
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+  langs:
+  - csharp
+  - vb
+  name: SearchLongestPrefix(ReadOnlySpan<byte>)
+  nameWithType: KeyRecordDictionary.IKeyAccess.SearchLongestPrefix(ReadOnlySpan<byte>)
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchLongestPrefix(System.ReadOnlySpan<byte>)
+  type: Method
+  source:
+    id: SearchLongestPrefix
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 601
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Finds the longest key in the dictionary that is a prefix of the given sequence.
+  example:
+  - >-
+    If the dictionary contains the keys "a", "app", and "apple", and the input sequence is "applepie",
+
+    this method will return a key: "apple".
+  syntax:
+    content: (int, byte[]) SearchLongestPrefix(ReadOnlySpan<byte> sequence)
+    parameters:
+    - id: sequence
+      type: System.ReadOnlySpan{System.Byte}
+      description: The sequence to search within.
+    return:
+      type: System.ValueTuple{System.Int32,System.Byte[]}
+      description: A tuple containing the identifier and key of the longest matching prefix, or a default value if no match is found.
+    content.vb: Function SearchLongestPrefix(sequence As ReadOnlySpan(Of Byte)) As (Integer, Byte())
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchLongestPrefix*
+  nameWithType.vb: KeyRecordDictionary.IKeyAccess.SearchLongestPrefix(ReadOnlySpan(Of Byte))
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchLongestPrefix(System.ReadOnlySpan(Of Byte))
+  name.vb: SearchLongestPrefix(ReadOnlySpan(Of Byte))
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchByPrefix(System.ReadOnlySpan{System.Byte},System.Boolean)
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchByPrefix(System.ReadOnlySpan{System.Byte},System.Boolean)
+  id: SearchByPrefix(System.ReadOnlySpan{System.Byte},System.Boolean)
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+  langs:
+  - csharp
+  - vb
+  name: SearchByPrefix(ReadOnlySpan<byte>, bool)
+  nameWithType: KeyRecordDictionary.IKeyAccess.SearchByPrefix(ReadOnlySpan<byte>, bool)
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchByPrefix(System.ReadOnlySpan<byte>, bool)
+  type: Method
+  source:
+    id: SearchByPrefix
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 613
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Finds all keys that start with the given prefix.
+  example:
+  - >-
+    If the dictionary contains the keys "a", "app", and "apple", and the input sequence is "ap",
+
+    this method will return two keys: "app" and "apple".
+  syntax:
+    content: IEnumerable<(int, byte[])> SearchByPrefix(ReadOnlySpan<byte> sequence, bool reverse = false)
+    parameters:
+    - id: sequence
+      type: System.ReadOnlySpan{System.Byte}
+      description: The prefix to search for.
+    - id: reverse
+      type: System.Boolean
+      description: If true, returns results in reverse lexicographical order.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Int32,System.Byte[]}}
+      description: An enumerable collection of (identifier, key) tuples for all keys starting with the prefix.
+    content.vb: Function SearchByPrefix(sequence As ReadOnlySpan(Of Byte), reverse As Boolean = False) As IEnumerable(Of (Integer, Byte()))
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchByPrefix*
+  nameWithType.vb: KeyRecordDictionary.IKeyAccess.SearchByPrefix(ReadOnlySpan(Of Byte), Boolean)
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchByPrefix(System.ReadOnlySpan(Of Byte), Boolean)
+  name.vb: SearchByPrefix(ReadOnlySpan(Of Byte), Boolean)
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.EnumerateAll(System.Boolean)
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.EnumerateAll(System.Boolean)
+  id: EnumerateAll(System.Boolean)
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+  langs:
+  - csharp
+  - vb
+  name: EnumerateAll(bool)
+  nameWithType: KeyRecordDictionary.IKeyAccess.EnumerateAll(bool)
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.EnumerateAll(bool)
+  type: Method
+  source:
+    id: EnumerateAll
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 620
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Enumerates all keys in the dictionary.
+  example: []
+  syntax:
+    content: IEnumerable<(int, byte[])> EnumerateAll(bool reverse = false)
+    parameters:
+    - id: reverse
+      type: System.Boolean
+      description: If true, returns keys in reverse lexicographical order.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Int32,System.Byte[]}}
+      description: An enumerable collection of all (identifier, key) tuples.
+    content.vb: Function EnumerateAll(reverse As Boolean = False) As IEnumerable(Of (Integer, Byte()))
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.EnumerateAll*
+  nameWithType.vb: KeyRecordDictionary.IKeyAccess.EnumerateAll(Boolean)
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.EnumerateAll(Boolean)
+  name.vb: EnumerateAll(Boolean)
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchWildcard(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Char},System.Boolean)
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchWildcard(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Char},System.Boolean)
+  id: SearchWildcard(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Char},System.Boolean)
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+  langs:
+  - csharp
+  - vb
+  name: SearchWildcard(ReadOnlySpan<byte>, ReadOnlySpan<char>, bool)
+  nameWithType: KeyRecordDictionary.IKeyAccess.SearchWildcard(ReadOnlySpan<byte>, ReadOnlySpan<char>, bool)
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchWildcard(System.ReadOnlySpan<byte>, System.ReadOnlySpan<char>, bool)
+  type: Method
+  source:
+    id: SearchWildcard
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 636
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Performs a wildcard search for keys matching a pattern.
+  example:
+  - >-
+    If the dictionary contains the keys "a", "app", and "apple", and the input sequence is "a?p*",
+
+    this method will return two keys: "app" and "apple".
+
+    The search pattern is provided as two separate arguments (`sequence` and `cards`) to unambiguously support searching for any possible byte value (0-255).
+
+    The `sequence` span contains the literal byte values for the pattern, while the `cards` span defines the role of each corresponding position.
+
+    This design allows a search to include literal byte values that might otherwise be interpreted as wildcard characters (e.g., the byte value 63, which is the ASCII code for '?').
+  syntax:
+    content: IEnumerable<(int, byte[])> SearchWildcard(ReadOnlySpan<byte> sequence, ReadOnlySpan<char> cards, bool reverse = false)
+    parameters:
+    - id: sequence
+      type: System.ReadOnlySpan{System.Byte}
+      description: The byte sequence of the pattern.
+    - id: cards
+      type: System.ReadOnlySpan{System.Char}
+      description: A sequence of characters ('?' for single, '*' for multiple wildcards) corresponding to the pattern.
+    - id: reverse
+      type: System.Boolean
+      description: If true, returns results in reverse order.
+    return:
+      type: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Int32,System.Byte[]}}
+      description: An enumerable collection of matching (identifier, key) tuples.
+    content.vb: Function SearchWildcard(sequence As ReadOnlySpan(Of Byte), cards As ReadOnlySpan(Of Char), reverse As Boolean = False) As IEnumerable(Of (Integer, Byte()))
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchWildcard*
+  nameWithType.vb: KeyRecordDictionary.IKeyAccess.SearchWildcard(ReadOnlySpan(Of Byte), ReadOnlySpan(Of Char), Boolean)
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchWildcard(System.ReadOnlySpan(Of Byte), System.ReadOnlySpan(Of Char), Boolean)
+  name.vb: SearchWildcard(ReadOnlySpan(Of Byte), ReadOnlySpan(Of Char), Boolean)
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindFirst(System.Int32@,System.Byte[]@)
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindFirst(System.Int32@,System.Byte[]@)
+  id: FindFirst(System.Int32@,System.Byte[]@)
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+  langs:
+  - csharp
+  - vb
+  name: FindFirst(out int, out byte[])
+  nameWithType: KeyRecordDictionary.IKeyAccess.FindFirst(out int, out byte[])
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindFirst(out int, out byte[])
+  type: Method
+  source:
+    id: FindFirst
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 644
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Finds the first key in the dictionary according to the current sort order.
+  example: []
+  syntax:
+    content: bool FindFirst(out int identifier, out byte[] key)
+    parameters:
+    - id: identifier
+      type: System.Int32
+      description: When this method returns, the identifier of the first key.
+    - id: key
+      type: System.Byte[]
+      description: When this method returns, the first key.
+    return:
+      type: System.Boolean
+      description: true if the dictionary is not empty; otherwise, false.
+    content.vb: Function FindFirst(identifier As Integer, key As Byte()) As Boolean
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindFirst*
+  nameWithType.vb: KeyRecordDictionary.IKeyAccess.FindFirst(Integer, Byte())
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindFirst(Integer, Byte())
+  name.vb: FindFirst(Integer, Byte())
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindLast(System.Int32@,System.Byte[]@)
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindLast(System.Int32@,System.Byte[]@)
+  id: FindLast(System.Int32@,System.Byte[]@)
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+  langs:
+  - csharp
+  - vb
+  name: FindLast(out int, out byte[])
+  nameWithType: KeyRecordDictionary.IKeyAccess.FindLast(out int, out byte[])
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindLast(out int, out byte[])
+  type: Method
+  source:
+    id: FindLast
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 652
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Finds the last key in the dictionary according to the current sort order.
+  example: []
+  syntax:
+    content: bool FindLast(out int identifier, out byte[] key)
+    parameters:
+    - id: identifier
+      type: System.Int32
+      description: When this method returns, the identifier of the last key.
+    - id: key
+      type: System.Byte[]
+      description: When this method returns, the last key.
+    return:
+      type: System.Boolean
+      description: true if the dictionary is not empty; otherwise, false.
+    content.vb: Function FindLast(identifier As Integer, key As Byte()) As Boolean
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindLast*
+  nameWithType.vb: KeyRecordDictionary.IKeyAccess.FindLast(Integer, Byte())
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindLast(Integer, Byte())
+  name.vb: FindLast(Integer, Byte())
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindNext(System.Int32,System.Int32@,System.Byte[]@)
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindNext(System.Int32,System.Int32@,System.Byte[]@)
+  id: FindNext(System.Int32,System.Int32@,System.Byte[]@)
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+  langs:
+  - csharp
+  - vb
+  name: FindNext(int, out int, out byte[])
+  nameWithType: KeyRecordDictionary.IKeyAccess.FindNext(int, out int, out byte[])
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindNext(int, out int, out byte[])
+  type: Method
+  source:
+    id: FindNext
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 661
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Finds the next key in sequence after the specified identifier.
+  example: []
+  syntax:
+    content: bool FindNext(int currentIdentifier, out int foundIdentifier, out byte[] foundKey)
+    parameters:
+    - id: currentIdentifier
+      type: System.Int32
+      description: The identifier to start the search from.
+    - id: foundIdentifier
+      type: System.Int32
+      description: When this method returns, the identifier of the next key.
+    - id: foundKey
+      type: System.Byte[]
+      description: When this method returns, the next key.
+    return:
+      type: System.Boolean
+      description: true if a next key was found; otherwise, false.
+    content.vb: Function FindNext(currentIdentifier As Integer, foundIdentifier As Integer, foundKey As Byte()) As Boolean
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindNext*
+  nameWithType.vb: KeyRecordDictionary.IKeyAccess.FindNext(Integer, Integer, Byte())
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindNext(Integer, Integer, Byte())
+  name.vb: FindNext(Integer, Integer, Byte())
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindNext(System.ReadOnlySpan{System.Byte},System.Int32@,System.Byte[]@)
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindNext(System.ReadOnlySpan{System.Byte},System.Int32@,System.Byte[]@)
+  id: FindNext(System.ReadOnlySpan{System.Byte},System.Int32@,System.Byte[]@)
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+  langs:
+  - csharp
+  - vb
+  name: FindNext(ReadOnlySpan<byte>, out int, out byte[])
+  nameWithType: KeyRecordDictionary.IKeyAccess.FindNext(ReadOnlySpan<byte>, out int, out byte[])
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindNext(System.ReadOnlySpan<byte>, out int, out byte[])
+  type: Method
+  source:
+    id: FindNext
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 670
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Finds the next key in sequence after the specified key.
+  example: []
+  syntax:
+    content: bool FindNext(ReadOnlySpan<byte> currentKey, out int foundIdentifier, out byte[] foundKey)
+    parameters:
+    - id: currentKey
+      type: System.ReadOnlySpan{System.Byte}
+      description: The key to start the search from.
+    - id: foundIdentifier
+      type: System.Int32
+      description: When this method returns, the identifier of the next key.
+    - id: foundKey
+      type: System.Byte[]
+      description: When this method returns, the next key.
+    return:
+      type: System.Boolean
+      description: true if a next key was found; otherwise, false.
+    content.vb: Function FindNext(currentKey As ReadOnlySpan(Of Byte), foundIdentifier As Integer, foundKey As Byte()) As Boolean
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindNext*
+  nameWithType.vb: KeyRecordDictionary.IKeyAccess.FindNext(ReadOnlySpan(Of Byte), Integer, Byte())
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindNext(System.ReadOnlySpan(Of Byte), Integer, Byte())
+  name.vb: FindNext(ReadOnlySpan(Of Byte), Integer, Byte())
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindPrevious(System.Int32,System.Int32@,System.Byte[]@)
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindPrevious(System.Int32,System.Int32@,System.Byte[]@)
+  id: FindPrevious(System.Int32,System.Int32@,System.Byte[]@)
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+  langs:
+  - csharp
+  - vb
+  name: FindPrevious(int, out int, out byte[])
+  nameWithType: KeyRecordDictionary.IKeyAccess.FindPrevious(int, out int, out byte[])
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindPrevious(int, out int, out byte[])
+  type: Method
+  source:
+    id: FindPrevious
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 679
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Finds the previous key in sequence before the specified identifier.
+  example: []
+  syntax:
+    content: bool FindPrevious(int currentIdentifier, out int foundIdentifier, out byte[] foundKey)
+    parameters:
+    - id: currentIdentifier
+      type: System.Int32
+      description: The identifier to start the search from.
+    - id: foundIdentifier
+      type: System.Int32
+      description: When this method returns, the identifier of the previous key.
+    - id: foundKey
+      type: System.Byte[]
+      description: When this method returns, the previous key.
+    return:
+      type: System.Boolean
+      description: true if a previous key was found; otherwise, false.
+    content.vb: Function FindPrevious(currentIdentifier As Integer, foundIdentifier As Integer, foundKey As Byte()) As Boolean
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindPrevious*
+  nameWithType.vb: KeyRecordDictionary.IKeyAccess.FindPrevious(Integer, Integer, Byte())
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindPrevious(Integer, Integer, Byte())
+  name.vb: FindPrevious(Integer, Integer, Byte())
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindPrevious(System.ReadOnlySpan{System.Byte},System.Int32@,System.Byte[]@)
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindPrevious(System.ReadOnlySpan{System.Byte},System.Int32@,System.Byte[]@)
+  id: FindPrevious(System.ReadOnlySpan{System.Byte},System.Int32@,System.Byte[]@)
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+  langs:
+  - csharp
+  - vb
+  name: FindPrevious(ReadOnlySpan<byte>, out int, out byte[])
+  nameWithType: KeyRecordDictionary.IKeyAccess.FindPrevious(ReadOnlySpan<byte>, out int, out byte[])
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindPrevious(System.ReadOnlySpan<byte>, out int, out byte[])
+  type: Method
+  source:
+    id: FindPrevious
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 688
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Finds the previous key in sequence before the specified key.
+  example: []
+  syntax:
+    content: bool FindPrevious(ReadOnlySpan<byte> currentKey, out int foundIdentifier, out byte[] foundKey)
+    parameters:
+    - id: currentKey
+      type: System.ReadOnlySpan{System.Byte}
+      description: The key to start the search from.
+    - id: foundIdentifier
+      type: System.Int32
+      description: When this method returns, the identifier of the previous key.
+    - id: foundKey
+      type: System.Byte[]
+      description: When this method returns, the previous key.
+    return:
+      type: System.Boolean
+      description: true if a previous key was found; otherwise, false.
+    content.vb: Function FindPrevious(currentKey As ReadOnlySpan(Of Byte), foundIdentifier As Integer, foundKey As Byte()) As Boolean
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindPrevious*
+  nameWithType.vb: KeyRecordDictionary.IKeyAccess.FindPrevious(ReadOnlySpan(Of Byte), Integer, Byte())
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindPrevious(System.ReadOnlySpan(Of Byte), Integer, Byte())
+  name.vb: FindPrevious(ReadOnlySpan(Of Byte), Integer, Byte())
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Add(System.ReadOnlySpan{System.Byte})
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Add(System.ReadOnlySpan{System.Byte})
+  id: Add(System.ReadOnlySpan{System.Byte})
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+  langs:
+  - csharp
+  - vb
+  name: Add(ReadOnlySpan<byte>)
+  nameWithType: KeyRecordDictionary.IKeyAccess.Add(ReadOnlySpan<byte>)
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Add(System.ReadOnlySpan<byte>)
+  type: Method
+  source:
+    id: Add
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 696
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Adds a key to the dictionary. If the key already exists, its existing identifier is returned.
+  example: []
+  syntax:
+    content: int Add(ReadOnlySpan<byte> key)
+    parameters:
+    - id: key
+      type: System.ReadOnlySpan{System.Byte}
+      description: The key to add.
+    return:
+      type: System.Int32
+      description: The identifier for the added or existing key.
+    content.vb: Function Add(key As ReadOnlySpan(Of Byte)) As Integer
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Add*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">key</code> is empty.
+  nameWithType.vb: KeyRecordDictionary.IKeyAccess.Add(ReadOnlySpan(Of Byte))
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Add(System.ReadOnlySpan(Of Byte))
+  name.vb: Add(ReadOnlySpan(Of Byte))
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.TryAdd(System.ReadOnlySpan{System.Byte},System.Int32@)
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.TryAdd(System.ReadOnlySpan{System.Byte},System.Int32@)
+  id: TryAdd(System.ReadOnlySpan{System.Byte},System.Int32@)
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+  langs:
+  - csharp
+  - vb
+  name: TryAdd(ReadOnlySpan<byte>, out int)
+  nameWithType: KeyRecordDictionary.IKeyAccess.TryAdd(ReadOnlySpan<byte>, out int)
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.TryAdd(System.ReadOnlySpan<byte>, out int)
+  type: Method
+  source:
+    id: TryAdd
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 705
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Tries to add a key to the dictionary.
+  example: []
+  syntax:
+    content: bool TryAdd(ReadOnlySpan<byte> key, out int identifier)
+    parameters:
+    - id: key
+      type: System.ReadOnlySpan{System.Byte}
+      description: The key to add.
+    - id: identifier
+      type: System.Int32
+      description: When this method returns, contains the identifier for the new key. If the key already existed, this will be the existing identifier.
+    return:
+      type: System.Boolean
+      description: true if the key was newly added; false if the key already existed.
+    content.vb: Function TryAdd(key As ReadOnlySpan(Of Byte), identifier As Integer) As Boolean
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.TryAdd*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code class="paramref">key</code> is empty.
+  nameWithType.vb: KeyRecordDictionary.IKeyAccess.TryAdd(ReadOnlySpan(Of Byte), Integer)
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.TryAdd(System.ReadOnlySpan(Of Byte), Integer)
+  name.vb: TryAdd(ReadOnlySpan(Of Byte), Integer)
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Remove(System.Int32)
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Remove(System.Int32)
+  id: Remove(System.Int32)
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+  langs:
+  - csharp
+  - vb
+  name: Remove(int)
+  nameWithType: KeyRecordDictionary.IKeyAccess.Remove(int)
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Remove(int)
+  type: Method
+  source:
+    id: Remove
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 712
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Removes a key from the dictionary using its identifier.
+  example: []
+  syntax:
+    content: bool Remove(int identifier)
+    parameters:
+    - id: identifier
+      type: System.Int32
+      description: The identifier of the key to remove.
+    return:
+      type: System.Boolean
+      description: true if the key was found and removed; otherwise, false.
+    content.vb: Function Remove(identifier As Integer) As Boolean
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Remove*
+  nameWithType.vb: KeyRecordDictionary.IKeyAccess.Remove(Integer)
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Remove(Integer)
+  name.vb: Remove(Integer)
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Remove(System.ReadOnlySpan{System.Byte})
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Remove(System.ReadOnlySpan{System.Byte})
+  id: Remove(System.ReadOnlySpan{System.Byte})
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+  langs:
+  - csharp
+  - vb
+  name: Remove(ReadOnlySpan<byte>)
+  nameWithType: KeyRecordDictionary.IKeyAccess.Remove(ReadOnlySpan<byte>)
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Remove(System.ReadOnlySpan<byte>)
+  type: Method
+  source:
+    id: Remove
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 719
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Removes a key from the dictionary.
+  example: []
+  syntax:
+    content: bool Remove(ReadOnlySpan<byte> key)
+    parameters:
+    - id: key
+      type: System.ReadOnlySpan{System.Byte}
+      description: The key to remove.
+    return:
+      type: System.Boolean
+      description: true if the key was found and removed; otherwise, false.
+    content.vb: Function Remove(key As ReadOnlySpan(Of Byte)) As Boolean
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Remove*
+  nameWithType.vb: KeyRecordDictionary.IKeyAccess.Remove(ReadOnlySpan(Of Byte))
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Remove(System.ReadOnlySpan(Of Byte))
+  name.vb: Remove(ReadOnlySpan(Of Byte))
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.AsStringSpecialized(System.Text.Encoding)
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.AsStringSpecialized(System.Text.Encoding)
+  id: AsStringSpecialized(System.Text.Encoding)
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+  langs:
+  - csharp
+  - vb
+  name: AsStringSpecialized(Encoding?)
+  nameWithType: KeyRecordDictionary.IKeyAccess.AsStringSpecialized(Encoding?)
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.AsStringSpecialized(System.Text.Encoding?)
+  type: Method
+  source:
+    id: AsStringSpecialized
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 726
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Returns a string-specialized wrapper for this key access interface.
+  example: []
+  syntax:
+    content: KeyRecordDictionary.StringSpecialized AsStringSpecialized(Encoding? encoding = null)
+    parameters:
+    - id: encoding
+      type: System.Text.Encoding
+      description: The encoding to use for string operations. Defaults to UTF-8.
+    return:
+      type: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.StringSpecialized
+      description: A new <xref href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.StringSpecialized" data-throw-if-not-resolved="false"></xref> instance.
+    content.vb: Function AsStringSpecialized(encoding As Encoding = Nothing) As KeyRecordDictionary.StringSpecialized
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.AsStringSpecialized*
+  nameWithType.vb: KeyRecordDictionary.IKeyAccess.AsStringSpecialized(Encoding)
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.AsStringSpecialized(System.Text.Encoding)
+  name.vb: AsStringSpecialized(Encoding)
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.GetRecordAccess(System.Int32,System.Boolean)
+  commentId: M:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.GetRecordAccess(System.Int32,System.Boolean)
+  id: GetRecordAccess(System.Int32,System.Boolean)
+  parent: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess
+  langs:
+  - csharp
+  - vb
+  name: GetRecordAccess(int, bool)
+  nameWithType: KeyRecordDictionary.IKeyAccess.GetRecordAccess(int, bool)
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.GetRecordAccess(int, bool)
+  type: Method
+  source:
+    id: GetRecordAccess
+    path: C:\Users\nanto\dev\TrieDictionary\src\KeyRecordDictionary.cs
+    startLine: 734
+  assemblies:
+  - BelNytheraSeiche.TrieDictionary
+  namespace: BelNytheraSeiche.TrieDictionary
+  summary: Gets an accessor for the list of records associated with a given key identifier.
+  example: []
+  syntax:
+    content: KeyRecordDictionary.IRecordAccess GetRecordAccess(int identifier, bool isTransient = false)
+    parameters:
+    - id: identifier
+      type: System.Int32
+      description: The identifier of the key whose records are to be accessed.
+    - id: isTransient
+      type: System.Boolean
+      description: If true, accesses the transient record store; otherwise, accesses the persistent record store.
+    return:
+      type: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess
+      description: An <xref href="BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess" data-throw-if-not-resolved="false"></xref> handle for the specified record list.
+    content.vb: Function GetRecordAccess(identifier As Integer, isTransient As Boolean = False) As KeyRecordDictionary.IRecordAccess
+  overload: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.GetRecordAccess*
+  nameWithType.vb: KeyRecordDictionary.IKeyAccess.GetRecordAccess(Integer, Boolean)
+  fullName.vb: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.GetRecordAccess(Integer, Boolean)
+  name.vb: GetRecordAccess(Integer, Boolean)
+references:
+- uid: BelNytheraSeiche.TrieDictionary
+  commentId: N:BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.html
+  name: BelNytheraSeiche.TrieDictionary
+  nameWithType: BelNytheraSeiche.TrieDictionary
+  fullName: BelNytheraSeiche.TrieDictionary
+  spec.csharp:
+  - uid: BelNytheraSeiche
+    name: BelNytheraSeiche
+    href: BelNytheraSeiche.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary
+    name: TrieDictionary
+    href: BelNytheraSeiche.TrieDictionary.html
+  spec.vb:
+  - uid: BelNytheraSeiche
+    name: BelNytheraSeiche
+    href: BelNytheraSeiche.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary
+    name: TrieDictionary
+    href: BelNytheraSeiche.TrieDictionary.html
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.TryGetKey*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.TryGetKey
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IKeyAccess_TryGetKey_System_Int32_System_Byte____
+  name: TryGetKey
+  nameWithType: KeyRecordDictionary.IKeyAccess.TryGetKey
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.TryGetKey
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.KeyNotFoundException
+  commentId: T:System.Collections.Generic.KeyNotFoundException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keynotfoundexception
+  name: KeyNotFoundException
+  nameWithType: KeyNotFoundException
+  fullName: System.Collections.Generic.KeyNotFoundException
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.GetKey*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.GetKey
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IKeyAccess_GetKey_System_Int32_
+  name: GetKey
+  nameWithType: KeyRecordDictionary.IKeyAccess.GetKey
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.GetKey
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Contains*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Contains
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IKeyAccess_Contains_System_ReadOnlySpan_System_Byte__
+  name: Contains
+  nameWithType: KeyRecordDictionary.IKeyAccess.Contains
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Contains
+- uid: System.ReadOnlySpan{System.Byte}
+  commentId: T:System.ReadOnlySpan{System.Byte}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<byte>
+  nameWithType: ReadOnlySpan<byte>
+  fullName: System.ReadOnlySpan<byte>
+  nameWithType.vb: ReadOnlySpan(Of Byte)
+  fullName.vb: System.ReadOnlySpan(Of Byte)
+  name.vb: ReadOnlySpan(Of Byte)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchExactly*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchExactly
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IKeyAccess_SearchExactly_System_ReadOnlySpan_System_Byte__
+  name: SearchExactly
+  nameWithType: KeyRecordDictionary.IKeyAccess.SearchExactly
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchExactly
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchCommonPrefix*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchCommonPrefix
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IKeyAccess_SearchCommonPrefix_System_ReadOnlySpan_System_Byte__
+  name: SearchCommonPrefix
+  nameWithType: KeyRecordDictionary.IKeyAccess.SearchCommonPrefix
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchCommonPrefix
+- uid: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Int32,System.Byte[]}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.ValueTuple{System.Int32,System.Byte[]}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<(int, byte[])>
+  nameWithType: IEnumerable<(int, byte[])>
+  fullName: System.Collections.Generic.IEnumerable<(int, byte[])>
+  nameWithType.vb: IEnumerable(Of (Integer, Byte()))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of (Integer, Byte()))
+  name.vb: IEnumerable(Of (Integer, Byte()))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchLongestPrefix*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchLongestPrefix
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IKeyAccess_SearchLongestPrefix_System_ReadOnlySpan_System_Byte__
+  name: SearchLongestPrefix
+  nameWithType: KeyRecordDictionary.IKeyAccess.SearchLongestPrefix
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchLongestPrefix
+- uid: System.ValueTuple{System.Int32,System.Byte[]}
+  commentId: T:System.ValueTuple{System.Int32,System.Byte[]}
+  parent: System
+  definition: System.ValueTuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: (int, byte[])
+  nameWithType: (int, byte[])
+  fullName: (int, byte[])
+  nameWithType.vb: (Integer, Byte())
+  fullName.vb: (Integer, Byte())
+  name.vb: (Integer, Byte())
+  spec.csharp:
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: )
+- uid: System.ValueTuple`2
+  commentId: T:System.ValueTuple`2
+  name: (T1, T2)
+  nameWithType: (T1, T2)
+  fullName: (T1, T2)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchByPrefix*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchByPrefix
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IKeyAccess_SearchByPrefix_System_ReadOnlySpan_System_Byte__System_Boolean_
+  name: SearchByPrefix
+  nameWithType: KeyRecordDictionary.IKeyAccess.SearchByPrefix
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchByPrefix
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.EnumerateAll*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.EnumerateAll
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IKeyAccess_EnumerateAll_System_Boolean_
+  name: EnumerateAll
+  nameWithType: KeyRecordDictionary.IKeyAccess.EnumerateAll
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.EnumerateAll
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchWildcard*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchWildcard
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IKeyAccess_SearchWildcard_System_ReadOnlySpan_System_Byte__System_ReadOnlySpan_System_Char__System_Boolean_
+  name: SearchWildcard
+  nameWithType: KeyRecordDictionary.IKeyAccess.SearchWildcard
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.SearchWildcard
+- uid: System.ReadOnlySpan{System.Char}
+  commentId: T:System.ReadOnlySpan{System.Char}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<char>
+  nameWithType: ReadOnlySpan<char>
+  fullName: System.ReadOnlySpan<char>
+  nameWithType.vb: ReadOnlySpan(Of Char)
+  fullName.vb: System.ReadOnlySpan(Of Char)
+  name.vb: ReadOnlySpan(Of Char)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: )
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindFirst*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindFirst
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IKeyAccess_FindFirst_System_Int32__System_Byte____
+  name: FindFirst
+  nameWithType: KeyRecordDictionary.IKeyAccess.FindFirst
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindFirst
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindLast*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindLast
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IKeyAccess_FindLast_System_Int32__System_Byte____
+  name: FindLast
+  nameWithType: KeyRecordDictionary.IKeyAccess.FindLast
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindLast
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindNext*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindNext
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IKeyAccess_FindNext_System_Int32_System_Int32__System_Byte____
+  name: FindNext
+  nameWithType: KeyRecordDictionary.IKeyAccess.FindNext
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindNext
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindPrevious*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindPrevious
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IKeyAccess_FindPrevious_System_Int32_System_Int32__System_Byte____
+  name: FindPrevious
+  nameWithType: KeyRecordDictionary.IKeyAccess.FindPrevious
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.FindPrevious
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Add*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Add
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IKeyAccess_Add_System_ReadOnlySpan_System_Byte__
+  name: Add
+  nameWithType: KeyRecordDictionary.IKeyAccess.Add
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Add
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.TryAdd*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.TryAdd
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IKeyAccess_TryAdd_System_ReadOnlySpan_System_Byte__System_Int32__
+  name: TryAdd
+  nameWithType: KeyRecordDictionary.IKeyAccess.TryAdd
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.TryAdd
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Remove*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Remove
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IKeyAccess_Remove_System_Int32_
+  name: Remove
+  nameWithType: KeyRecordDictionary.IKeyAccess.Remove
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.Remove
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.StringSpecialized
+  commentId: T:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.StringSpecialized
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  name: KeyRecordDictionary.StringSpecialized
+  nameWithType: KeyRecordDictionary.StringSpecialized
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.StringSpecialized
+  spec.csharp:
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.StringSpecialized
+    name: StringSpecialized
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.StringSpecialized.html
+  spec.vb:
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.StringSpecialized
+    name: StringSpecialized
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.StringSpecialized.html
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.AsStringSpecialized*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.AsStringSpecialized
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IKeyAccess_AsStringSpecialized_System_Text_Encoding_
+  name: AsStringSpecialized
+  nameWithType: KeyRecordDictionary.IKeyAccess.AsStringSpecialized
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.AsStringSpecialized
+- uid: System.Text.Encoding
+  commentId: T:System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.encoding
+  name: Encoding
+  nameWithType: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess
+  commentId: T:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess
+  parent: BelNytheraSeiche.TrieDictionary
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  name: KeyRecordDictionary.IRecordAccess
+  nameWithType: KeyRecordDictionary.IRecordAccess
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess
+  spec.csharp:
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess
+    name: IRecordAccess
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess.html
+  spec.vb:
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary
+    name: KeyRecordDictionary
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.html
+  - name: .
+  - uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess
+    name: IRecordAccess
+    href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IRecordAccess.html
+- uid: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.GetRecordAccess*
+  commentId: Overload:BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.GetRecordAccess
+  href: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.html#BelNytheraSeiche_TrieDictionary_KeyRecordDictionary_IKeyAccess_GetRecordAccess_System_Int32_System_Boolean_
+  name: GetRecordAccess
+  nameWithType: KeyRecordDictionary.IKeyAccess.GetRecordAccess
+  fullName: BelNytheraSeiche.TrieDictionary.KeyRecordDictionary.IKeyAccess.GetRecordAccess
