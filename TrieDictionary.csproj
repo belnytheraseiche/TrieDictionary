@@ -18,6 +18,7 @@
     <PackageId>BelNytheraSeiche.TrieDictionary</PackageId>
     <PackageTags>trie;tree;dictionary;collections;data-structures;double-array;dawg;louds;binary-tree;key-search;key-value-store;storage;utility</PackageTags>
     <RepositoryUrl>https://github.com/belnytheraseiche/TrieDictionary</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/belnytheraseiche/TrieDictionary</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Title>BelNytheraSeiche: A High-Performance Trie and Dictionary Library for .NET</Title>
     <Description>
