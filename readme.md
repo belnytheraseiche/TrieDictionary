@@ -1,6 +1,6 @@
 # BelNytheraSeiche.TrieDictionary
 
-[![NuGet version](https://img.shields.io/nuget/v/BelNytheraSeiche.svg)](https://www.nuget.org/packages/BelNytheraSeiche.TrieDictionary/)
+[![NuGet version](https://img.shields.io/nuget/v/BelNytheraSeiche.TrieDictionary.svg)](https://www.nuget.org/packages/BelNytheraSeiche.TrieDictionary/)
 <!-- [![Build Status](https://dev.azure.com/your-org/your-project/_apis/build/status/your-build-definition)](https://dev.azure.com/your-org/your-project/_build/latest?definitionId=your-build-definition) -->
 
 A collection of high-performance, memory-efficient dictionary and data storage classes for .NET, specializing in advanced search capabilities.
