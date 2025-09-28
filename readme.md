@@ -193,10 +193,18 @@ This library is composed of several key components:
   - `PrimitiveRecordStore`: A low-level, append-only store for raw byte records. Used as the default persistent storage.
   - `BasicRecordStore` Implementations (`HashMapRecordStore`, `AVLTreeRecordStore`, etc.): In-memory stores used for transient data or other specialized use cases.
 
-For a complete reference of all public classes and methods, please see our full **[API Reference](https://belnytheraseiche.github.io/TrieDictionary/api/)**.
+For a complete reference of all public classes and methods, please see our full **[API Reference](https://belnytheraseiche.github.io/TrieDictionary/api/index.html)**.
 
 ---
 
 ## License
 
 This project is licensed under the MIT License. See the  **[LICENSE](https://github.com/belnytheraseiche/TrieDictionary/blob/main/LICENSE)** file for details.
+
+---
+
+## Project Website
+
+[Main Page - https://github.com/belnytheraseiche/TrieDictionary/](https://github.com/belnytheraseiche/TrieDictionary/)
+
+[API Reference - https://belnytheraseiche.github.io/TrieDictionary/api/index.html](https://belnytheraseiche.github.io/TrieDictionary/api/index.html)
