@@ -207,4 +207,4 @@ This project is licensed under the MIT License. See the  **[LICENSE](https://git
 
 [Main Page - https://github.com/belnytheraseiche/TrieDictionary/](https://github.com/belnytheraseiche/TrieDictionary/)
 
-[API Reference - https://belnytheraseiche.github.io/TrieDictionary/api/index.html](https://belnytheraseiche.github.io/TrieDictionary/api/index.html)
+[Reference - https://belnytheraseiche.github.io/TrieDictionary/](https://belnytheraseiche.github.io/TrieDictionary/)
