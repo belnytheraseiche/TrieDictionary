@@ -1,6 +1,6 @@
 # BelNytheraSeiche.TrieDictionary
 
-<!-- [![NuGet version](https://img.shields.io/nuget/v/BelNytheraSeiche.svg)](https://www.nuget.org/packages/BelNytheraSeiche.TrieDictionary/) -->
+[![NuGet version](https://img.shields.io/nuget/v/BelNytheraSeiche.svg)](https://www.nuget.org/packages/BelNytheraSeiche.TrieDictionary/)
 <!-- [![Build Status](https://dev.azure.com/your-org/your-project/_apis/build/status/your-build-definition)](https://dev.azure.com/your-org/your-project/_build/latest?definitionId=your-build-definition) -->
 
 A collection of high-performance, memory-efficient dictionary and data storage classes for .NET, specializing in advanced search capabilities.
@@ -89,7 +89,7 @@ foreach (var (identifier2, key) in ssdict.SearchByPrefix("ap")) // or dict.Searc
 
 For more detailed examples covering all major classes in the library, please see the full sample file:
 
-[**➡️ View `Program.cs` for More Examples**](https://github.com/belnytheraseiche/TrieDictionary/src/Program.cs)
+[**➡️ View `Program.cs` for More Examples**](https://github.com/belnytheraseiche/TrieDictionary/blob/main/src/Program.cs)
 
 ---
 
@@ -193,10 +193,10 @@ This library is composed of several key components:
   - `PrimitiveRecordStore`: A low-level, append-only store for raw byte records. Used as the default persistent storage.
   - `BasicRecordStore` Implementations (`HashMapRecordStore`, `AVLTreeRecordStore`, etc.): In-memory stores used for transient data or other specialized use cases.
 
-For a complete reference of all public classes and methods, please see our full **[API Reference](https://github.com/belnytheraseiche/TrieDictionary/api/)**.
+For a complete reference of all public classes and methods, please see our full **[API Reference](https://belnytheraseiche.github.io/TrieDictionary/api/)**.
 
 ---
 
 ## License
 
-This project is licensed under the MIT License. See the  **[LICENSE](https://github.com/belnytheraseiche/TrieDictionary/LICENSE)** file for details.
+This project is licensed under the MIT License. See the  **[LICENSE](https://github.com/belnytheraseiche/TrieDictionary/blob/main/LICENSE)** file for details.
